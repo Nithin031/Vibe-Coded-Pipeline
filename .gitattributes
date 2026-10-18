@@ -1,0 +1,2 @@
+# store every file byte-for-byte (model files and V3 hashes must not change on checkout)
+* -text
