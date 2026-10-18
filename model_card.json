@@ -1,0 +1,83 @@
+{
+  "version": "V4 experimental (not promoted)",
+  "created": "2026-10-18",
+  "input_contract": "esp-csi CSV (type, local_timestamp us, rssi, len, data = raw interleaved I/Q); L-LTF amplitude; 20 Hz grid; 3 s windows every 1 s",
+  "presence": {
+    "classes": [
+      "empty",
+      "occupied"
+    ],
+    "needs_empty_reference_s": 30,
+    "preprocessing": "standard",
+    "lgbm": {
+      "files": [
+        "presence/lgbm_cal_s0.txt",
+        "presence/lgbm_cal_s1.txt",
+        "presence/lgbm_cal_s2.txt"
+      ],
+      "threshold": 0.9,
+      "role": "V4 final choice (validation 0.786 over clean + noise)"
+    },
+    "cnn": {
+      "files": [
+        "presence/cnn_cal.pt"
+      ],
+      "threshold": 0.45,
+      "role": "best .pt alternative (validation 0.748)"
+    }
+  },
+  "counting": {
+    "classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "trained_classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "note": "outputs 4 and 5 were never trained; treat '3' as '3 or more'",
+    "clean": {
+      "files": [
+        "counting/clean/count_gapcnn.pt"
+      ],
+      "preprocessing": "standard",
+      "lgbm_files": [
+        "counting/clean/count_lgbm_s0.txt",
+        "counting/clean/count_lgbm_s1.txt",
+        "counting/clean/count_lgbm_s2.txt"
+      ]
+    },
+    "noisy": {
+      "files": [
+        "counting/noisy/count_gapcnn.pt"
+      ],
+      "preprocessing": "robust (per-packet gain normalisation + Hampel spike filter), trained with noisy copies",
+      "lgbm_files": [
+        "counting/noisy/count_lgbm_s0.txt",
+        "counting/noisy/count_lgbm_s1.txt",
+        "counting/noisy/count_lgbm_s2.txt"
+      ]
+    }
+  },
+  "smoothing": "causal median over 5 windows",
+  "sha256": {
+    "counting/clean/count_gapcnn.pt": "fcd1f7d95640ced500a3ab5995ece31ca98fcdae6c16ad679d96c0819706d5f3",
+    "counting/clean/count_lgbm_s0.txt": "1100771bacf255827a157c4f8268ad30e45394e538da1759fdff4af84d4b7875",
+    "counting/clean/count_lgbm_s1.txt": "793df9a0e9b35c4c272aebacc496489673a39c602ee2f853c9fc326de4c8d5f6",
+    "counting/clean/count_lgbm_s2.txt": "11b91d2b0505fb0e50ca66fc65a7f46616f95ba2e2e1f915f39783c50b29a91a",
+    "counting/noisy/count_gapcnn.pt": "9428efe3009b62df28875ab08eeed67a296bb905b4a7ebee55d1c79aae0b04a2",
+    "counting/noisy/count_lgbm_s0.txt": "a52c03732675ab39ca02d772344c5ca19233bfb6d0e58941310531a90b014027",
+    "counting/noisy/count_lgbm_s1.txt": "89a5cc914278e6c57a7286c2620a625aa912916406631d91401fc406586cd0dc",
+    "counting/noisy/count_lgbm_s2.txt": "30903bcaadd631d9424242aaa28f275c317facb765f14178469d15800cedd8e6",
+    "presence/cnn_cal.pt": "d4912c9cf090a75bd63c14e326846cdf17443c091cb1ea2001f57a44404c7aa1",
+    "presence/lgbm_cal_s0.txt": "c4af6c33fcb89843daba57c1d1246256b7d364b716602079db2652bf1c1da16c",
+    "presence/lgbm_cal_s1.txt": "17a3da58d7dc61bdfcfef2abae5395c015799f305dbf25c34a6d098ff3cbbd3f",
+    "presence/lgbm_cal_s2.txt": "797603cc7767dc492f940f07261ac80772f7f8348d484fa2709b1d99b4558336"
+  }
+}
