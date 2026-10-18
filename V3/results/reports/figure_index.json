@@ -1,0 +1,58 @@
+{
+  "figures": [
+    {
+      "file": "results/figures/fig1_presence_raw_vs_cal.png",
+      "description": "Presence balanced accuracy, raw versus 30 s calibration.",
+      "bytes": 112787,
+      "sha256": "e4af323064a03b1dbbab5b15d821cb56b811c0f619a6fbacbf18c717172a4be3"
+    },
+    {
+      "file": "results/figures/fig2_false_alarms.png",
+      "description": "Empty-room false-alarm rate, raw versus calibration.",
+      "bytes": 109390,
+      "sha256": "abb5cf3eaeaa68f3720384aad64cec0175f080d6ab64d34f6ce8b4a962e91bc8"
+    },
+    {
+      "file": "results/figures/fig3_congested_channel.png",
+      "description": "N2 same-room quiet-to-congested confusion matrices.",
+      "bytes": 101828,
+      "sha256": "abf0e794a755f2f3cef560e1ed0cd36d40b2014c16104c73fa4862e1e9128661"
+    },
+    {
+      "file": "results/figures/fig4_espectre_rooms.png",
+      "description": "N1 held-out ESPectre-room presence comparison.",
+      "bytes": 50691,
+      "sha256": "59c2e157c00d154a835bcc4170987e59673a35d217cf5fe8145b1c7ac67ed39d"
+    },
+    {
+      "file": "results/figures/fig5_empty_vs_occupied.png",
+      "description": "Raw versus calibrated fluctuation distributions.",
+      "bytes": 72540,
+      "sha256": "4c0128e9e0a521c85219aeb88f34e31b8a0a470b21a85a3ffb84e09240c6162b"
+    },
+    {
+      "file": "results/figures/fig6_n3_cross_room.png",
+      "description": "N3 unseen-room raw versus calibrated presence comparison.",
+      "bytes": 69159,
+      "sha256": "e6d4367b10fc9dbbece64dd114755d31a0fbc11122104089bebf1fa605816fa7"
+    },
+    {
+      "file": "results/figures/fig7_n4_cross_dataset.png",
+      "description": "N4 new-setup model-family transfer comparison.",
+      "bytes": 49967,
+      "sha256": "fb9d9cbaa08f1046516eb8be68b01ff271ec20671787dfdfa588627dd5796050"
+    },
+    {
+      "file": "results/figures/fig8_model_family_n2.png",
+      "description": "N2 model-family comparison on congested-channel presence.",
+      "bytes": 47846,
+      "sha256": "fa3c15c553ad0cd5f0fe393b30ec7c6246aad8e407ac7fd996895c96b3e71a35"
+    },
+    {
+      "file": "results/figures/fig9_presence_per_class.png",
+      "description": "Mean smoothed empty specificity and occupied sensitivity across N1-N3.",
+      "bytes": 42278,
+      "sha256": "b1bec48020a44af3dc16d9cf1f090a9ac0aafbc9120c50beba075b789b07d8a1"
+    }
+  ]
+}

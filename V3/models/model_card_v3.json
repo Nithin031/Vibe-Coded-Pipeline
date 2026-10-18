@@ -1,0 +1,67 @@
+{
+  "version": "V3",
+  "created": "2026-10-18 01:27",
+  "datasets": [
+    "espectre",
+    "pipeline"
+  ],
+  "n_windows": 21316,
+  "tasks": {
+    "presence": {
+      "classes": [
+        "empty",
+        "occupied"
+      ]
+    },
+    "motion": {
+      "classes": [
+        "empty",
+        "static",
+        "moving"
+      ]
+    }
+  },
+  "input": {
+    "sample_rate_hz": 20,
+    "window_s": 3,
+    "hop_s": 1,
+    "subcarrier_bins": 32,
+    "calibration": "optional runtime step"
+  },
+  "training": {
+    "seed": 0,
+    "epochs": 30,
+    "deep_augmentation": "gain, circular shift, packet dropout",
+    "transformer_initialization": "WiGesture + WiFall masked reconstruction"
+  },
+  "artifacts": {
+    "presence": {
+      "lgbm": {
+        "file": "presence_lgbm.txt",
+        "sha256": "69851a5ea896e7a4618d6393aa33ad96cad34b2c5ecfb80dc0a86336915619f6"
+      },
+      "cnn": {
+        "file": "presence_cnn.pt",
+        "sha256": "6a1cfd22a5d90db66d89d20890172ee0a728744abbd53e79011ef6c1b8ccab72"
+      },
+      "tf": {
+        "file": "presence_tf.pt",
+        "sha256": "478a1e607d75202d28df924cf829a5031a4c5079bd73f4ea6dd2fd4a30dc39c9"
+      }
+    },
+    "motion": {
+      "lgbm": {
+        "file": "motion_lgbm.txt",
+        "sha256": "a6060b122ddb06381dc822996c0ea00599c684335edde0f9a068822c1da8afe4"
+      },
+      "cnn": {
+        "file": "motion_cnn.pt",
+        "sha256": "a142517cc2b26eaf28c0d4ed108b919a3f0bdb4aab92e92bf110841a330c24f5"
+      },
+      "tf": {
+        "file": "motion_tf.pt",
+        "sha256": "a13afbc3c6f6c7758e05f34dbf3eb7872e44565347a843aed6934afbdf380eb1"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# regenerable processed windows (python V4/src/data.py --build all)
+cache/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# run logs
+results/logs/
+
+# lists file names of the whole local project folder (not only V3/V4): keep local
+manifests/snapshot/file_inventory.csv

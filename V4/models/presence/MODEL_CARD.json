@@ -1,0 +1,86 @@
+{
+  "name": "V4 presence candidate (experimental, NOT promoted)",
+  "task": "room presence: empty (0) / occupied (1); windows failing the quality gate -> 'unknown'",
+  "variant": "standard",
+  "model": "lgbm_cal",
+  "files": [
+    {
+      "file": "presence/standard/lgbm_cal_s0.txt",
+      "sha256": "c4af6c33fcb89843daba57c1d1246256b7d364b716602079db2652bf1c1da16c"
+    },
+    {
+      "file": "presence/standard/lgbm_cal_s1.txt",
+      "sha256": "17a3da58d7dc61bdfcfef2abae5395c015799f305dbf25c34a6d098ff3cbbd3f"
+    },
+    {
+      "file": "presence/standard/lgbm_cal_s2.txt",
+      "sha256": "797603cc7767dc492f940f07261ac80772f7f8348d484fa2709b1d99b4558336"
+    }
+  ],
+  "features": [
+    "std_q10",
+    "std_q50",
+    "std_q90",
+    "rstd_q50",
+    "rstd_q90",
+    "diff_q50",
+    "diff_q90",
+    "range_q50",
+    "range_q90",
+    "std_cv",
+    "pca_top1",
+    "pca_top3",
+    "pca_eff_rank",
+    "pca_participation",
+    "band_0_0.3",
+    "band_0.3_1",
+    "band_1_2",
+    "band_2_4",
+    "band_4_8",
+    "band_8_up",
+    "spec_centroid",
+    "spec_entropy",
+    "acf_0.2s",
+    "acf_0.5s",
+    "acf_1s",
+    "period_peak_share",
+    "period_flatness",
+    "period_acf_peak",
+    "period_peak_freq",
+    "corr_adjacent",
+    "corr_abs_mean",
+    "corr_links",
+    "rssi_std",
+    "rssi_range",
+    "rssi_diff_abs"
+  ],
+  "needs_calibration": true,
+  "calibration": "30 s of empty room after installation (see configs/v4_protocol.json)",
+  "threshold": 0.9,
+  "smoothing": "causal median over 5 one-second windows",
+  "input": "esp-csi raw CSI_DATA, L-LTF amplitude, 20 Hz grid, 3 s windows, 1 s hop",
+  "trained_on": "train split of ESPectre, pipeline (room 1 quiet), HomeOccupancy (_1), OfficeLocalization (_1)",
+  "selection": {
+    "rule": "max mean validation balanced accuracy over clean + 22 noise conditions",
+    "validation_scores": {
+      "standard/lgbm_cal": 0.7862419017249911,
+      "robust_aug/lgbm_norssi_cal": 0.7749148000232068,
+      "robust_aug/lgbm_cal": 0.770959590590021,
+      "standard/lgbm_norssi_cal": 0.762123573624148,
+      "standard/cnn_cal": 0.7477927964992225,
+      "standard/gapcnn_cal": 0.7300378107384745,
+      "robust_aug/cnn_cal": 0.7066342902824777,
+      "robust_aug/gapcnn_cal": 0.7038085180347798,
+      "robust_aug/lgbm_raw": 0.6619564229321864,
+      "standard/cnn_raw": 0.6559755447603317,
+      "standard/lgbm_raw": 0.6525625090955736,
+      "robust_aug/cnn_raw": 0.6414238799664321,
+      "standard/lgbm_norssi_raw": 0.6409513871710278,
+      "robust_aug/lgbm_norssi_raw": 0.6403499135445326,
+      "robust_aug/gapcnn_raw": 0.6366144470602214,
+      "standard/gapcnn_raw": 0.6265857642438748
+    },
+    "selected": "standard/lgbm_cal"
+  },
+  "status": "experimental: promotion needs a live capture in the target room (configs/v4_protocol.json)"
+}

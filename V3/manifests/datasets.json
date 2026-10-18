@@ -1,0 +1,35 @@
+{
+  "version": "V3",
+  "datasets": [
+    {
+      "name": "espectre",
+      "use": "N1/N1c and V3 final training",
+      "condition": "real homes, rooms, chip variation"
+    },
+    {
+      "name": "pipeline",
+      "use": "N2/N2c/N3/N3c and V3 final training",
+      "condition": "quiet and measured congested channel"
+    },
+    {
+      "name": "wicount",
+      "use": "N4 source/reference",
+      "condition": "ESP32-S3 labelled counting"
+    },
+    {
+      "name": "thesis",
+      "use": "N4 source/reference",
+      "condition": "ESP-NOW HT40 labelled counting"
+    },
+    {
+      "name": "wigesture/wifall",
+      "use": "transformer self-supervised pretraining",
+      "condition": "unlabelled/labelled activity recordings"
+    },
+    {
+      "name": "homeoccupancy",
+      "use": "V4 separate fine-tuning",
+      "condition": "ESP32-C6 home empty/sleep/work; no controlled congestion claim"
+    }
+  ]
+}

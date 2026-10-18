@@ -1,0 +1,31 @@
+{
+  "removed": [
+    {
+      "path": "cache/",
+      "action": "deleted",
+      "reason": "206,814,999 bytes of ignored, regenerable window/cache outputs; source datasets and cache configuration remain available",
+      "replacement": "V3/src/build.py regenerates dataset caches on demand"
+    },
+    {
+      "path": "src/__pycache__/",
+      "action": "deleted",
+      "reason": "Generated Python bytecode covered by .gitignore",
+      "replacement": "Python regenerates bytecode when modules are imported"
+    },
+    {
+      "path": "src/train_final.py",
+      "action": "deleted",
+      "reason": "Unreferenced superseded V2-style trainer; V3/src/train_final_v3.py is the canonical V3 trainer",
+      "sha256": "D536E8E910557BB0B4EEB50A00F4AC6271E4EC7ADC1A01093318509947F26985",
+      "replacement": "V3/src/train_final_v3.py"
+    }
+  ],
+  "archived": [],
+  "decision": "Only regenerable generated outputs and one unreferenced superseded V2-style trainer were removed. No model, result, figure, manifest, dataset, or active V3 source was deleted.",
+  "preserved": [
+    "raw datasets",
+    "V3 checkpoints",
+    "historical N*.json results",
+    "generated figures"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": "V3",
+  "experiments": [
+    {
+      "id": "N1_espectre_leave_room_out",
+      "protocol": "N1",
+      "result_file": "results/N1_espectre_leave_room_out.json",
+      "calibrated": false,
+      "smoothing": "5-window median in saved smoothed scores",
+      "reproducibility": "saved result and log; final full-pool artifacts are separate",
+      "log": "results/logs/run_noise.out"
+    },
+    {
+      "id": "N1c_espectre_leave_room_out_calibrated",
+      "protocol": "N1c",
+      "result_file": "results/N1c_espectre_leave_room_out_calibrated.json",
+      "calibrated": true,
+      "smoothing": "5-window median in saved smoothed scores",
+      "reproducibility": "saved result and log; final full-pool artifacts are separate",
+      "log": "results/logs/run_noise_cal.out"
+    },
+    {
+      "id": "N2_pipeline_quiet_to_congested",
+      "protocol": "N2",
+      "result_file": "results/N2_pipeline_quiet_to_congested.json",
+      "calibrated": false,
+      "smoothing": "5-window median in saved smoothed scores",
+      "reproducibility": "saved result and log; final full-pool artifacts are separate",
+      "log": "results/logs/run_noise.out"
+    },
+    {
+      "id": "N2c_pipeline_quiet_to_congested_calibrated",
+      "protocol": "N2c",
+      "result_file": "results/N2c_pipeline_quiet_to_congested_calibrated.json",
+      "calibrated": true,
+      "smoothing": "5-window median in saved smoothed scores",
+      "reproducibility": "saved result and log; final full-pool artifacts are separate",
+      "log": "results/logs/run_noise_cal.out"
+    },
+    {
+      "id": "N3_pipeline_room1_to_room2",
+      "protocol": "N3",
+      "result_file": "results/N3_pipeline_room1_to_room2.json",
+      "calibrated": false,
+      "smoothing": "5-window median in saved smoothed scores",
+      "reproducibility": "saved result and log; final full-pool artifacts are separate",
+      "log": "results/logs/run_noise.out"
+    },
+    {
+      "id": "N3c_pipeline_room1_to_room2_calibrated",
+      "protocol": "N3c",
+      "result_file": "results/N3c_pipeline_room1_to_room2_calibrated.json",
+      "calibrated": true,
+      "smoothing": "5-window median in saved smoothed scores",
+      "reproducibility": "saved result and log; final full-pool artifacts are separate",
+      "log": "results/logs/run_noise_cal.out"
+    },
+    {
+      "id": "N4_all_to_pipeline",
+      "protocol": "N4",
+      "result_file": "results/N4_all_to_pipeline.json",
+      "calibrated": false,
+      "smoothing": "5-window median in saved smoothed scores",
+      "reproducibility": "saved result and log; final full-pool artifacts are separate",
+      "log": "results/logs/run_noise.out"
+    }
+  ]
+}

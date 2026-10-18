@@ -1,0 +1,31 @@
+{
+  "_comment": "Sidecar manifest required next to every new ESP32 counting recording (<file>.json). Checked by V4/src/validate_recording.py.",
+  "required": {
+    "file_id": "string, unique, e.g. room1_2026-11-02_s03_c4",
+    "count": "integer 0-5: people inside the room for the WHOLE recording",
+    "session_id": "string: one session = one sitting of the same boards, layout and channel",
+    "room": "string",
+    "date": "YYYY-MM-DD",
+    "start_time": "HH:MM:SS local time",
+    "chip": "esp32 | esp32s2 | esp32s3 | esp32c3 | esp32c5 | esp32c6",
+    "tx_board_id": "string (MAC or sticker)",
+    "rx_board_id": "string (MAC or sticker)",
+    "firmware": "string: firmware name + version/commit",
+    "link": "router | esp-now",
+    "channel": "integer Wi-Fi channel",
+    "bandwidth_mhz": "20 | 40",
+    "tx_position": "string or [x, y, z] metres",
+    "rx_position": "string or [x, y, z] metres",
+    "link_distance_m": "number",
+    "serial_baud": "integer",
+    "traffic_condition": "quiet | normal | congested (write what you measured, e.g. number of visible APs)",
+    "people_activity": "list, one entry per person: sitting | standing | walking | mixed",
+    "people_positions": "list or free text: where each person was",
+    "empty_reference_file": "file_id of the 30 s empty recording made for this session (or null if this IS the reference)",
+    "notes": "free text: fans/AC on, door open, anything unusual"
+  },
+  "optional": {
+    "operator": "string",
+    "video_ground_truth": "path to a video or count log if one exists"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "fig1_data_fix.png": {
+    "caption": "Share of 3 s windows that contained no real packet (pure interpolation). A few corrupted timestamps stretched each recording 3-5x; after removing them before unwrapping, almost every window is real.",
+    "data": "archived preliminary cache vs V4/cache/homeoccupancy_standard.pkl"
+  },
+  "fig2_presence_groups.png": {
+    "caption": "Presence on every test group (standard preprocessing), same windows for every model, 5-window smoothing, thresholds chosen on validation. Shaded groups were part of V3's training data.",
+    "data": "results/metrics/presence_*/result.json"
+  },
+  "fig9_tradeoff.png": {
+    "caption": "Every possible threshold of the selected model: lower-left is better. The blue box is the provisional target (\u2264 5 % false alarms and \u2264 15 % misses).",
+    "data": "results/metrics/presence_*/result.json"
+  },
+  "fig2b_presence_groups_robust.png": {
+    "caption": "Presence on every test group (robust_aug preprocessing), same windows for every model, 5-window smoothing, thresholds chosen on validation. Shaded groups were part of V3's training data.",
+    "data": "results/metrics/presence_*/result.json"
+  },
+  "fig3_loso.png": {
+    "caption": "Leave-one-source-out: V4 is trained on the other three sources and tested on the left-out one; threshold fixed at 0.5. Home and Office are the fair V3 vs V4 comparison.",
+    "data": "results/metrics/loso_*/result.json"
+  },
+  "fig4_noise_heatmap.png": {
+    "caption": "Each column adds one synthetic noise type to the raw test recordings (levels 1-3; 'crazy' = all at level 3). Darker = better. Noise is synthetic: this is a stress test, not real-world evidence.",
+    "data": "results/metrics/noise_*/result.json"
+  },
+  "fig5_noise_fa_miss.png": {
+    "caption": "False alarms and misses at the strongest level of each noise type; dashed lines are the targets.",
+    "data": "results/metrics/noise_*/result.json"
+  },
+  "fig6_gap_ablation.png": {
+    "caption": "Plain V3-style CNN vs the V4 gap-aware CNN, same data and training, clean and with packet loss.",
+    "data": "results/metrics/noise_standard_*/result.json"
+  },
+  "fig7_counting.png": {
+    "caption": "WiCount people counting (standard pipeline), pooled over 3 folds (each window tested once). Counts 1-2: held-out recordings; counts 0 and 3: held-out time blocks of their single recording. Rows 4-5: no data exists.",
+    "data": "results/metrics/counting_*/result.json"
+  },
+  "fig8_counting_noise.png": {
+    "caption": "Exact-count accuracy on the same WiCount test windows when noise is added.",
+    "data": "results/metrics/counting_*/result.json"
+  }
+}

@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Regenerable feature/window caches
+cache/
+
+# Live training/evaluation logs
+results/logs/
+
+# Local environments and temporary files
+.venv/
+venv/
+.env
+*.tmp
+*.swp

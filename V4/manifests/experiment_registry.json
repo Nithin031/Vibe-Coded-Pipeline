@@ -1,0 +1,238 @@
+[
+  {
+    "run_id": "presence_standard_20261018-184111",
+    "created": "2026-10-18 18:42",
+    "status": "experimental: contains the V4 final candidate lgbm_cal (not promoted)",
+    "result": "results/metrics/presence_standard_20261018-184111/result.json",
+    "config": "results/metrics/presence_standard_20261018-184111/config.json",
+    "checkpoints": [
+      {
+        "file": "models/presence/standard/cnn_cal.pt",
+        "sha256": "d4912c9cf090a75bd63c14e326846cdf17443c091cb1ea2001f57a44404c7aa1"
+      },
+      {
+        "file": "models/presence/standard/cnn_raw.pt",
+        "sha256": "c8d1d69f0d175ec6ec6e079234c6089d0832d6a2d7f9cac9dcb1622d281643b9"
+      },
+      {
+        "file": "models/presence/standard/gapcnn_cal.pt",
+        "sha256": "d9a359477009845cd02ea5465394214e151ffec6a16866ec19116214ed891ed9"
+      },
+      {
+        "file": "models/presence/standard/gapcnn_raw.pt",
+        "sha256": "b2566a3315a1f0dc394eb8b6bb22fcff4d3427a72d4f8f2cf4b93061ec19dc42"
+      },
+      {
+        "file": "models/presence/standard/lgbm_cal_s0.txt",
+        "sha256": "c4af6c33fcb89843daba57c1d1246256b7d364b716602079db2652bf1c1da16c"
+      },
+      {
+        "file": "models/presence/standard/lgbm_cal_s1.txt",
+        "sha256": "17a3da58d7dc61bdfcfef2abae5395c015799f305dbf25c34a6d098ff3cbbd3f"
+      },
+      {
+        "file": "models/presence/standard/lgbm_cal_s2.txt",
+        "sha256": "797603cc7767dc492f940f07261ac80772f7f8348d484fa2709b1d99b4558336"
+      },
+      {
+        "file": "models/presence/standard/lgbm_norssi_cal_s0.txt",
+        "sha256": "4e6fde240f31590cac6dd6ef95e1eb963d78d3b17fdf3ca78b39fcb47836dbf1"
+      },
+      {
+        "file": "models/presence/standard/lgbm_norssi_cal_s1.txt",
+        "sha256": "3781656f7c3adfbf156ca67bdeb75e63fff10bf65c65c9a2098c261432b28bff"
+      },
+      {
+        "file": "models/presence/standard/lgbm_norssi_cal_s2.txt",
+        "sha256": "66097068e292844cb9fe534f4b70a5079acfc76ba3671077c9efbd50020ff95f"
+      },
+      {
+        "file": "models/presence/standard/lgbm_norssi_raw_s0.txt",
+        "sha256": "d6471733ab628d80748846a9c3c2545db05a4f2aa44c4f8cc8ee59e076279721"
+      },
+      {
+        "file": "models/presence/standard/lgbm_norssi_raw_s1.txt",
+        "sha256": "1abc7206ecc918c866a5b0d8081763089c7e33390faa09c6d760c55b1b65b12d"
+      },
+      {
+        "file": "models/presence/standard/lgbm_norssi_raw_s2.txt",
+        "sha256": "054e4190b52c98440dccb4458b05c911b79b147871db75bdd17cb5bc37793a5a"
+      },
+      {
+        "file": "models/presence/standard/lgbm_raw_s0.txt",
+        "sha256": "99fbffa66bec374dff4c21585bbf3d4700cbe86b6593dd7a683d2220693b5df8"
+      },
+      {
+        "file": "models/presence/standard/lgbm_raw_s1.txt",
+        "sha256": "7991919a1bea4d29e602b5b2d8e9d4dd84c2fd9a8ceaea3d8d999d41a3d02d40"
+      },
+      {
+        "file": "models/presence/standard/lgbm_raw_s2.txt",
+        "sha256": "286d1edd8f5979e98bf19e940216ce577843fd7f888039a2c53b30e723306938"
+      }
+    ]
+  },
+  {
+    "run_id": "noise_standard_20261018-184428",
+    "created": "2026-10-18 18:46",
+    "status": "smoke test only (pipeline source); superseded by noise_standard_20261018-184616",
+    "result": "results/metrics/noise_standard_20261018-184428/result.json",
+    "config": "results/metrics/noise_standard_20261018-184428/config.json",
+    "checkpoints": []
+  },
+  {
+    "run_id": "counting_standard_20261018-185431",
+    "created": "2026-10-18 18:55",
+    "status": "experimental",
+    "result": "results/metrics/counting_standard_20261018-185431/result.json",
+    "config": "results/metrics/counting_standard_20261018-185431/config.json",
+    "checkpoints": [
+      {
+        "file": "models/counting/standard/count_gapcnn.pt",
+        "sha256": "fcd1f7d95640ced500a3ab5995ece31ca98fcdae6c16ad679d96c0819706d5f3"
+      },
+      {
+        "file": "models/counting/standard/count_lgbm_s0.txt",
+        "sha256": "1100771bacf255827a157c4f8268ad30e45394e538da1759fdff4af84d4b7875"
+      },
+      {
+        "file": "models/counting/standard/count_lgbm_s1.txt",
+        "sha256": "793df9a0e9b35c4c272aebacc496489673a39c602ee2f853c9fc326de4c8d5f6"
+      },
+      {
+        "file": "models/counting/standard/count_lgbm_s2.txt",
+        "sha256": "11b91d2b0505fb0e50ca66fc65a7f46616f95ba2e2e1f915f39783c50b29a91a"
+      }
+    ]
+  },
+  {
+    "run_id": "noise_standard_20261018-184616",
+    "created": "2026-10-18 19:03",
+    "status": "experimental",
+    "result": "results/metrics/noise_standard_20261018-184616/result.json",
+    "config": "results/metrics/noise_standard_20261018-184616/config.json",
+    "checkpoints": []
+  },
+  {
+    "run_id": "presence_robust_aug_20261018-190453",
+    "created": "2026-10-18 19:10",
+    "status": "experimental: robust variant, NOT selected on validation",
+    "result": "results/metrics/presence_robust_aug_20261018-190453/result.json",
+    "config": "results/metrics/presence_robust_aug_20261018-190453/config.json",
+    "checkpoints": [
+      {
+        "file": "models/presence/robust_aug/cnn_cal.pt",
+        "sha256": "029988e1827294f8813745f7cd030e9d8c84ec01fea1c251b2f8a141dc8b5cba"
+      },
+      {
+        "file": "models/presence/robust_aug/cnn_raw.pt",
+        "sha256": "25b4f14bfa283de4dbe970afa4d0a7543e97e80eaf7c44d6709db95e301d23a1"
+      },
+      {
+        "file": "models/presence/robust_aug/gapcnn_cal.pt",
+        "sha256": "88007ffe8c79b60eb8593ddda45ba5bba4a6a9883b0d8d8f038754848d3bac14"
+      },
+      {
+        "file": "models/presence/robust_aug/gapcnn_raw.pt",
+        "sha256": "076126f4e223cb016bfc4441dd0ae4113ef35f936cf3d2693f850495f85f7f7c"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_cal_s0.txt",
+        "sha256": "1622d1bc8929d4ef8eccb9bebbd5211ab16a5828bbcdfa1ab703ecf2fbe11a67"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_cal_s1.txt",
+        "sha256": "aec11db951cd4a82c4cc009a7f3fd4f3bd0cf8f76abd6e7ae7ab23d93927b0dc"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_cal_s2.txt",
+        "sha256": "66bf8270b458040f6039a2066b9a93555b20b50aa26d41ca3eb50ddbd053b7f4"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_norssi_cal_s0.txt",
+        "sha256": "80a0ec5c49c2f5da8f09815cf3aca6727e01b6c6d07f331c56e24cdb6caf91c0"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_norssi_cal_s1.txt",
+        "sha256": "a7af3e6d9995638db9147673a2b9805d98921de5e3f47e68d3b60a3c9ef2069f"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_norssi_cal_s2.txt",
+        "sha256": "f8cbdf583fb169a05a0940ea0dcc62a0cc42f8957468a7ef5d62a9f4b20599db"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_norssi_raw_s0.txt",
+        "sha256": "72a55b8b561a3f6ab3d3563b3c751b8349a8445e93073ccd9965c95b3f4769b1"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_norssi_raw_s1.txt",
+        "sha256": "7faf59be17e8a8af07ac1b80ae0105b5062950bd988cb8d80b23133716a92a86"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_norssi_raw_s2.txt",
+        "sha256": "3c6caf2c84ec8210b08db621870c2555ad93598f02f16ed13d0f077b870f7248"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_raw_s0.txt",
+        "sha256": "26713cb1861c9b4581dba6c5a535faefc31e04de33943da73298538f03d703a1"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_raw_s1.txt",
+        "sha256": "2f9fef8b1b030583950b5c0e0de23c57ed50bbde9bf79bf613057f70db9f8bda"
+      },
+      {
+        "file": "models/presence/robust_aug/lgbm_raw_s2.txt",
+        "sha256": "ed980cf321fdcaf0eb3a939b9c66a1b43baaedea4fe9a746cdb1c1889c70f67a"
+      }
+    ]
+  },
+  {
+    "run_id": "counting_robust_aug_20261018-191055",
+    "created": "2026-10-18 19:14",
+    "status": "experimental",
+    "result": "results/metrics/counting_robust_aug_20261018-191055/result.json",
+    "config": "results/metrics/counting_robust_aug_20261018-191055/config.json",
+    "checkpoints": [
+      {
+        "file": "models/counting/robust_aug/count_gapcnn.pt",
+        "sha256": "9428efe3009b62df28875ab08eeed67a296bb905b4a7ebee55d1c79aae0b04a2"
+      },
+      {
+        "file": "models/counting/robust_aug/count_lgbm_s0.txt",
+        "sha256": "a52c03732675ab39ca02d772344c5ca19233bfb6d0e58941310531a90b014027"
+      },
+      {
+        "file": "models/counting/robust_aug/count_lgbm_s1.txt",
+        "sha256": "89a5cc914278e6c57a7286c2620a625aa912916406631d91401fc406586cd0dc"
+      },
+      {
+        "file": "models/counting/robust_aug/count_lgbm_s2.txt",
+        "sha256": "30903bcaadd631d9424242aaa28f275c317facb765f14178469d15800cedd8e6"
+      }
+    ]
+  },
+  {
+    "run_id": "noise_robust_aug_20261018-191048",
+    "created": "2026-10-18 19:55",
+    "status": "experimental: robust variant, NOT selected on validation",
+    "result": "results/metrics/noise_robust_aug_20261018-191048/result.json",
+    "config": "results/metrics/noise_robust_aug_20261018-191048/config.json",
+    "checkpoints": []
+  },
+  {
+    "run_id": "loso_standard_20261018-195545",
+    "created": "2026-10-18 20:01",
+    "status": "experimental",
+    "result": "results/metrics/loso_standard_20261018-195545/result.json",
+    "config": "results/metrics/loso_standard_20261018-195545/config.json",
+    "checkpoints": []
+  },
+  {
+    "run_id": "loso_robust_aug_20261018-200143",
+    "created": "2026-10-18 20:08",
+    "status": "experimental: robust variant, NOT selected on validation",
+    "result": "results/metrics/loso_robust_aug_20261018-200143/result.json",
+    "config": "results/metrics/loso_robust_aug_20261018-200143/config.json",
+    "checkpoints": []
+  }
+]

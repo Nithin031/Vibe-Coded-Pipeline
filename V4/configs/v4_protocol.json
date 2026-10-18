@@ -1,0 +1,105 @@
+{
+  "_comment": "V4 protocol. Written 2026-10-18 BEFORE any V4 presence model was trained or scored. Do not edit after results exist; create a new protocol version instead.",
+  "protocol_version": "v4-protocol-1",
+  "created": "2026-10-18",
+
+  "signal_contract": {
+    "sample_rate_hz": 20,
+    "window_s": 3,
+    "hop_s": 1,
+    "subcarrier_bins": 32,
+    "model_input": "float32[32,60] relative fluctuation + bool[60] gap mask (V3 contract)"
+  },
+
+  "timestamp_rules": {
+    "esp32_clock_period_us": 4294967296,
+    "drop_timestamps_outside_clock_range": true,
+    "spike_rule": "drop a packet whose timestamp differs from the rolling median of its 5 neighbours by more than spike_s",
+    "spike_s": 1.0,
+    "duplicates": "kept; packets in the same 1/20 s bin are averaged (V3 grid)"
+  },
+
+  "window_quality": {
+    "max_interpolated_gap_s": 0.5,
+    "max_missing_ratio": 0.25,
+    "rule": "a window is VALID only if its longest run of empty grid steps is <= max_interpolated_gap_s AND its missing ratio <= max_missing_ratio. Invalid windows are never used for training and are reported as 'unknown / low quality', never scored as empty or occupied."
+  },
+
+  "labels": {
+    "espectre": {"empty": "empty", "static_presence": "occupied/static", "motion": "occupied/moving"},
+    "pipeline": {"empty": "empty", "stationary": "occupied/static", "moving": "occupied/moving"},
+    "homeoccupancy": {"empty": "empty", "sleep": "occupied/activity=sleep", "work": "occupied/activity=work"},
+    "officelocalization": {"empty": "empty", "one": "occupied/zone=one", "two": "occupied/zone=two", "five": "occupied/zone=five"},
+    "rule": "any label not listed raises an error; sleep/work and zones are NOT mapped to static/moving"
+  },
+
+  "splits": {
+    "rule": "splits are assigned per recording BEFORE windowing; windows never cross recordings",
+    "espectre": "use the dataset's own dataset_role: train -> train, selection -> val, holdout -> test, exclude -> unused",
+    "pipeline": "room1_quiet -> train; room1_noisy -> test (recorded congested channel); room2_quiet -> test (unseen room)",
+    "homeoccupancy": "_1 -> train, _2 -> val, _3 -> test_dev (already inspected in preliminary V4; development benchmark only)",
+    "officelocalization": "published split: _1 -> train, _2 -> test_external; unlisted empty_3 -> val; unlisted empty_4, empty_5 -> test_extra_empty (false-alarm-only check)"
+  },
+
+  "calibration": {
+    "reference_s": 30,
+    "reference": "first 30 s of VALID windows of the first empty recording of the same site within the same split",
+    "sites": {
+      "espectre": "room + chip + device id",
+      "pipeline": "room + channel condition",
+      "homeoccupancy": "recording index (empty_i calibrates sleep_i and work_i): CROSS-RECORDING reference",
+      "officelocalization": "split (first empty recording of the split): CROSS-RECORDING reference"
+    },
+    "reference_windows_scored": false,
+    "uses_test_labels": "only the operational fact that the reference recording is empty (installer knowledge); no labels of scored windows"
+  },
+
+  "training": {
+    "sample_weighting": "each source has equal total weight; within a source each class has equal weight; within a source-class each recording has equal weight",
+    "deep_max_epochs": 20,
+    "early_stopping": "pick the epoch with the best validation balanced accuracy (patience 5); test data never used",
+    "lgbm_seeds": [0, 1, 2],
+    "deep_seeds": [0],
+    "decision_threshold": "chosen on the validation split to maximise balanced accuracy; 0.5 also reported",
+    "smoothing": "causal rolling median over 5 windows within a recording (V3)",
+    "transformer_init": "V3/models/transformer_pretrained.pt (self-supervised on WiGesture + WiFall only; not trained on any evaluation source)",
+    "identifier_features": "never used: room, recording, session, MAC, chip, channel, source"
+  },
+
+  "counting": {
+    "classes": [0, 1, 2, 3, 4, 5],
+    "data_available": "WiCount (one meeting room, ESP32-S3, 0-3 people) and OTH room2 samples (0-3 people, one file each). No real data for 4 or 5 people exists in the project.",
+    "rule": "counts 4 and 5 are never invented; the model head has 6 outputs but 4/5 are reported as 'no training data'",
+    "folds": "3 folds. Counts 1 and 2 (7 and 6 recordings): held-out RECORDINGS. Counts 0 and 3 (one recording each): the recording is cut into 3 equal time blocks and fold k tests block k (weaker evidence, reported separately). Windows crossing a block edge are dropped.",
+    "cross_room_check": "train on all WiCount, test on OTH room2 (different room and setup)",
+    "hyperparameters": "fixed in advance (no validation selection): LightGBM V3 settings; CNN 30 epochs",
+    "metrics": "exact accuracy, MAE, per-class precision/recall, confusion, empty false alarms, over/under-count rates, latency, per-recording results"
+  },
+
+  "noise_stress": {
+    "_comment": "SYNTHETIC noise applied to the raw amplitude stream before preprocessing. Results are stress tests, not real-world noise evidence.",
+    "types": {
+      "packet_loss": "bursty packet loss (Gilbert-Elliott); mean loss 10 / 30 / 50 %",
+      "agc_jumps": "random gain steps about every 5 s; log-gain std 0.1 / 0.3 / 0.6",
+      "impulses": "1 / 5 / 10 % of packets get 3-10x spikes on 30 % of subcarriers",
+      "white_noise": "additive Gaussian noise at SNR 25 / 15 / 8 dB",
+      "fan": "periodic multiplicative ripple 1-15 Hz with depth 2 / 5 / 10 % (fan, AC, machines)",
+      "jitter": "timestamp jitter with std 2 / 5 / 10 ms",
+      "dead_subcarriers": "10 / 25 / 40 % of subcarriers stuck at a constant",
+      "crazy": "all of the above at level 3 at once"
+    },
+    "levels": [1, 2, 3],
+    "eval_crop_s": 180,
+    "seeds": "validation noise uses seed 1000+, test noise uses seed 2000+; training augmentation uses seed 0-999",
+    "improvement_selection": "robust variants are chosen on the VALIDATION split (clean + noisy); the test split is scored once afterwards"
+  },
+
+  "promotion": {
+    "_comment": "provisional engineering targets, not product requirements",
+    "max_false_alarm_rate": 0.05,
+    "max_miss_rate": 0.15,
+    "evaluation_required": "a target-room live capture with contemporaneous empty calibration (NOT available in this run)",
+    "also_required": "beat V3 on independent groups for presence without trading away occupied sensitivity",
+    "consequence_if_not_met": "V3 stays the deployment baseline; V4 is labelled experimental"
+  }
+}

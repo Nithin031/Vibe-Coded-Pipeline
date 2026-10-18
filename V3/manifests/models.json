@@ -1,0 +1,231 @@
+{
+  "version": "V3",
+  "models": [
+    {
+      "artifact": "models/presence_lgbm.txt",
+      "family": "lgbm",
+      "task": "presence",
+      "classes": [
+        "empty",
+        "occupied"
+      ],
+      "input": {
+        "sample_rate_hz": 20,
+        "window_s": 3,
+        "hop_s": 1,
+        "subcarrier_bins": 32,
+        "calibration": "optional runtime step"
+      },
+      "training": {
+        "seed": 0,
+        "epochs": 30,
+        "deep_augmentation": "gain, circular shift, packet dropout",
+        "transformer_initialization": "WiGesture + WiFall masked reconstruction"
+      },
+      "calibration": "runtime/evaluation-time option; weights are raw",
+      "smoothing": "5-window median for reported V3 noise scores",
+      "bytes": 295332,
+      "sha256": "69851a5ea896e7a4618d6393aa33ad96cad34b2c5ecfb80dc0a86336915619f6",
+      "exists": true,
+      "load_tested": true,
+      "load_error": null,
+      "evaluation_variants": [
+        "lgbm",
+        "ensemble"
+      ]
+    },
+    {
+      "artifact": "models/presence_cnn.pt",
+      "family": "cnn",
+      "task": "presence",
+      "classes": [
+        "empty",
+        "occupied"
+      ],
+      "input": {
+        "sample_rate_hz": 20,
+        "window_s": 3,
+        "hop_s": 1,
+        "subcarrier_bins": 32,
+        "calibration": "optional runtime step"
+      },
+      "training": {
+        "seed": 0,
+        "epochs": 30,
+        "deep_augmentation": "gain, circular shift, packet dropout",
+        "transformer_initialization": "WiGesture + WiFall masked reconstruction"
+      },
+      "calibration": "runtime/evaluation-time option; weights are raw",
+      "smoothing": "5-window median for reported V3 noise scores",
+      "bytes": 200943,
+      "sha256": "6a1cfd22a5d90db66d89d20890172ee0a728744abbd53e79011ef6c1b8ccab72",
+      "exists": true,
+      "load_tested": true,
+      "load_error": null,
+      "evaluation_variants": [
+        "cnn",
+        "ensemble"
+      ]
+    },
+    {
+      "artifact": "models/presence_tf.pt",
+      "family": "tf",
+      "task": "presence",
+      "classes": [
+        "empty",
+        "occupied"
+      ],
+      "input": {
+        "sample_rate_hz": 20,
+        "window_s": 3,
+        "hop_s": 1,
+        "subcarrier_bins": 32,
+        "calibration": "optional runtime step"
+      },
+      "training": {
+        "seed": 0,
+        "epochs": 30,
+        "deep_augmentation": "gain, circular shift, packet dropout",
+        "transformer_initialization": "WiGesture + WiFall masked reconstruction"
+      },
+      "calibration": "runtime/evaluation-time option; weights are raw",
+      "smoothing": "5-window median for reported V3 noise scores",
+      "bytes": 634241,
+      "sha256": "478a1e607d75202d28df924cf829a5031a4c5079bd73f4ea6dd2fd4a30dc39c9",
+      "exists": true,
+      "load_tested": true,
+      "load_error": null,
+      "evaluation_variants": [
+        "tf",
+        "ensemble"
+      ]
+    },
+    {
+      "artifact": "models/motion_lgbm.txt",
+      "family": "lgbm",
+      "task": "motion",
+      "classes": [
+        "empty",
+        "static",
+        "moving"
+      ],
+      "input": {
+        "sample_rate_hz": 20,
+        "window_s": 3,
+        "hop_s": 1,
+        "subcarrier_bins": 32,
+        "calibration": "optional runtime step"
+      },
+      "training": {
+        "seed": 0,
+        "epochs": 30,
+        "deep_augmentation": "gain, circular shift, packet dropout",
+        "transformer_initialization": "WiGesture + WiFall masked reconstruction"
+      },
+      "calibration": "runtime/evaluation-time option; weights are raw",
+      "smoothing": "5-window median for reported V3 noise scores",
+      "bytes": 850143,
+      "sha256": "a6060b122ddb06381dc822996c0ea00599c684335edde0f9a068822c1da8afe4",
+      "exists": true,
+      "load_tested": true,
+      "load_error": null,
+      "evaluation_variants": [
+        "lgbm",
+        "ensemble"
+      ]
+    },
+    {
+      "artifact": "models/motion_cnn.pt",
+      "family": "cnn",
+      "task": "motion",
+      "classes": [
+        "empty",
+        "static",
+        "moving"
+      ],
+      "input": {
+        "sample_rate_hz": 20,
+        "window_s": 3,
+        "hop_s": 1,
+        "subcarrier_bins": 32,
+        "calibration": "optional runtime step"
+      },
+      "training": {
+        "seed": 0,
+        "epochs": 30,
+        "deep_augmentation": "gain, circular shift, packet dropout",
+        "transformer_initialization": "WiGesture + WiFall masked reconstruction"
+      },
+      "calibration": "runtime/evaluation-time option; weights are raw",
+      "smoothing": "5-window median for reported V3 noise scores",
+      "bytes": 201397,
+      "sha256": "a142517cc2b26eaf28c0d4ed108b919a3f0bdb4aab92e92bf110841a330c24f5",
+      "exists": true,
+      "load_tested": true,
+      "load_error": null,
+      "evaluation_variants": [
+        "cnn",
+        "ensemble"
+      ]
+    },
+    {
+      "artifact": "models/motion_tf.pt",
+      "family": "tf",
+      "task": "motion",
+      "classes": [
+        "empty",
+        "static",
+        "moving"
+      ],
+      "input": {
+        "sample_rate_hz": 20,
+        "window_s": 3,
+        "hop_s": 1,
+        "subcarrier_bins": 32,
+        "calibration": "optional runtime step"
+      },
+      "training": {
+        "seed": 0,
+        "epochs": 30,
+        "deep_augmentation": "gain, circular shift, packet dropout",
+        "transformer_initialization": "WiGesture + WiFall masked reconstruction"
+      },
+      "calibration": "runtime/evaluation-time option; weights are raw",
+      "smoothing": "5-window median for reported V3 noise scores",
+      "bytes": 634345,
+      "sha256": "a13afbc3c6f6c7758e05f34dbf3eb7872e44565347a843aed6934afbdf380eb1",
+      "exists": true,
+      "load_tested": true,
+      "load_error": null,
+      "evaluation_variants": [
+        "tf",
+        "ensemble"
+      ]
+    },
+    {
+      "artifact": "models/transformer_pretrained.pt",
+      "family": "transformer_backbone",
+      "task": "pretraining_only",
+      "classes": null,
+      "input": {
+        "sample_rate_hz": 20,
+        "window_s": 3,
+        "hop_s": 1,
+        "subcarrier_bins": 32,
+        "calibration": "optional runtime step"
+      },
+      "training": {
+        "source": "WiGesture + WiFall masked reconstruction"
+      },
+      "calibration": "not applicable",
+      "smoothing": "not applicable",
+      "bytes": 635653,
+      "sha256": "c6b2c9926d6378e9930d7fc346babadc2170b4cca9da3d5c781aeb898a3b2375",
+      "exists": true,
+      "load_tested": true,
+      "load_error": null,
+      "runtime_approved": false,
+      "note": "Initialization backbone only; it has no occupancy/motion classifier head."
+    }
+  ]
+}

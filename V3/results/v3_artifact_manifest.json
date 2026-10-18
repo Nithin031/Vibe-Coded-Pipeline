@@ -1,0 +1,63 @@
+{
+  "version": "V3",
+  "final_model_card": "models/model_card_v3.json",
+  "final_artifacts": {
+    "presence": {
+      "lgbm": {
+        "file": "presence_lgbm.txt",
+        "exists": true,
+        "bytes": 295332,
+        "sha256_matches": true
+      },
+      "cnn": {
+        "file": "presence_cnn.pt",
+        "exists": true,
+        "bytes": 200943,
+        "sha256_matches": true
+      },
+      "tf": {
+        "file": "presence_tf.pt",
+        "exists": true,
+        "bytes": 634241,
+        "sha256_matches": true
+      }
+    },
+    "motion": {
+      "lgbm": {
+        "file": "motion_lgbm.txt",
+        "exists": true,
+        "bytes": 850143,
+        "sha256_matches": true
+      },
+      "cnn": {
+        "file": "motion_cnn.pt",
+        "exists": true,
+        "bytes": 201397,
+        "sha256_matches": true
+      },
+      "tf": {
+        "file": "motion_tf.pt",
+        "exists": true,
+        "bytes": 634345,
+        "sha256_matches": true
+      }
+    }
+  },
+  "evaluation_result_files": [
+    "N1_espectre_leave_room_out.json",
+    "N1c_espectre_leave_room_out_calibrated.json",
+    "N2_pipeline_quiet_to_congested.json",
+    "N2c_pipeline_quiet_to_congested_calibrated.json",
+    "N3_pipeline_room1_to_room2.json",
+    "N3c_pipeline_room1_to_room2_calibrated.json",
+    "N4_all_to_pipeline.json"
+  ],
+  "mapping_note": "N1-N4 and N1c-N3c JSON files contain held-out protocol evaluations. The final *_tf.pt, *_cnn.pt, and *_lgbm.txt files were trained after those evaluations on the full ESPectre + pipeline training pool; they are deployment artifacts, not the checkpoints used to produce the held-out scores.",
+  "figures": [
+    "fig1_presence_raw_vs_cal.png",
+    "fig2_false_alarms.png",
+    "fig3_congested_channel.png",
+    "fig4_espectre_rooms.png",
+    "fig5_empty_vs_occupied.png"
+  ]
+}
