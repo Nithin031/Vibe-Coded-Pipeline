@@ -21,6 +21,41 @@ architecture (`cnn` = V3 CNN1D, `gapcnn` = V4 gap-aware CNN, defined in `V4/src/
 Use `infer.py` (or `models.load_net`) instead of loading them by hand, because the input must be
 prepared exactly as in training.
 
+## What it can detect
+
+| What | Can it? | How good (tested) |
+|---|---|---|
+| **Room empty or occupied** | **Yes**, the main feature | **0.98** balanced accuracy in a new home and a new office it never saw. In other homes / chips: 0.78–0.85, rarely false alarms (0–3 %) but **misses 30–43 %** of occupied windows |
+| **Someone sitting or sleeping (not moving)** | **Yes**, counted as "occupied" | in the home test, sleep and desk work were both detected (about 1 % missed) |
+| **Count 0 / 1 / 2 people** | **Yes, only in the trained room** | about 89 % exact, never off by more than one person |
+| **Count 3 people** | **Not really** | almost always says "2" (recall 0–4 %) |
+| **Count 4–5 people** | **No** | no training data exists |
+| **Bad signal / broken stream** | **Yes**: answers "unknown" | e.g. at 50 % packet loss most windows are reported "unknown" instead of guessed |
+| Sleeping vs working, standing vs walking, where in the room | **No** | V4 does not classify activity or location |
+| Who the person is | **No** | – |
+
+### Counting 0–2 people in detail
+
+Tested in the WiCount meeting room, on recordings the model never trained on:
+
+| True people | Correctly counted | Wrong answers go to |
+|---|---|---|
+| 0 | **100 %** | – |
+| 1 | **90–98 %** | "2" (rarely "0") |
+| 2 | **74–86 %** | "1" |
+
+- **Exact count for 0–2 overall:** about **89 %** (LightGBM 0.886, gap-CNN noisy version 0.895).
+- **Mistakes:** only 1 ↔ 2 mix-ups.
+- **Empty room:** never counted as people.
+- **Evidence for 0 is weak.** There is only one empty recording, so it was tested on time blocks of that same recording.
+- **Other rooms:** accuracy drops to **26–53 %**. The model learned "this room", not "people in general".
+
+### In short
+
+- **Ready to try in your room:** empty vs occupied, after a 30 s empty-room reference.
+- **Counting 0–2:** works, but only after it is retrained on recordings from **your** room.
+- **Beyond 2–3 people:** you need your own recordings with 3–5 people (`V4/docs/COLLECTION_PROTOCOL.md`) or access to the WiFiVision dataset.
+
 ## Training data
 
 All of it is public recordings made by other groups; none of it comes from our own ESP32 setup yet.
