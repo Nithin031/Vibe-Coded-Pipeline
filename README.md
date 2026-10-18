@@ -126,7 +126,7 @@ Accepted buffer lengths:
 Run it:
 
 ```powershell
-$py = "C:/Users/nithi/AppData/Local/Programs/Python/Python312/python.exe"
+$py = "python"          # Python 3.12
 & $py V4/deploy/infer.py --reference empty_30s.csv --input room.csv --out result.csv
 & $py V4/deploy/infer.py --reference empty_30s.csv --input room.csv --env noisy --out result.csv
 ```
