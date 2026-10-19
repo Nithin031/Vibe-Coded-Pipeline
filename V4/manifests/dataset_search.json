@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-18",
+  "question": "Which datasets support people COUNTING (ideally ESP32, ideally 4-5 people)?",
+  "on_disk": [
+    {"name": "WiCount", "path": "datasets/wicount", "hardware": "ESP32-S3", "counts": "0-3",
+     "structure": "1 meeting room, 1 day, 15 recordings of about 60 s (count 0: 1, count 1: 7, count 2: 6, count 3: 1)",
+     "use": "main ESP32 counting data"},
+    {"name": "OTH room2 samples", "path": "archive/datasets/esp32_reference", "hardware": "ESP32 (ESP-NOW, HT40)", "counts": "0-3",
+     "structure": "1 room, 1 file of about 60 s per count", "use": "second-room counting check"},
+    {"name": "Intel 5300 WiFi-CrowdCounting", "path": "datasets/intel5300", "hardware": "Intel IWL-5300 NIC (NOT ESP32)", "counts": "0-8 (room B 0-7)",
+     "structure": "3 rooms, 1 recording per room and count", "use": "non-ESP32 only; not mixed with ESP32 training"},
+    {"name": "EHUNAM subset", "path": "datasets/ehunam", "hardware": "Raspberry Pi 4 Nexmon, 3 receivers (NOT ESP32)", "counts": "MC1 0-4, MC3 0-5",
+     "structure": "basement (MC1) and industrial lab (MC3), several days", "use": "non-ESP32 0-5 method check only"}
+  ],
+  "online_checked": [
+    {"name": "WiFiVision (WiFiVision-Counting-Tools)", "url": "https://github.com/nguyen-phan-duc-minh/WiFiVision-Counting-Tools",
+     "hardware": "2 x ESP32 (CP2102), TX-RX 11 m", "counts": "0-7, 1000 train + 200 test samples per class, 1 lab room",
+     "access": "ON REQUEST: Google Drive 'Request Access' with institution, intended use, project description, non-commercial confirmation",
+     "verdict": "best ESP32 source with 4 and 5 people; needs the researcher to request access"},
+    {"name": "Less is More (dilution) apartment mesh", "url": "https://zenodo.org/records/22028063",
+     "hardware": "9 x ESP32-C3 mesh, 72 links, about 10 Hz per link", "counts": "none: hourly diary labels empty / sleep / active",
+     "access": "open, CC BY 4.0, 45.7 GB",
+     "verdict": "NOT a counting dataset; labels are hourly and recall-based. Not downloaded (only the 180 KB label files were checked)"},
+    {"name": "Same group's office deployment", "url": "mentioned in the dilution README only",
+     "hardware": "13-node ESP32 mesh, 155 links", "counts": "camera person counts, 27 sessions",
+     "access": "no public record found", "verdict": "lead only"},
+    {"name": "IIT (BHU) multi-human activity", "url": "https://ieee-dataport.org/comment/9122",
+     "hardware": "ESP32 NodeMCU, ESP32-CSI Toolkit", "counts": "1, 2, 3 users doing activities; no empty class stated",
+     "access": "IEEE DataPort subscription, 270 MB, licence not stated", "verdict": "possible 1-3 source if a subscription is available"},
+    {"name": "Haron98 WIFI-CSI-Dataset", "url": "https://huggingface.co/datasets/Haron98/WIFI-CSI-Dataset",
+     "hardware": "ESP32-style logs, 3 receivers", "counts": "unclear: 4 unnamed labels per person (likely activity)",
+     "access": "open, licence unclear", "verdict": "not usable for counting"},
+    {"name": "OTH thesis full set", "url": "archive/reference_repos/wifi-csi-occupancy",
+     "hardware": "ESP32", "counts": "0-3, about 120 sessions, 3 rooms", "access": "on request from the authors",
+     "verdict": "best way to get more 0-3 ESP32 sessions"},
+    {"name": "80 MHz CSI human sensing (IEEE DataPort)", "url": "https://ieee-dataport.org/documents/csi-dataset-wireless-human-sensing-80-mhz-wi-fi-channels",
+     "hardware": "802.11ac (NOT ESP32)", "counts": "people moving concurrently", "access": "DataPort", "verdict": "not ESP32"}
+  ],
+  "conclusion": "No open ESP32 dataset with 4 or 5 people exists. Real 0-5 ESP32 counting needs either WiFiVision access (on request) or our own recordings with the V4 collection protocol."
+}

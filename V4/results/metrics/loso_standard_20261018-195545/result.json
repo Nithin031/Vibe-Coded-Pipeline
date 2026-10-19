@@ -1,0 +1,5387 @@
+{
+  "variant": "standard",
+  "threshold": 0.5,
+  "targets": {
+    "espectre": {
+      "v3_cnn_raw": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9814838125983637,
+        "accuracy": 0.9856265213863452,
+        "false_alarm": 0.0077090665325959444,
+        "miss": 0.029323308270676692,
+        "sensitivity": 0.9706766917293234,
+        "specificity": 0.992290933467404,
+        "precision": 0.982496194824962,
+        "macro_f1": 0.9830939932430843,
+        "auroc": 0.999262296011522,
+        "auprc": 0.9984383834115574,
+        "false_alerts_per_hour": 7.843137254901961,
+        "confusion": [
+          [
+            5921,
+            46
+          ],
+          [
+            78,
+            2582
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9222222222222223
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.9964912280701754
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.9421052631578948
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.9661016949152542
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.8033707865168539
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.898876404494382
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9101123595505618
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9606741573033708
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9887640449438202
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": true
+      },
+      "v3_tf_raw": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9994360902255639,
+        "accuracy": 0.9996522545496697,
+        "false_alarm": 0.0,
+        "miss": 0.0011278195488721805,
+        "sensitivity": 0.9988721804511278,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "macro_f1": 0.9995922263124586,
+        "auroc": 0.9999986769336615,
+        "auprc": 0.9999970398437037,
+        "false_alerts_per_hour": 0.0,
+        "confusion": [
+          [
+            5967,
+            0
+          ],
+          [
+            3,
+            2657
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9831460674157303
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": true
+      },
+      "v3_cnn_cal": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.6724373150069745,
+        "accuracy": 0.5759823808971832,
+        "false_alarm": 0.579185520361991,
+        "miss": 0.07593984962406015,
+        "sensitivity": 0.9240601503759398,
+        "specificity": 0.42081447963800905,
+        "precision": 0.41562394318566115,
+        "macro_f1": 0.5759663767536406,
+        "auroc": 0.7970992715574758,
+        "auprc": 0.6365065449415639,
+        "false_alerts_per_hour": 106.18401206636501,
+        "confusion": [
+          [
+            2511,
+            3456
+          ],
+          [
+            202,
+            2458
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.6421052631578947
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.34444444444444444
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.043859649122807015
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.28888888888888886
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.6228070175438597
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.4982456140350877
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 0.7223198594024605
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.6444444444444445
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9777777777777777
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9666666666666667
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9111111111111111
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.3220338983050847
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.8522727272727273
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9325842696629213
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9101123595505618
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.5617977528089888
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.5337078651685393
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": true
+      },
+      "lgbm_raw": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.5033449952180602,
+        "accuracy": 0.3165642749507361,
+        "false_alarm": 0.983911513323278,
+        "miss": 0.009398496240601503,
+        "sensitivity": 0.9906015037593985,
+        "specificity": 0.01608848667672197,
+        "precision": 0.3097813308252998,
+        "macro_f1": 0.2517529632263138,
+        "auroc": 0.5674904959734681,
+        "auprc": 0.3323208577729264,
+        "false_alerts_per_hour": 18.702865761689292,
+        "confusion": [
+          [
+            96,
+            5871
+          ],
+          [
+            25,
+            2635
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.6888888888888889
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.07777777777777778
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.011111111111111112
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.03508771929824561
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.06666666666666667
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.7159090909090909
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_cal": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.6237640355287414,
+        "accuracy": 0.47954097600556395,
+        "false_alarm": 0.7524719289425171,
+        "miss": 0.0,
+        "sensitivity": 1.0,
+        "specificity": 0.2475280710574828,
+        "precision": 0.37202797202797205,
+        "macro_f1": 0.46956671656694826,
+        "auroc": 0.8823064448451445,
+        "auprc": 0.7965601044361764,
+        "false_alerts_per_hour": 123.68024132730015,
+        "confusion": [
+          [
+            1477,
+            4490
+          ],
+          [
+            0,
+            2660
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.5403508771929825
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.06666666666666667
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.8555555555555555
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.22105263157894736
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.03333333333333333
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.06666666666666667
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.3333333333333333
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.2824561403508772
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.612280701754386
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.4070175438596491
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.8222222222222222
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9888888888888889
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_norssi_cal": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.7381975867269985,
+        "accuracy": 0.6570070708241568,
+        "false_alarm": 0.473604826546003,
+        "miss": 0.05,
+        "sensitivity": 0.95,
+        "specificity": 0.526395173453997,
+        "precision": 0.47207173547543435,
+        "macro_f1": 0.655260815286187,
+        "auroc": 0.8694737724149488,
+        "auprc": 0.7896588679751375,
+        "false_alerts_per_hour": 53.69532428355958,
+        "confusion": [
+          [
+            3141,
+            2826
+          ],
+          [
+            133,
+            2527
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.9368421052631579
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.6444444444444445
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.07719298245614035
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.6192982456140351
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 0.01054481546572935
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.4666666666666667
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.07894736842105263
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9666666666666667
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.9947368421052631
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9888888888888889
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.9555555555555556
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9101123595505618
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9438202247191011
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.398876404494382
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_raw": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.4726198036569554,
+        "accuracy": 0.2916425176770604,
+        "false_alarm": 0.9994972347913524,
+        "miss": 0.05526315789473684,
+        "sensitivity": 0.9447368421052632,
+        "specificity": 0.0005027652086475615,
+        "precision": 0.29644921552436004,
+        "macro_f1": 0.2261346853885376,
+        "auroc": 0.585675727780991,
+        "auprc": 0.43934145466953867,
+        "false_alerts_per_hour": 11.463046757164404,
+        "confusion": [
+          [
+            3,
+            5964
+          ],
+          [
+            147,
+            2513
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.03333333333333333
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9204545454545454
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9431818181818182
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9772727272727273
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.25280898876404495
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_cal": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.49741252326391644,
+        "accuracy": 0.488350527413933,
+        "false_alarm": 0.5262275850511144,
+        "miss": 0.4789473684210526,
+        "sensitivity": 0.5210526315789473,
+        "specificity": 0.47377241494888556,
+        "precision": 0.30623066725585507,
+        "macro_f1": 0.4736656585483118,
+        "auroc": 0.5385395993755127,
+        "auprc": 0.4630643829797102,
+        "false_alerts_per_hour": 104.97737556561086,
+        "confusion": [
+          [
+            2827,
+            3140
+          ],
+          [
+            1274,
+            1386
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.8298245614035088
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.7444444444444445
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.9824561403508771
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.06666666666666667
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.3894736842105263
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.756140350877193
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 0.11423550087873462
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.7444444444444445
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.8444444444444444
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.8894736842105263
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.21578947368421053
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.03859649122807018
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.06842105263157895
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.8777777777777778
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9659090909090909
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9318181818181818
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.5
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.2840909090909091
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9318181818181818
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9318181818181818
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.05056179775280899
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.38202247191011235
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.9831460674157303
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.06179775280898876
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.06741573033707865
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.016853932584269662
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "cnn_raw": {
+        "n_windows": 8627,
+        "rejected_rate": 0.0,
+        "n": 8627,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.47525138260432376,
+        "accuracy": 0.2932653297786021,
+        "false_alarm": 0.9994972347913524,
+        "miss": 0.05,
+        "sensitivity": 0.95,
+        "specificity": 0.0005027652086475615,
+        "precision": 0.29760923330585326,
+        "macro_f1": 0.22710800848254784,
+        "auroc": 0.598094815974073,
+        "auprc": 0.4235614952278903,
+        "false_alerts_per_hour": 11.463046757164404,
+        "confusion": [
+          [
+            3,
+            5964
+          ],
+          [
+            133,
+            2527
+          ]
+        ],
+        "mean_gap_ratio": 0.0006240098914261427,
+        "per_recording": [
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260712_235052_800678_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev0000acebe64ae708_20260729_130739_615108_0003",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c3_64sc_dev6b67adafa4a27076_20261005_224557_717133_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261004_172224_320247_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c5_64sc_devfcf36d40cde0c5df_20261005_232240_916742_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260712_215645_774938_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev00007c2c6742bbac_20260731_145534_810338_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 569,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_215837_745894_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_c6_64sc_dev3cf79180d3a0aca4_20261005_220427_155460_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261004_172849_747914_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_esp32_64sc_dev5566279062754e5b_20261006_002035_939331_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260712_203314_805494_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260713_002325_306350_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_dev000010b41de8ec00_20260715_202019_268337_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165102_409263_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 570,
+            "accuracy": 0.005263157894736842
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_165336_090595_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261004_171437_294594_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 90,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "empty_s3_64sc_devec65a3e95955ccd8_20261006_004154_505195_0001",
+            "source": "espectre",
+            "label": 0,
+            "n": 118,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev0000acebe64ae708_20260725_142210_772024_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c3_64sc_dev6b67adafa4a27076_20261004_124325_657689_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_103019_148441_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev00007c2c6742bbac_20260729_164809_749002_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_c6_64sc_dev3cf79180d3a0aca4_20261004_113534_754968_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_163234_180596_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_esp32_64sc_dev5566279062754e5b_20261004_180709_961620_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260711_200403_160376_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260723_130900_697661_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "motion_s3_64sc_dev000010b41de8ec00_20260725_125205_333734_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 88,
+            "accuracy": 0.9886363636363636
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev0000acebe64ae708_20260725_142002_522602_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c3_64sc_dev6b67adafa4a27076_20261004_124105_229710_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_102752_587151_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev00007c2c6742bbac_20260729_164602_953056_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_c6_64sc_dev3cf79180d3a0aca4_20261004_113059_327986_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_162825_671970_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_esp32_64sc_dev5566279062754e5b_20261004_180423_850112_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260711_195741_405999_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260723_130651_930086_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "static_presence_s3_64sc_dev000010b41de8ec00_20260725_124905_563793_0001",
+            "source": "espectre",
+            "label": 1,
+            "n": 178,
+            "accuracy": 0.25842696629213485
+          }
+        ],
+        "seen_by_v3": false
+      }
+    },
+    "pipeline": {
+      "v3_cnn_raw": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9996751137102013,
+        "accuracy": 0.9995629370629371,
+        "false_alarm": 0.0,
+        "miss": 0.000649772579597141,
+        "sensitivity": 0.9993502274204028,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "macro_f1": 0.9995039483585959,
+        "auroc": 0.999997397439601,
+        "auprc": 0.9999987358510125,
+        "false_alerts_per_hour": 0.0,
+        "confusion": [
+          [
+            749,
+            0
+          ],
+          [
+            1,
+            1538
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 0.9951923076923077
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": true
+      },
+      "v3_tf_raw": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9996751137102013,
+        "accuracy": 0.9995629370629371,
+        "false_alarm": 0.0,
+        "miss": 0.000649772579597141,
+        "sensitivity": 0.9993502274204028,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "macro_f1": 0.9995039483585959,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "false_alerts_per_hour": 0.0,
+        "confusion": [
+          [
+            749,
+            0
+          ],
+          [
+            1,
+            1538
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 0.9968354430379747
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": true
+      },
+      "v3_cnn_cal": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.7202937249666221,
+        "accuracy": 0.8168706293706294,
+        "false_alarm": 0.5594125500667557,
+        "miss": 0.0,
+        "sensitivity": 1.0,
+        "specificity": 0.44058744993324434,
+        "precision": 0.7860061287027579,
+        "macro_f1": 0.7459302465796844,
+        "auroc": 0.8811636221047601,
+        "auprc": 0.9107015937297567,
+        "false_alerts_per_hour": 216.2883845126836,
+        "confusion": [
+          [
+            330,
+            419
+          ],
+          [
+            0,
+            1539
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 0.519774011299435
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 0.03608247422680412
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 0.6915422885572139
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": true
+      },
+      "lgbm_raw": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.5137471577871643,
+        "accuracy": 0.6800699300699301,
+        "false_alarm": 0.9679572763684913,
+        "miss": 0.004548408057179987,
+        "sensitivity": 0.99545159194282,
+        "specificity": 0.03204272363150868,
+        "precision": 0.6787771377935312,
+        "macro_f1": 0.4343519494204426,
+        "auroc": 0.6510070607463623,
+        "auprc": 0.8196202073855176,
+        "false_alerts_per_hour": 48.06408544726302,
+        "confusion": [
+          [
+            24,
+            725
+          ],
+          [
+            7,
+            1532
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 0.06779661016949153
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 0.9663461538461539
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 1.0
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_cal": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.8275968564540461,
+        "accuracy": 0.7736013986013986,
+        "false_alarm": 0.01602136181575434,
+        "miss": 0.32878492527615333,
+        "sensitivity": 0.6712150747238467,
+        "specificity": 0.9839786381842457,
+        "precision": 0.9885167464114832,
+        "macro_f1": 0.7697477215363,
+        "auroc": 0.930895948767731,
+        "auprc": 0.9668227535190238,
+        "false_alerts_per_hour": 19.225634178905207,
+        "confusion": [
+          [
+            737,
+            12
+          ],
+          [
+            506,
+            1033
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 0.9170506912442397
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 0.05063291139240506
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 0.9536082474226805
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 0.9876543209876543
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 0.8605769230769231
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 0.9850746268656716
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 0.8680555555555556
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 0.5580524344569289
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_norssi_cal": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.8767483783879915,
+        "accuracy": 0.8457167832167832,
+        "false_alarm": 0.03337783711615487,
+        "miss": 0.21312540610786224,
+        "sensitivity": 0.7868745938921378,
+        "specificity": 0.9666221628838452,
+        "precision": 0.9797734627831716,
+        "macro_f1": 0.8383952859022265,
+        "auroc": 0.9643136918100027,
+        "auprc": 0.9810936543042147,
+        "false_alerts_per_hour": 38.45126835781041,
+        "confusion": [
+          [
+            724,
+            25
+          ],
+          [
+            328,
+            1211
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 0.439873417721519
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 0.8917525773195877
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 0.8605769230769231
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 0.9800995024875622
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 0.8888888888888888
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 0.6629213483146067
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_raw": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.5176336479828856,
+        "accuracy": 0.6013986013986014,
+        "false_alarm": 0.7249666221628839,
+        "miss": 0.23976608187134502,
+        "sensitivity": 0.7602339181286549,
+        "specificity": 0.2750333778371162,
+        "precision": 0.6830122591943958,
+        "macro_f1": 0.5153677216530473,
+        "auroc": 0.48632224382347355,
+        "auprc": 0.6507373834867094,
+        "false_alerts_per_hour": 100.93457943925235,
+        "confusion": [
+          [
+            206,
+            543
+          ],
+          [
+            369,
+            1170
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 0.5819209039548022
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 0.5632911392405063
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 0.75
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 0.7569444444444444
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 0.5917602996254682
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_cal": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.5314961859477354,
+        "accuracy": 0.3701923076923077,
+        "false_alarm": 0.0013351134846461949,
+        "miss": 0.935672514619883,
+        "sensitivity": 0.06432748538011696,
+        "specificity": 0.9986648865153538,
+        "precision": 0.99,
+        "macro_f1": 0.31508433250383333,
+        "auroc": 0.8748133747313941,
+        "auprc": 0.9324290500516309,
+        "false_alerts_per_hour": 4.806408544726302,
+        "confusion": [
+          [
+            748,
+            1
+          ],
+          [
+            1440,
+            99
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 0.2304147465437788
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 0.9950248756218906
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 0.04513888888888889
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 0.1348314606741573
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "cnn_raw": {
+        "n_windows": 2288,
+        "rejected_rate": 0.0,
+        "n": 2288,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.5544997835537269,
+        "accuracy": 0.6048951048951049,
+        "false_alarm": 0.5914552736982643,
+        "miss": 0.299545159194282,
+        "sensitivity": 0.700454840805718,
+        "specificity": 0.40854472630173566,
+        "precision": 0.7087442472057857,
+        "macro_f1": 0.5541345473985548,
+        "auroc": 0.5591982725939112,
+        "auprc": 0.7260459711040127,
+        "false_alerts_per_hour": 72.09612817089453,
+        "confusion": [
+          [
+            306,
+            443
+          ],
+          [
+            461,
+            1078
+          ]
+        ],
+        "mean_gap_ratio": 0.0,
+        "per_recording": [
+          {
+            "recording": "room1_noisy_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 354,
+            "accuracy": 0.8559322033898306
+          },
+          {
+            "recording": "room1_noisy_moving_trial",
+            "source": "pipeline",
+            "label": 1,
+            "n": 217,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_noisy_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 316,
+            "accuracy": 0.5981012658227848
+          },
+          {
+            "recording": "room1_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 194,
+            "accuracy": 0.0
+          },
+          {
+            "recording": "room1_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 243,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "room1_quiet_stationary_trail1",
+            "source": "pipeline",
+            "label": 1,
+            "n": 208,
+            "accuracy": 0.6826923076923077
+          },
+          {
+            "recording": "room2_quiet_empty_trail",
+            "source": "pipeline",
+            "label": 0,
+            "n": 201,
+            "accuracy": 0.014925373134328358
+          },
+          {
+            "recording": "room2_quiet_moving_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 288,
+            "accuracy": 0.6006944444444444
+          },
+          {
+            "recording": "room2_quiet_stationary_trail",
+            "source": "pipeline",
+            "label": 1,
+            "n": 267,
+            "accuracy": 0.42696629213483145
+          }
+        ],
+        "seen_by_v3": false
+      }
+    },
+    "homeoccupancy": {
+      "v3_cnn_raw": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.8736962207432745,
+        "accuracy": 0.8405502392344497,
+        "false_alarm": 0.020942408376963352,
+        "miss": 0.23166515013648772,
+        "sensitivity": 0.7683348498635123,
+        "specificity": 0.9790575916230366,
+        "precision": 0.9859878561419897,
+        "macro_f1": 0.8358338374823817,
+        "auroc": 0.972616197177507,
+        "auprc": 0.9858114877990127,
+        "false_alerts_per_hour": 18.848167539267017,
+        "confusion": [
+          [
+            2805,
+            60
+          ],
+          [
+            1273,
+            4222
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 0.9926393270241851
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 0.9729448491155047
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 0.9716684155299056
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.8092369477911646
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.8253012048192772
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 0.8252525252525252
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.5513513513513514
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.6097814776274714
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.8876629889669007
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "v3_tf_raw": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.5426232319719497,
+        "accuracy": 0.6563397129186603,
+        "false_alarm": 0.818848167539267,
+        "miss": 0.09590536851683348,
+        "sensitivity": 0.9040946314831665,
+        "specificity": 0.181151832460733,
+        "precision": 0.6792452830188679,
+        "macro_f1": 0.5205549249551845,
+        "auroc": 0.6291000703479445,
+        "auprc": 0.7354350289092466,
+        "false_alerts_per_hour": 136.9633507853403,
+        "confusion": [
+          [
+            519,
+            2346
+          ],
+          [
+            527,
+            4968
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 0.2628811777076761
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 0.10613943808532779
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 0.17523609653725078
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.8644578313253012
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9106425702811245
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 0.9131313131313131
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.9099099099099099
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.8761706555671176
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9518555667001003
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "v3_cnn_cal": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.8717658604442877,
+        "accuracy": 0.8979665071770335,
+        "false_alarm": 0.21151832460732983,
+        "miss": 0.044949954504094634,
+        "sensitivity": 0.9550500454959053,
+        "specificity": 0.7884816753926701,
+        "precision": 0.8964810386060813,
+        "macro_f1": 0.88301166495632,
+        "auroc": 0.9670024629720497,
+        "auprc": 0.9848274697360607,
+        "false_alerts_per_hour": 160.83769633507853,
+        "confusion": [
+          [
+            2259,
+            606
+          ],
+          [
+            247,
+            5248
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 0.8916929547844374
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 0.6930280957336108
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 0.7817418677859391
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9969879518072289
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9819277108433735
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 0.9828282828282828
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.872072072072072
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.8688865764828304
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9879638916750251
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_raw": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9713961764383614,
+        "accuracy": 0.9712918660287081,
+        "false_alarm": 0.028272251308900525,
+        "miss": 0.028935395814376708,
+        "sensitivity": 0.9710646041856233,
+        "specificity": 0.9717277486910995,
+        "precision": 0.9850470740262137,
+        "macro_f1": 0.9683417755265262,
+        "auroc": 0.9946466325884074,
+        "auprc": 0.9974962888808097,
+        "false_alerts_per_hour": 20.104712041884817,
+        "confusion": [
+          [
+            2784,
+            81
+          ],
+          [
+            159,
+            5336
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 0.9442691903259727
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 0.9706190975865687
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 0.997979797979798
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.8828828828828829
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.9344432882414152
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.970912738214644
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_cal": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9771909097116687,
+        "accuracy": 0.9704545454545455,
+        "false_alarm": 0.0013961605584642235,
+        "miss": 0.04422202001819836,
+        "sensitivity": 0.9557779799818016,
+        "specificity": 0.9986038394415357,
+        "precision": 0.9992389649923896,
+        "macro_f1": 0.967822463623522,
+        "auroc": 0.9981341120834901,
+        "auprc": 0.9990862977212827,
+        "false_alerts_per_hour": 1.256544502617801,
+        "confusion": [
+          [
+            2861,
+            4
+          ],
+          [
+            243,
+            5252
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 0.9958376690946931
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9929718875502008
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 0.9939393939393939
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.7297297297297297
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.9417273673257024
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9759277833500501
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_norssi_cal": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9803457688808007,
+        "accuracy": 0.9741626794258373,
+        "false_alarm": 0.0,
+        "miss": 0.039308462238398546,
+        "sensitivity": 0.9606915377616014,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "macro_f1": 0.9718123965887905,
+        "auroc": 0.9998323718055603,
+        "auprc": 0.9999134055316797,
+        "false_alerts_per_hour": 0.0,
+        "confusion": [
+          [
+            2865,
+            0
+          ],
+          [
+            216,
+            5279
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9969879518072289
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9939759036144579
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 0.996969696969697
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.7657657657657657
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.9344432882414152
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9889669007021064
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_raw": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9545526871167982,
+        "accuracy": 0.9583732057416268,
+        "false_alarm": 0.05759162303664921,
+        "miss": 0.033303002729754325,
+        "sensitivity": 0.9666969972702457,
+        "specificity": 0.9424083769633508,
+        "precision": 0.9698740186233339,
+        "macro_f1": 0.9538700522187051,
+        "auroc": 0.9885955024955257,
+        "auprc": 0.9949294523628782,
+        "false_alerts_per_hour": 45.23560209424084,
+        "confusion": [
+          [
+            2700,
+            165
+          ],
+          [
+            183,
+            5312
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 0.9842271293375394
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 0.9011446409989594
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 0.9422875131164743
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.9621621621621622
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.8345473465140478
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9969909729187563
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_cal": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.8858052775250227,
+        "accuracy": 0.8498803827751196,
+        "false_alarm": 0.0,
+        "miss": 0.2283894449499545,
+        "sensitivity": 0.7716105550500455,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "macro_f1": 0.8457064977817681,
+        "auroc": 0.9442587661002307,
+        "auprc": 0.9779372825330714,
+        "false_alerts_per_hour": 0.0,
+        "confusion": [
+          [
+            2865,
+            0
+          ],
+          [
+            1255,
+            4240
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9779116465863453
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 0.9748995983935743
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 0.9171717171717172
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.27387387387387385
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.47762747138397504
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.7783350050150452
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "cnn_raw": {
+        "n_windows": 8360,
+        "rejected_rate": 0.0,
+        "n": 8360,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9683515237555321,
+        "accuracy": 0.9639952153110047,
+        "false_alarm": 0.01780104712041885,
+        "miss": 0.04549590536851683,
+        "sensitivity": 0.9545040946314831,
+        "specificity": 0.9821989528795811,
+        "precision": 0.990370090634441,
+        "macro_f1": 0.9606694852733217,
+        "auroc": 0.9882509087271152,
+        "auprc": 0.9950797471396264,
+        "false_alerts_per_hour": 18.848167539267017,
+        "confusion": [
+          [
+            2814,
+            51
+          ],
+          [
+            250,
+            5245
+          ]
+        ],
+        "mean_gap_ratio": 0.025685805422647527,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 951,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 961,
+            "accuracy": 0.9708636836628513
+          },
+          {
+            "recording": "empty_3",
+            "source": "homeoccupancy",
+            "label": 0,
+            "n": 953,
+            "accuracy": 0.9758656873032528
+          },
+          {
+            "recording": "sleep_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 996,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "sleep_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 990,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "work_1",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 555,
+            "accuracy": 0.8954954954954955
+          },
+          {
+            "recording": "work_2",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 961,
+            "accuracy": 0.8064516129032258
+          },
+          {
+            "recording": "work_3",
+            "source": "homeoccupancy",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9939819458375125
+          }
+        ],
+        "seen_by_v3": false
+      }
+    },
+    "officelocalization": {
+      "v3_cnn_raw": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.8846140149024764,
+        "accuracy": 0.8785547331515388,
+        "false_alarm": 0.001851851851851852,
+        "miss": 0.22892011834319526,
+        "sensitivity": 0.7710798816568047,
+        "specificity": 0.9981481481481481,
+        "precision": 0.9978463747307968,
+        "macro_f1": 0.8780181739659233,
+        "auroc": 0.9874455919594809,
+        "auprc": 0.9911853776855412,
+        "false_alerts_per_hour": 1.4814814814814814,
+        "confusion": [
+          [
+            4851,
+            9
+          ],
+          [
+            1238,
+            4170
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.9908256880733946
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.7382146439317954
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 0.7743467933491687
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.7251755265797393
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.624248496993988
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9247743229689067
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.8416833667334669
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "v3_tf_raw": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.6991897387196533,
+        "accuracy": 0.7098753408648227,
+        "false_alarm": 0.5010288065843621,
+        "miss": 0.10059171597633136,
+        "sensitivity": 0.8994082840236687,
+        "specificity": 0.49897119341563784,
+        "precision": 0.6663926565282915,
+        "macro_f1": 0.692526961086045,
+        "auroc": 0.8042971127973798,
+        "auprc": 0.8001409574136744,
+        "false_alerts_per_hour": 216.29629629629628,
+        "confusion": [
+          [
+            2425,
+            2435
+          ],
+          [
+            544,
+            4864
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 0.5851393188854489
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.4577319587628866
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.5371134020618556
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.5515463917525774
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.36493374108053006
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.950852557673019
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 0.9524940617577197
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.8555667001003009
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.7715430861723447
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9789368104312939
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9178356713426854
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "v3_cnn_cal": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9239606922833419,
+        "accuracy": 0.9243280093494352,
+        "false_alarm": 0.08292181069958848,
+        "miss": 0.06915680473372782,
+        "sensitivity": 0.9308431952662722,
+        "specificity": 0.9170781893004115,
+        "precision": 0.9258782416773956,
+        "macro_f1": 0.9240882979787752,
+        "auroc": 0.9585667932890154,
+        "auprc": 0.9639922627043193,
+        "false_alerts_per_hour": 54.81481481481481,
+        "confusion": [
+          [
+            4457,
+            403
+          ],
+          [
+            374,
+            5034
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 0.9566563467492261
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.8938144329896908
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9237113402061856
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9762886597938144
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.835881753312946
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9679037111334002
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 0.9786223277909739
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9889669007021064
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9849699398797596
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.950852557673019
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.7414829659318637
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_raw": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9766905301093336,
+        "accuracy": 0.9776977015971952,
+        "false_alarm": 0.04218106995884774,
+        "miss": 0.004437869822485207,
+        "sensitivity": 0.9955621301775148,
+        "specificity": 0.9578189300411523,
+        "precision": 0.9633208087314368,
+        "macro_f1": 0.9775847148241584,
+        "auroc": 0.9882090166678841,
+        "auprc": 0.9830496751588353,
+        "false_alerts_per_hour": 11.851851851851851,
+        "confusion": [
+          [
+            4655,
+            205
+          ],
+          [
+            24,
+            5384
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 0.9958720330237358
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9783505154639175
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.8165137614678899
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9969909729187563
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9789579158316634
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_cal": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9774224894684296,
+        "accuracy": 0.9782820412933385,
+        "false_alarm": 0.03868312757201646,
+        "miss": 0.0064718934911242604,
+        "sensitivity": 0.9935281065088757,
+        "specificity": 0.9613168724279836,
+        "precision": 0.9661931307318827,
+        "macro_f1": 0.9781803433363329,
+        "auroc": 0.986382428409672,
+        "auprc": 0.9810681207418661,
+        "false_alerts_per_hour": 10.37037037037037,
+        "confusion": [
+          [
+            4672,
+            188
+          ],
+          [
+            35,
+            5373
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9783505154639175
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.8297655453618756
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9839518555667001
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.998997995991984
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9819639278557114
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "lgbm_norssi_cal": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.97977694986242,
+        "accuracy": 0.9806194000779119,
+        "false_alarm": 0.0360082304526749,
+        "miss": 0.004437869822485207,
+        "sensitivity": 0.9955621301775148,
+        "specificity": 0.9639917695473251,
+        "precision": 0.9685195178989027,
+        "macro_f1": 0.9805291667095073,
+        "auroc": 0.9894307625343949,
+        "auprc": 0.9866483080605702,
+        "false_alerts_per_hour": 11.851851851851851,
+        "confusion": [
+          [
+            4685,
+            175
+          ],
+          [
+            24,
+            5384
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 0.9958720330237358
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9783505154639175
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.8470948012232415
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9929789368104313
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9979959919839679
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9849699398797596
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_raw": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9855673350865659,
+        "accuracy": 0.9854888975457733,
+        "false_alarm": 0.012962962962962963,
+        "miss": 0.015902366863905327,
+        "sensitivity": 0.9840976331360947,
+        "specificity": 0.987037037037037,
+        "precision": 0.9883008356545961,
+        "macro_f1": 0.9854508624831524,
+        "auroc": 0.9950416012248277,
+        "auprc": 0.9946052356564962,
+        "false_alerts_per_hour": 6.666666666666666,
+        "confusion": [
+          [
+            4797,
+            63
+          ],
+          [
+            86,
+            5322
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9958762886597938
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.9398572884811417
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.996993987975952
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9919759277833501
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9248496993987976
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "gapcnn_cal": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.8779177167798963,
+        "accuracy": 0.8721269964939619,
+        "false_alarm": 0.013580246913580247,
+        "miss": 0.23058431952662722,
+        "sensitivity": 0.7694156804733728,
+        "specificity": 0.9864197530864197,
+        "precision": 0.9843860894251242,
+        "macro_f1": 0.8716391668051573,
+        "auroc": 0.9897823982759879,
+        "auprc": 0.9909938431412535,
+        "false_alerts_per_hour": 8.888888888888888,
+        "confusion": [
+          [
+            4794,
+            66
+          ],
+          [
+            1247,
+            4161
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9876288659793815
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.944954128440367
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.38515546639919757
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 0.47030878859857483
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.7903711133400201
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.7975951903807615
+          }
+        ],
+        "seen_by_v3": false
+      },
+      "cnn_raw": {
+        "n_windows": 10268,
+        "rejected_rate": 0.0,
+        "n": 10268,
+        "threshold": 0.5,
+        "smoothed": true,
+        "bal_acc": 0.9865739218837509,
+        "accuracy": 0.9865601869887027,
+        "false_alarm": 0.01316872427983539,
+        "miss": 0.013683431952662722,
+        "sensitivity": 0.9863165680473372,
+        "specificity": 0.9868312757201646,
+        "precision": 0.9881437569470174,
+        "macro_f1": 0.986523188841645,
+        "auroc": 0.9956023845179829,
+        "auprc": 0.995675452860151,
+        "false_alerts_per_hour": 8.148148148148147,
+        "confusion": [
+          [
+            4796,
+            64
+          ],
+          [
+            74,
+            5334
+          ]
+        ],
+        "mean_gap_ratio": 0.00024347487339306583,
+        "per_recording": [
+          {
+            "recording": "empty_1",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 969,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_2",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 0.9927835051546392
+          },
+          {
+            "recording": "empty_3",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_4",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 970,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "empty_5",
+            "source": "officelocalization",
+            "label": 0,
+            "n": 981,
+            "accuracy": 0.9418960244648318
+          },
+          {
+            "recording": "five_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "five_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 421,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "one_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 1.0
+          },
+          {
+            "recording": "two_1",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 997,
+            "accuracy": 0.9909729187562688
+          },
+          {
+            "recording": "two_2",
+            "source": "officelocalization",
+            "label": 1,
+            "n": 998,
+            "accuracy": 0.9348697394789579
+          }
+        ],
+        "seen_by_v3": false
+      }
+    }
+  }
+}

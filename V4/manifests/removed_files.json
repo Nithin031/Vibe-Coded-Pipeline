@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-18 18:18",
+  "note": "moved, not deleted; safe to delete archive/V4_removed_2026-10-18 by hand",
+  "files": [
+    {
+      "file": "V4/RF_ESP32_Dataset-v1.0.1.zip",
+      "moved_to": "archive/V4_removed_2026-10-18/RF_ESP32_Dataset-v1.0.1.zip",
+      "reason": "duplicate of datasets/rf_esp32 (data files byte-identical; README/LICENSE differ only in line endings)",
+      "bytes": 13818790,
+      "sha256": "9aa6c7c1c2e36533f3ebae32f1620c7d7ca882b8cd31e5514d2f5797d633b8f9"
+    },
+    {
+      "file": "V4/src/finetune_homeoccupancy.py",
+      "moved_to": "archive/V4_removed_2026-10-18/src/finetune_homeoccupancy.py",
+      "reason": "preliminary fine-tuner; its parser let corrupted timestamps through (50-83% fake windows); replaced by src/data.py",
+      "bytes": 8661,
+      "sha256": "3b129f1d356cf7d6071d2e23890213fe8baec2be732e265d38842bba3ad5a45f"
+    },
+    {
+      "file": "V4/src/build_manifest.py",
+      "moved_to": "archive/V4_removed_2026-10-18/src/build_manifest.py",
+      "reason": "replaced by manifests/experiment_registry.json written by every run",
+      "bytes": 1410,
+      "sha256": "44101470b765dcb7939f748c674f084eb72fc00dcc7a8435e4db33c66fbece6d"
+    },
+    {
+      "file": "V4/models/homeoccupancy_tf.pt",
+      "moved_to": "archive/V4_removed_2026-10-18/models/homeoccupancy_tf.pt",
+      "reason": "trained on corrupted windows; invalid",
+      "bytes": 634877,
+      "sha256": "aa1499ed364f134ac0ba57329ee2d038e2c70b2a078d220b6b6a62a3bdc8cad8"
+    },
+    {
+      "file": "V4/models/homeoccupancy_cnn.pt",
+      "moved_to": "archive/V4_removed_2026-10-18/models/homeoccupancy_cnn.pt",
+      "reason": "trained on corrupted windows; invalid",
+      "bytes": 201600,
+      "sha256": "12578ce78cda710bc37e61df07eaedac2ffc3c6e251bc962b0f6e79d47f241a4"
+    },
+    {
+      "file": "V4/results/homeoccupancy_tf.json",
+      "moved_to": "archive/V4_removed_2026-10-18/results/homeoccupancy_tf.json",
+      "reason": "result on corrupted windows; numbers kept in docs/REPORT.md history",
+      "bytes": 3328,
+      "sha256": "5a539629bc0ce5a795d02a385d8e8d20c92de759aae76fb426fb1edc014f6566"
+    },
+    {
+      "file": "V4/results/homeoccupancy_cnn.json",
+      "moved_to": "archive/V4_removed_2026-10-18/results/homeoccupancy_cnn.json",
+      "reason": "result on corrupted windows; numbers kept in docs/REPORT.md history",
+      "bytes": 3342,
+      "sha256": "6a14c74af90ecbdd32b327e2764fcd25f17f511e8f5fa90358fcd7d80ada272f"
+    },
+    {
+      "file": "V4/manifests/experiment_index.json",
+      "moved_to": "archive/V4_removed_2026-10-18/manifests/experiment_index.json",
+      "reason": "described the invalid preliminary runs",
+      "bytes": 9594,
+      "sha256": "aad8e564741d96b44546ad75d5f31be6915e154265ef5e538d88ed534e0f5c15"
+    },
+    {
+      "file": "V4/manifests/datasets.json",
+      "moved_to": "archive/V4_removed_2026-10-18/manifests/datasets.json",
+      "reason": "rewritten from the new dataset audit",
+      "bytes": 963,
+      "sha256": "f415ea2cd9b7ba70bb7b17a28040f8cb3ac7711d01e7408b8a839719943d07e4"
+    },
+    {
+      "file": "V4/configs/homeoccupancy.json",
+      "moved_to": "archive/V4_removed_2026-10-18/configs/homeoccupancy.json",
+      "reason": "replaced by configs/v4_protocol.json",
+      "bytes": 562,
+      "sha256": "3c7add8431f02441317b90c52f80142dff9d61f94af477102ac350ae689b5c06"
+    },
+    {
+      "file": "V4/tests/test_protocol.py",
+      "moved_to": "archive/V4_removed_2026-10-18/tests/test_protocol.py",
+      "reason": "its two checks moved into tests/test_v4.py",
+      "bytes": 940,
+      "sha256": "08c2b36e7474f419f8dbf0b5793e2ad1693caecf26786951b038be73648230bc"
+    },
+    {
+      "file": "V4/docs/V4_PLAN.md",
+      "moved_to": "archive/V4_removed_2026-10-18/docs/V4_PLAN.md",
+      "reason": "replaced by docs/REPORT.md",
+      "bytes": 1283,
+      "sha256": "7809f28e6353858125ecb10b668f6ba9898b28f09624dd0dc000faa6c0f4a850"
+    },
+    {
+      "file": "V4/docs/EXPERIMENTS.md",
+      "moved_to": "archive/V4_removed_2026-10-18/docs/EXPERIMENTS.md",
+      "reason": "replaced by docs/REPORT.md",
+      "bytes": 1152,
+      "sha256": "b681e6ce133e3adfd2a4e761f5f5cd6dd7423e1801b26325bdf9f6da5956726a"
+    },
+    {
+      "file": "V4/docs/DATASETS.md",
+      "moved_to": "archive/V4_removed_2026-10-18/docs/DATASETS.md",
+      "reason": "replaced by docs/DATASET_AUDIT.md",
+      "bytes": 1233,
+      "sha256": "900e59e019d86a72674c84eabdb215c68fea624693835445751d913b68ac0d1c"
+    },
+    {
+      "file": "V4/docs/methods_and_results.md",
+      "moved_to": "archive/V4_removed_2026-10-18/docs/methods_and_results.md",
+      "reason": "replaced by docs/REPORT.md",
+      "bytes": 4229,
+      "sha256": "9af03f907849446b79486a41bfbcf07c1938179681927dd8d7194a29778ab6e1"
+    },
+    {
+      "file": "V4/cache/homeoccupancy",
+      "moved_to": "archive/V4_removed_2026-10-18/cache/homeoccupancy",
+      "reason": "cache built from corrupted windows; regenerable"
+    }
+  ]
+}
