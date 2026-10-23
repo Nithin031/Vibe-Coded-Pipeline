@@ -14,8 +14,8 @@ and a benchmark against V4 ([results](results/README.md#v4-vs-v5-benchmark-kaggl
 | Install | 20 s empty-room calibration (required) |
 | Honest output | **empty / 1 / 2 / 3+**, updated every 2.5 s (median of the last 30 s) |
 | Held-out error | ESP32 (WiCount) MAE 0.29, 100 % within ±1 · WiMANS unseen room MAE 1.01 · empty found 93-100 % |
-| Files | [`results/phase4_final__mat80_wicount_wimans_csibench/model_esp32_counter/`](results/phase4_final__mat80_wicount_wimans_csibench/model_esp32_counter/) |
-| How to deploy | [deployment guide](results/phase4_final__mat80_wicount_wimans_csibench/model_esp32_counter/README.md) - 2 or 3 ESP32-S3, input format, calibration, Python + C |
+| Files | [`deploy/`](deploy/) - the only copy of the model |
+| How to deploy | [deployment guide](deploy/README.md) - 2 or 3 ESP32-S3, input format, calibration, Python + C |
 
 Above 2-3 people the estimates bunch together (one link measures total motion, which stops growing).
 Full numbers: [`results/README.md`](results/README.md) and
@@ -26,6 +26,11 @@ Full numbers: [`results/README.md`](results/README.md) and
 ```
 V5/
 ├── README.md                 <- this file
+├── deploy/                   THE MODEL (V5 final) + everything to run it - self-contained
+│   ├── infer.py              run on a recorded ESP32 CSV (calibrate, count, score)
+│   ├── src/                  data.py, calibration.py, metrics.py, models.py
+│   ├── tests/                test_deploy.py (src == esp32_counter, files consistent, infer end to end)
+│   └── trees.json, counter_model.h, model.txt, model_card.json, README.md (deployment guide)
 ├── esp32_counter/            the counter: preprocessing, 10 cues, tree export (Python + C header), streaming API
 │   ├── esp32_counter.py
 │   └── test_esp32_counter.py stream == batch, no future leakage, C header == Python, budget
@@ -45,7 +50,7 @@ V5/
 │       └── kaggle_ehunam_explore.ipynb        EHUNAM discovery (not used for counting yet)
 ├── notebook_builders/        Python scripts that generate the notebooks (edit these, not the .ipynb)
 ├── kaggle_kernels/           kernel-metadata.json per Kaggle kernel (for `kaggle kernels push`)
-├── results/                  all results: phase2-5, phase4 = final model, benchmark_v4_vs_v5, kaggle/
+├── results/                  all results: phase2-5, phase4 = how the final model was chosen, benchmark_v4_vs_v5, kaggle/
 └── reports/                  dataset audit, deep audit (80 MHz + CountFi), audit plan, dataset survey
 ```
 

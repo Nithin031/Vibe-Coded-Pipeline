@@ -9,7 +9,7 @@ Generated 2026-10-23 13:08. One link, device preprocessing, 5.0 s windows every 
 - Trained on: wicount, mat80, wimans (99992 windows; CSI-Bench and mat80 PC2a have no empty recording, so the calibrated model cannot use them - identical to pool esp32+mat80+wimans), counts 0-10
 - Calibration: Leave the room empty, start the counter, call begin_calibration(); the next 7 windows (20 s after the 10 s warm-up) set the offset.
 - Size: 300 trees, 8700 nodes, ~77 KB flash
-- Files: `D:/wifi/results/phase4_final__mat80_wicount_wimans_csibench/model_esp32_counter/` (trees.json, counter_model.h, model.txt, model_card.json)
+- Files: `deploy/` at the V5 root (trees.json, counter_model.h, model.txt, model_card.json)
 
 ## Selection (sites with an empty recording, smoothed MAE per dataset)
 

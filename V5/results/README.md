@@ -11,7 +11,7 @@ results/
 ├── phase3_esp32_final__mat80_wicount_countfi/    Phase 3: device-ready pipeline (superseded)
 └── phase4_final__mat80_wicount_wimans_csibench/  Phase 4: all labelled sources pooled -> FINAL MODEL
     ├── PHASE4_RESULTS.md                         full tables
-    ├── model_esp32_counter/                      <- the model to deploy
+    ├── (model moved to ../deploy/)               <- the model to deploy
     ├── figures/
     └── *.csv
 ├── phase5_experiments/                           Phase 5 (Kaggle): upgrades tested, none adopted
@@ -129,7 +129,7 @@ published 0.84). Same WiCount packets, same splits, same noisy packets. Each sys
 
 Full tables: [`benchmark_v4_vs_v5/BENCHMARK.md`](benchmark_v4_vs_v5/BENCHMARK.md).
 
-## Final model: `phase4_final__mat80_wicount_wimans_csibench/model_esp32_counter/`
+## Final model: [`../deploy/`](../deploy/) (the only copy)
 
 | File | What |
 |---|---|
@@ -144,7 +144,7 @@ Full tables: [`benchmark_v4_vs_v5/BENCHMARK.md`](benchmark_v4_vs_v5/BENCHMARK.md
 ```python
 import sys; sys.path.insert(0, "esp32_counter")
 import esp32_counter as ec
-model, card = ec.load_bundle("results/phase4_final__mat80_wicount_wimans_csibench/model_esp32_counter")
+model, card = ec.load_bundle("deploy")
 counter = ec.StreamingCounter(model)
 counter.begin_calibration()                 # required: room empty for the first 30 s
 for t, amp52 in packets:                    # amp52 = |CSI| of the 52 data tones
