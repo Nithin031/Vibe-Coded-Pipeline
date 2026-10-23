@@ -1,7 +1,7 @@
 # Wi-Fi CSI people counting on ESP32-S3: results
 
 Goal: count the people in a room from the Wi-Fi channel state information (CSI) of **one ESP32-S3 link**.
-Last updated 2026-10-23 (Phase 4).
+Last updated 2026-10-23 (Phase 4 model; Phase 5 experiments and V4 vs V5 benchmark).
 
 ```
 results/
@@ -14,6 +14,8 @@ results/
     ├── model_esp32_counter/                      <- the model to deploy
     ├── figures/
     └── *.csv
+├── phase5_experiments/                           Phase 5 (Kaggle): upgrades tested, none adopted
+└── benchmark_v4_vs_v5/                           V4 (GitHub v4 branch, its own code) vs V5, same data + noise
 ```
 
 ## Datasets
@@ -88,6 +90,45 @@ Leave one room out for 5 training pools x 2 modes; scores are held-out, smoothed
 - Replay of the raw WiCount CSVs through the bundle = batch numbers exactly; ESP32 budget unchanged (77 KB flash, 75 KB RAM).
 - Honest output: **empty / 1 / 2 / 3+**, after a 20 s empty-room calibration, in rooms like the training rooms.
 
+## Phase 5: upgrades tested (Kaggle, 2026-10-23) - none adopted
+
+Leave one site out on all 5 datasets, same rule for every upgrade: it helps if MAE drops >= 0.05 on >= 2 datasets
+and WiCount gets no worse than +0.05. With the install calibration (the deployed mode) **no upgrade passes**.
+
+| Upgrade | Effect with empty-room calibration | Verdict |
+|---|---|---|
+| 9 extra cues | MAE mat80 -0.25, WiCount -0.03, WiMANS -0.01; empty found less often (mat80 94 -> 86 %) | no |
+| 4-class output (0/1/2/3+) | WiCount -0.13, empty found more often (WiMANS 93 -> 98 %); mat80 +0.08 | no, closest - retest on own data |
+| 30 s memory cues | mat80 -0.50, WiCount +0.07 | no |
+| Two-point calibration (empty + 2 people) | worse on mat80, WiCount, WiMANS | no |
+| 2 / 3 links averaged | -0.03 to -0.06 (links = antennas of one device, a lower bound) | small gain; retest with 2 boards on different walls |
+
+Full tables: [`phase5_experiments/PHASE5_RESULTS.md`](phase5_experiments/PHASE5_RESULTS.md).
+
+## V4 vs V5 benchmark (Kaggle, 2026-10-23)
+
+V4 = GitHub `Nithin031/Vibe-Coded-Pipeline` branch `v4`, run with its own code (harness check: V4 LightGBM exact 0.843,
+published 0.84). Same WiCount packets, same splits, same noisy packets. Each system keeps its own smoothing.
+
+| Benchmark | V4 LightGBM | V4 gap-CNN | V5 WiCount-only | **V5 final** |
+|---|---|---|---|---|
+| B1 V4's 3 folds - exact | 0.849 | 0.850 | 0.885 | 0.881 |
+| B1 - F1 on 0/1/2/3+ | 0.720 | 0.685 | 0.461 | **0.736** |
+| B2 new session (leave one file out) - exact | 0.755 | 0.783 | 0.825 | **0.854** |
+| B2 - empty room recognised | 0 % | 0 % | 0 % | **100 %** |
+| B2 - 3 people recognised | 0 % | 0 % | 0 % | 0 % |
+| B3 noise, 22 conditions - exact (unanswered = wrong) | 0.624 | **0.727** | 0.620 | 0.504 |
+| Counting model size | ~1 MB arrays | ~191 KB | 77 KB | 77 KB |
+| First answer | ~3 s | ~3 s | 15 s | 15 s |
+
+- **Clean signal, new session: V5 final wins** (exact 0.85 vs 0.76-0.78) and is the only system that still finds the
+  empty room when the empty file was never trained on - the empty-room calibration does that.
+- **Noise: V4 gap-CNN wins clearly.** V5 final breaks on white noise (exact 0.04 at level 1), impulses (0.09-0.33),
+  fans (0.48 at level 3) and dead subcarriers (~0.5). Unchanged by: AGC jumps, jitter, packet loss.
+- Nobody counts 3 people on an unseen file. V4 also has a presence model and an 'unknown' answer; V5 does not.
+
+Full tables: [`benchmark_v4_vs_v5/BENCHMARK.md`](benchmark_v4_vs_v5/BENCHMARK.md).
+
 ## Final model: `phase4_final__mat80_wicount_wimans_csibench/model_esp32_counter/`
 
 | File | What |
@@ -123,11 +164,15 @@ for t, amp52 in packets:                    # amp52 = |CSI| of the 52 data tones
 | `notebooks/local/phase3_esp32_final_local.ipynb` | Phase 3: tests, checks, experiments, model, export, replay |
 | `notebooks/kaggle/kaggle_phase4_features.ipynb` | Phase 4a (Kaggle): WiMANS + CSI-Bench -> feature tables |
 | `notebooks/local/phase4_final_local.ipynb` | Phase 4: pool all sources, leave one room out, final model, export |
-| `notebook_builders/build_local_nbs.py`, `build_final_nb.py`, `build_phase4_nbs.py` | generate the notebooks |
+| `notebooks/kaggle/kaggle_phase5_features.ipynb`, `kaggle_phase5_experiments.ipynb` | Phase 5 (Kaggle): all cue tables, then the upgrade tests |
+| `notebooks/kaggle/kaggle_v4_vs_v5_benchmark.ipynb` | V4 vs V5 benchmark (Kaggle, clones V4 from GitHub) |
+| `notebook_builders/build_*.py` | generate the notebooks |
 
 ## Limits and next steps
 
 - WiCount is one room on one evening; counts 0 and 3 have one file each, and the final model was chosen on these same files.
 - No ESP32 data above 3 people. Counts 4-10 are learned from 4-antenna router data only.
 - Next: record your own ESP32-S3 data in several rooms and on several days, 0-5+ people, at >= 100 packets/s, and use it as the test set.
-  Optional: try a 2-point install calibration (empty + one known count) to fix the squeezed scale.
+- Noise is the main weakness (benchmark B3): white noise, impulses, fans and dead subcarriers. Next fix: V4-style robust
+  preprocessing (impulse / outlier clipping, dead-tone masking) and noise-augmented training, then rerun the benchmark.
+- Two-point calibration was tested in Phase 5 and does not help.

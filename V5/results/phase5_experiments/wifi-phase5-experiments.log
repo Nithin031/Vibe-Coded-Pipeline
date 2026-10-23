@@ -1,0 +1,1249 @@
+[{"stream_name":"stderr","time":8.88694332,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":8.887003177,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":10.441560936,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.441603504,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.441610088000001,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.44161511,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.397454776,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.397494842,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.397501174,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.397506492,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":12.84350318,"data":"Writing /kaggle/working/esp32_counter.py\n"}
+,{"stream_name":"stdout","time":22.109807547,"data":"streams   (70257, 27)  datasets=['countfi', 'mat80', 'wicount']\n"}
+,{"stream_name":"stdout","time":22.109850497,"data":"wimans    (50787, 27)  datasets=['wimans']\n"}
+,{"stream_name":"stdout","time":22.109856437,"data":"csibench  (20193, 27)  datasets=['csibench']\n"}
+,{"stream_name":"stderr","time":35.824410583,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824449433,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.824454994999996,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824460433,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.824464873,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824469593,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.82447403,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824478278,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.824482299,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824486847,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.82449094,"data":"\n"}
+,{"stream_name":"stderr","time":35.824495053,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824536821,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.824545022,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824549786,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.824554117,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824559027,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.824563467,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.82456877,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":35.824572954,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":35.824577394,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":36.026834585,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":36.026875835,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":36.026882288,"data":"\n"}
+,{"stream_name":"stderr","time":36.026885819,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":36.026889742,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":38.032674895,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":38.032715968,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":38.03272214,"data":"\n"}
+,{"stream_name":"stderr","time":38.032727253,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":38.032732502,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":39.943980399,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":39.944027942,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":39.944035387,"data":"\n"}
+,{"stream_name":"stderr","time":39.944041437,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":39.944045776,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":42.010478204,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":42.010536072,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":42.010545253,"data":"\n"}
+,{"stream_name":"stderr","time":42.01055148,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":42.010574664,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":43.985014494,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":43.985055174,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":43.985061953,"data":"\n"}
+,{"stream_name":"stderr","time":43.98506719,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":43.985071049,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":45.7527912,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":45.752843127,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":45.752861959,"data":"\n"}
+,{"stream_name":"stderr","time":45.75286691,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":45.752872229,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":47.619277972,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":47.619325778,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":47.619331779,"data":"\n"}
+,{"stream_name":"stderr","time":47.619353614,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":47.619358698,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":49.49675725,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":49.496797212,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":49.496802519,"data":"\n"}
+,{"stream_name":"stderr","time":49.496815944,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":49.496821984,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":51.413231841,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":51.413276593,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":51.413282725,"data":"\n"}
+,{"stream_name":"stderr","time":51.413287701,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":51.413293425,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":53.60397018,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":53.604034816,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":53.604040784,"data":"\n"}
+,{"stream_name":"stderr","time":53.6040455,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":53.604050837,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":55.552439474,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":55.552488624,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":55.552497896,"data":"\n"}
+,{"stream_name":"stderr","time":55.55250557,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":55.552532869,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":57.551555142,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":57.551603719,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":57.551613854,"data":"\n"}
+,{"stream_name":"stderr","time":57.551622715,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":57.551634478,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":59.552676392,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":59.55273068,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":59.552736972,"data":"\n"}
+,{"stream_name":"stderr","time":59.552741715,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":59.552746898,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":61.672545533,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":61.672585971,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":61.672591767,"data":"\n"}
+,{"stream_name":"stderr","time":61.672596425,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":61.672601892,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":63.713367344,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":63.713402736,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":63.713408508,"data":"\n"}
+,{"stream_name":"stderr","time":63.713413206,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":63.713433748,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":65.706103083,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":65.706138732,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":65.706144798,"data":"\n"}
+,{"stream_name":"stderr","time":65.706149336,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":65.706154633,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":67.828082094,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":67.828120148,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":67.828125971,"data":"\n"}
+,{"stream_name":"stderr","time":67.828130661,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":67.828136141,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":69.812000942,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":69.812039132,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":69.812043375,"data":"\n"}
+,{"stream_name":"stderr","time":69.8120467,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":69.812050253,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":72.018576815,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":72.018642913,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":72.018651065,"data":"\n"}
+,{"stream_name":"stderr","time":72.018657165,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":72.018663832,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":73.99503258,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":73.995074271,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":73.995081103,"data":"\n"}
+,{"stream_name":"stderr","time":73.995086605,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":73.99509302,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":75.949663165,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":75.949703402,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":75.949732505,"data":"\n"}
+,{"stream_name":"stderr","time":75.949737888,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":75.949743418,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":77.912445201,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":77.912491104,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":77.91249684,"data":"\n"}
+,{"stream_name":"stderr","time":77.912501448,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":77.912506872,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":79.866780981,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":79.866841937,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":79.866848465,"data":"\n"}
+,{"stream_name":"stderr","time":79.866853533,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":79.866859068,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":81.928678291,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":81.928718038,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":81.928723588,"data":"\n"}
+,{"stream_name":"stderr","time":81.92872832,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":81.928733728,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":83.6572642,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":83.657319499,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":83.657326033,"data":"\n"}
+,{"stream_name":"stderr","time":83.65733065,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":83.65733605,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":85.542313914,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":85.542366064,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":85.542374259,"data":"\n"}
+,{"stream_name":"stderr","time":85.542380017,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":85.542386654,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":87.307068292,"data":"base_reg          zero_shot  32 sites  [54 s]\n"}
+,{"stream_name":"stderr","time":87.395937744,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":87.395974323,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":87.395980315,"data":"\n"}
+,{"stream_name":"stderr","time":87.395984971,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":87.395990621,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":97.589595908,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":97.589642888,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":97.589649455,"data":"\n"}
+,{"stream_name":"stderr","time":97.589654253,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":97.5896602,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":100.745243796,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":100.745283863,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":100.745289956,"data":"\n"}
+,{"stream_name":"stderr","time":100.745295093,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":100.745299384,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":102.452597941,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":102.452739095,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":102.452748601,"data":"\n"}
+,{"stream_name":"stderr","time":102.452753408,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":102.452758788,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":104.215601088,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":104.215750117,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":104.21575701,"data":"\n"}
+,{"stream_name":"stderr","time":104.215760994,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":104.215765262,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":105.90447264,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":105.90453899,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":105.90454859,"data":"\n"}
+,{"stream_name":"stderr","time":105.90457362,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":105.904579316,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":107.594508548,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":107.594564053,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":107.59456981,"data":"\n"}
+,{"stream_name":"stderr","time":107.594578617,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":107.594584205,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":109.303477522,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":109.303536835,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":109.303545277,"data":"\n"}
+,{"stream_name":"stderr","time":109.303550572,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":109.303555829,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":110.973833959,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":110.973879157,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":110.973885112,"data":"\n"}
+,{"stream_name":"stderr","time":110.973889927,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":110.973895238,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":112.83669647400001,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":112.836735101,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":112.836741267,"data":"\n"}
+,{"stream_name":"stderr","time":112.8367464,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":112.836752002,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":114.53961403,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":114.539748975,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":114.539754929,"data":"\n"}
+,{"stream_name":"stderr","time":114.539758195,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":114.53976178,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":116.246560298,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":116.246629214,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":116.246636134,"data":"\n"}
+,{"stream_name":"stderr","time":116.24664097,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":116.24664612,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":117.960886299,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":117.960925515,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":117.960930935,"data":"\n"}
+,{"stream_name":"stderr","time":117.960935394,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":117.960940624,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":119.702958124,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":119.703013651,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":119.703020933,"data":"\n"}
+,{"stream_name":"stderr","time":119.703025586,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":119.703031164,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":121.442987055,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":121.443026555,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":121.443030704,"data":"\n"}
+,{"stream_name":"stderr","time":121.443034108,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":121.443037828,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":123.206547707,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":123.206591039,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":123.206596916,"data":"\n"}
+,{"stream_name":"stderr","time":123.206601164,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":123.206606523,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":124.901641943,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":124.901762662,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":124.901778409,"data":"\n"}
+,{"stream_name":"stderr","time":124.901783274,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":124.901808299,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":126.628587455,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":126.628626385,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":126.628632676,"data":"\n"}
+,{"stream_name":"stderr","time":126.628637807,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":126.628643065,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":128.328362349,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":128.328396375,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":128.328401252,"data":"\n"}
+,{"stream_name":"stderr","time":128.328404499,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":128.3284151,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":129.89372208,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":129.89376447,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":129.893770072,"data":"\n"}
+,{"stream_name":"stderr","time":129.893774614,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":129.893779557,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":131.737681232,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":131.737722228,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":131.737727332,"data":"\n"}
+,{"stream_name":"stderr","time":131.737731953,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":131.737737076,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":133.237441029,"data":"base_reg          empty_cal  32 sites  [100 s]\n"}
+,{"stream_name":"stderr","time":133.351931004,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":133.351970124,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":133.351976044,"data":"\n"}
+,{"stream_name":"stderr","time":133.351981109,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":133.35198662,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334288849,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334351627,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334358452,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334363997,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.33436902,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334374564,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334379292,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334384403,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334388636,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334392987,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334397016,"data":"\n"}
+,{"stream_name":"stderr","time":136.33440125,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334405937,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334410322,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334415309,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334419785,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334425413,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.334429764,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334434345,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.33443862,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.334443851,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.542682458,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.542722739,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":136.542726956,"data":"\n"}
+,{"stream_name":"stderr","time":136.542730453,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":136.542734049,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":139.298752441,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":139.298829921,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":139.298835942,"data":"\n"}
+,{"stream_name":"stderr","time":139.298839355,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":139.298843441,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":142.231873249,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":142.231917911,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":142.231924246,"data":"\n"}
+,{"stream_name":"stderr","time":142.231929254,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":142.231934806,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":145.036361671,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":145.03646488,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":145.036492368,"data":"\n"}
+,{"stream_name":"stderr","time":145.036498047,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":145.036503381,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":147.876385715,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":147.876424128,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":147.87643022,"data":"\n"}
+,{"stream_name":"stderr","time":147.87643495,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":147.876440283,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":150.419454079,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":150.419500498,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":150.419506333,"data":"\n"}
+,{"stream_name":"stderr","time":150.419529972,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":150.419732955,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":153.140859762,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":153.140899671,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":153.140905491,"data":"\n"}
+,{"stream_name":"stderr","time":153.140910344,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":153.140935544,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":155.687317355,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":155.687364725,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":155.687370867,"data":"\n"}
+,{"stream_name":"stderr","time":155.68737606,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":155.68738124,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":158.324742087,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":158.324784522,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":158.324789164,"data":"\n"}
+,{"stream_name":"stderr","time":158.324792537,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":158.324796217,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":161.16304794,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":161.163077556,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":161.163083154,"data":"\n"}
+,{"stream_name":"stderr","time":161.16308787,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":161.163093236,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":163.920453125,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":163.920496399,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":163.920502615,"data":"\n"}
+,{"stream_name":"stderr","time":163.920506929,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":163.920530985,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":166.622730285,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":166.622784299,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":166.622791015,"data":"\n"}
+,{"stream_name":"stderr","time":166.622795926,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":166.622801253,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":169.403710446,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":169.403762539,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":169.40377017,"data":"\n"}
+,{"stream_name":"stderr","time":169.403794283,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":169.403800059,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":172.258694666,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":172.258753208,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":172.258762017,"data":"\n"}
+,{"stream_name":"stderr","time":172.25876938,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":172.25877772,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":175.053473564,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":175.053538347,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":175.053547248,"data":"\n"}
+,{"stream_name":"stderr","time":175.053552578,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":175.053557963,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":177.879025961,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":177.879095691,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":177.879104928,"data":"\n"}
+,{"stream_name":"stderr","time":177.879112425,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":177.879120749,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":180.637599468,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":180.637669818,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":180.637679882,"data":"\n"}
+,{"stream_name":"stderr","time":180.63768683199999,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":180.637694676,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":183.552209413,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":183.552250818,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":183.552256485,"data":"\n"}
+,{"stream_name":"stderr","time":183.552261035,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":183.552266156,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":186.314038259,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":186.314120741,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":186.314127776,"data":"\n"}
+,{"stream_name":"stderr","time":186.314132499,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":186.314137625,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":189.101283512,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":189.101321581,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":189.101327055,"data":"\n"}
+,{"stream_name":"stderr","time":189.101331652,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":189.101337165,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":192.058234784,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":192.058270666,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":192.058276501,"data":"\n"}
+,{"stream_name":"stderr","time":192.058281721,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":192.058288214,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":194.776116439,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":194.776155764,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":194.77616162,"data":"\n"}
+,{"stream_name":"stderr","time":194.776166427,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":194.776171713,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":197.480053021,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":197.480099139,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":197.480105687,"data":"\n"}
+,{"stream_name":"stderr","time":197.480110655,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":197.480116484,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":200.197316521,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":200.197360844,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":200.197368078,"data":"\n"}
+,{"stream_name":"stderr","time":200.197373657,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":200.197401316,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":202.770693524,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":202.770733313,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":202.770739596,"data":"\n"}
+,{"stream_name":"stderr","time":202.770744882,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":202.770750368,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":205.350633593,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":205.350677168,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":205.350683303,"data":"\n"}
+,{"stream_name":"stderr","time":205.35068786,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":205.350693432,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":207.847713752,"data":"extra_reg         zero_shot  32 sites  [174 s]\n"}
+,{"stream_name":"stderr","time":207.929233964,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":207.929275002,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":207.929281014,"data":"\n"}
+,{"stream_name":"stderr","time":207.929286157,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":207.929291821,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":222.416488535,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":222.416541796,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":222.416548724,"data":"\n"}
+,{"stream_name":"stderr","time":222.416553188,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":222.416578989,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":226.923297614,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":226.923337972,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":226.923343812,"data":"\n"}
+,{"stream_name":"stderr","time":226.923348542,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":226.923353963,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":229.170878507,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":229.170937466,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":229.170942706,"data":"\n"}
+,{"stream_name":"stderr","time":229.170947174,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":229.170951814,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":231.761138069,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":231.761181531,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":231.761199324,"data":"\n"}
+,{"stream_name":"stderr","time":231.761205741,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":231.761211506,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":234.225349433,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":234.225492668,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":234.225681384,"data":"\n"}
+,{"stream_name":"stderr","time":234.225693184,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":234.225697693,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":236.686317482,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":236.686357337,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":236.686363897,"data":"\n"}
+,{"stream_name":"stderr","time":236.686369737,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":236.686376341,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":239.174355783,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":239.174396441,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":239.174403143,"data":"\n"}
+,{"stream_name":"stderr","time":239.174408672,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":239.174415036,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":241.783797282,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":241.783841284,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":241.783847985,"data":"\n"}
+,{"stream_name":"stderr","time":241.78385367,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":241.783882784,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":244.30560939,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":244.305648741,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":244.305655081,"data":"\n"}
+,{"stream_name":"stderr","time":244.305659836,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":244.305665136,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":246.734484087,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":246.734543004,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":246.734551207,"data":"\n"}
+,{"stream_name":"stderr","time":246.73455597,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":246.734561235,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":249.137300429,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":249.137343998,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":249.137351019,"data":"\n"}
+,{"stream_name":"stderr","time":249.137354399,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":249.137358307,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":251.8099289,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":251.809970362,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":251.809975729,"data":"\n"}
+,{"stream_name":"stderr","time":251.809980301,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":251.8099855,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":254.408479037,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":254.408539755,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":254.408555443,"data":"\n"}
+,{"stream_name":"stderr","time":254.408560773,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":254.408566177,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":256.960659781,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":256.960701214,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":256.960734309,"data":"\n"}
+,{"stream_name":"stderr","time":256.960738465,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":256.960742142,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":259.49882517,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":259.498883292,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":259.498888793,"data":"\n"}
+,{"stream_name":"stderr","time":259.498893059,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":259.498898033,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":262.030104481,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":262.030148794,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":262.030154636,"data":"\n"}
+,{"stream_name":"stderr","time":262.030157942,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":262.030161548,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":264.45301923,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":264.453063854,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":264.453070841,"data":"\n"}
+,{"stream_name":"stderr","time":264.453076474,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":264.453082941,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":266.902673219,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":266.902713938,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":266.902720473,"data":"\n"}
+,{"stream_name":"stderr","time":266.902726189,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":266.902732347,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":268.958118305,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":268.95816559,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":268.958171864,"data":"\n"}
+,{"stream_name":"stderr","time":268.95817734,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":268.958183128,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":271.184888026,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":271.184949901,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":271.184957235,"data":"\n"}
+,{"stream_name":"stderr","time":271.184960966,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":271.184964578,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":273.355469989,"data":"extra_reg         empty_cal  32 sites  [240 s]\n"}
+,{"stream_name":"stderr","time":273.468274681,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":273.46833056,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":273.468337006,"data":"\n"}
+,{"stream_name":"stderr","time":273.46834138,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":273.468346569,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":280.769699647,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":280.769744151,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":280.769750197,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":280.769755382,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":280.769759956,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":280.769765441,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":280.769769832,"data":"\n"}
+,{"stream_name":"stderr","time":280.769774256,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":280.769779474,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":280.769783892,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":280.769789064,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":280.769793659,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":280.769799016,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":281.014429087,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":281.0144687,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":281.014472866,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":281.014492861,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":281.014498308,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":281.014503341,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":281.01450757,"data":"\n"}
+,{"stream_name":"stderr","time":281.014526126,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":281.014534043,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":281.014538661,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":281.014543843,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":281.014548265,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":281.014553283,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":288.199941448,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":288.200020255,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":288.2000266,"data":"\n"}
+,{"stream_name":"stderr","time":288.200042448,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":288.200046499,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":295.293802628,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":295.293845005,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":295.29385087,"data":"\n"}
+,{"stream_name":"stderr","time":295.293855148,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":295.293859844,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":302.523460231,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":302.523509771,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":302.52353937,"data":"\n"}
+,{"stream_name":"stderr","time":302.523545462,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":302.523551996,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":309.728376939,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":309.728424314,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":309.72843241,"data":"\n"}
+,{"stream_name":"stderr","time":309.728452986,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":309.728456814,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":316.322812283,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":316.322856877,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":316.32286256,"data":"\n"}
+,{"stream_name":"stderr","time":316.322866875,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":316.322872717,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":323.510568121,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":323.510601928,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":323.510607839,"data":"\n"}
+,{"stream_name":"stderr","time":323.510612663,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":323.510618118,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":330.33360926,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":330.333690937,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":330.333698714,"data":"\n"}
+,{"stream_name":"stderr","time":330.333703631,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":330.333709516,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":337.399642485,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":337.399695989,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":337.399706952,"data":"\n"}
+,{"stream_name":"stderr","time":337.401759283,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":337.40179623,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":345.175444321,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":345.175506817,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":345.175547201,"data":"\n"}
+,{"stream_name":"stderr","time":345.175558821,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":345.17556884,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":352.422708017,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":352.422772571,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":352.422778353,"data":"\n"}
+,{"stream_name":"stderr","time":352.422782794,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":352.422787899,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":359.651860415,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":359.651892388,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":359.651897846,"data":"\n"}
+,{"stream_name":"stderr","time":359.651902238,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":359.65190732,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":366.935394261,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":366.935437513,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":366.935442781,"data":"\n"}
+,{"stream_name":"stderr","time":366.935447363,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":366.93545296,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":374.588003827,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":374.588073682,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":374.588084919,"data":"\n"}
+,{"stream_name":"stderr","time":374.588095195,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":374.588105945,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":381.91500587,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":381.915051547,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":381.915058773,"data":"\n"}
+,{"stream_name":"stderr","time":381.915062701,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":381.915066979,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":389.276128274,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":389.276177297,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":389.276183339,"data":"\n"}
+,{"stream_name":"stderr","time":389.276188476,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":389.276217695,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":396.546327988,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":396.54638044,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":396.546386568,"data":"\n"}
+,{"stream_name":"stderr","time":396.546391425,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":396.546397197,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":403.81557148,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":403.815609651,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":403.815613858,"data":"\n"}
+,{"stream_name":"stderr","time":403.815618524,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":403.815623582,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":411.140774369,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":411.140823346,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":411.140830904,"data":"\n"}
+,{"stream_name":"stderr","time":411.140836309,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":411.140841815,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":418.523361678,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":418.523407727,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":418.523414666,"data":"\n"}
+,{"stream_name":"stderr","time":418.523420823,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":418.523425403,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":426.269653291,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":426.269800783,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":426.26980672,"data":"\n"}
+,{"stream_name":"stderr","time":426.269810486,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":426.269815026,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":433.799696083,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":433.799730706,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":433.799745868,"data":"\n"}
+,{"stream_name":"stderr","time":433.799749335,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":433.799753026,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":441.161719348,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":441.161860569,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":441.16187061,"data":"\n"}
+,{"stream_name":"stderr","time":441.16187561,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":441.161880942,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":448.577158297,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":448.577206232,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":448.577212588,"data":"\n"}
+,{"stream_name":"stderr","time":448.577217963,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":448.577223458,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":455.101480073,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":455.101541637,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":455.101551472,"data":"\n"}
+,{"stream_name":"stderr","time":455.101557398,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":455.101563808,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":462.074533352,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":462.074579041,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":462.074586514,"data":"\n"}
+,{"stream_name":"stderr","time":462.074592351,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":462.074598122,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":469.046688368,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":469.046722903,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":469.046729527,"data":"\n"}
+,{"stream_name":"stderr","time":469.049000106,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":469.049060664,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":469.378585227,"data":"base_clf4         zero_shot  32 sites  [436 s]\n"}
+,{"stream_name":"stderr","time":502.311586181,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":502.311625682,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":502.311632449,"data":"\n"}
+,{"stream_name":"stderr","time":502.311638257,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":502.311643856,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":512.761693062,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":512.761794133,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":512.76180442,"data":"\n"}
+,{"stream_name":"stderr","time":512.761810595,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":512.761817782,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":517.788666732,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":517.788858396,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":517.788872638,"data":"\n"}
+,{"stream_name":"stderr","time":517.788878966,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":517.788885396,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":523.685493158,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":523.685566901,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":523.685581296,"data":"\n"}
+,{"stream_name":"stderr","time":523.685587607,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":523.685594287,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":529.016394191,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":529.016441852,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":529.016449177,"data":"\n"}
+,{"stream_name":"stderr","time":529.016454979,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":529.016461032,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":534.542557678,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":534.542601885,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":534.542620969,"data":"\n"}
+,{"stream_name":"stderr","time":534.542626013,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":534.542631052,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":539.93987434,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":539.939941813,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":539.93994871,"data":"\n"}
+,{"stream_name":"stderr","time":539.939953688,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":539.939959023,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":545.511600175,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":545.511642751,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":545.511649136,"data":"\n"}
+,{"stream_name":"stderr","time":545.511653758,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":545.511659103,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":551.057592071,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":551.057635811,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":551.057640596,"data":"\n"}
+,{"stream_name":"stderr","time":551.057643875,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":551.057647818,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":556.482284029,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":556.482344744,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":556.48235091,"data":"\n"}
+,{"stream_name":"stderr","time":556.482355574,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":556.482360756,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":562.206424117,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":562.206465142,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":562.206471298,"data":"\n"}
+,{"stream_name":"stderr","time":562.206476144,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":562.206481509,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":567.588850974,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":567.588890831,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":567.588897538,"data":"\n"}
+,{"stream_name":"stderr","time":567.588902569,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":567.588908309,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":573.120325688,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":573.120370426,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":573.120377251,"data":"\n"}
+,{"stream_name":"stderr","time":573.120383277,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":573.120389564,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":578.588727325,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":578.588777501,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":578.588789892,"data":"\n"}
+,{"stream_name":"stderr","time":578.588795992,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":578.588801413,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":584.131118336,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":584.131198675,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":584.131206819,"data":"\n"}
+,{"stream_name":"stderr","time":584.131212136,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":584.131218231,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":589.591774038,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":589.591821521,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":589.591828803,"data":"\n"}
+,{"stream_name":"stderr","time":589.591842704,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":589.593126437,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":595.083126033,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":595.083171455,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":595.08317851,"data":"\n"}
+,{"stream_name":"stderr","time":595.083184215,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":595.083212249,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":600.505600009,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":600.506024362,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":600.506039396,"data":"\n"}
+,{"stream_name":"stderr","time":600.506045123,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":600.506051319,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":605.360035471,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":605.360080909,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":605.360088873,"data":"\n"}
+,{"stream_name":"stderr","time":605.360094693,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":605.360101214,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":610.430678507,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":610.430764277,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":610.430773354,"data":"\n"}
+,{"stream_name":"stderr","time":610.430779109,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":610.430785714,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":615.924694968,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":615.924743081,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":615.924750373,"data":"\n"}
+,{"stream_name":"stderr","time":615.924756011,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n"}
+,{"stream_name":"stderr","time":615.924762177,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":616.199829305,"data":"base_clf4         empty_cal  32 sites  [583 s]\n"}
+,{"stream_name":"stderr","time":617.429751629,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429794531,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429801538,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429808105,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429813462,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429841249,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429846216,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429851493,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429855968,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429861261,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429866058,"data":"\n"}
+,{"stream_name":"stderr","time":617.429869288,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429872616,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429875498,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429878709,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429881535,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429884759,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429887553,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429890843,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.429893649,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.429896893,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.641677868,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.641716692,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":617.641721155,"data":"\n"}
+,{"stream_name":"stderr","time":617.64172519,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":617.641729675,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":618.472986309,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":618.473026539,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":618.473031556,"data":"\n"}
+,{"stream_name":"stderr","time":618.473035754,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":618.473040419,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":619.497607593,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":619.497688933,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":619.497695519,"data":"\n"}
+,{"stream_name":"stderr","time":619.499768368,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":619.499813482,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":620.426065986,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":620.426105248,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":620.426110046,"data":"\n"}
+,{"stream_name":"stderr","time":620.42611445,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":620.42611935,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":621.412700789,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":621.4127619,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":621.412768529,"data":"\n"}
+,{"stream_name":"stderr","time":621.412773367,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":621.412778973,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":622.569377251,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":622.569419693,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":622.569424966,"data":"\n"}
+,{"stream_name":"stderr","time":622.569429355,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":622.569434658,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":623.561009342,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":623.561047802,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":623.561052369,"data":"\n"}
+,{"stream_name":"stderr","time":623.561056456,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":623.561061034,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":624.526604695,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":624.526642601,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":624.526647544,"data":"\n"}
+,{"stream_name":"stderr","time":624.527941147,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":624.528019424,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":625.510601706,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":625.510650843,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":625.510656035,"data":"\n"}
+,{"stream_name":"stderr","time":625.510660391,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":625.510665284,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":626.508886827,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":626.508924916,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":626.508929939,"data":"\n"}
+,{"stream_name":"stderr","time":626.508933972,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":626.508938729,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":627.510134679,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":627.510174033,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":627.510178747,"data":"\n"}
+,{"stream_name":"stderr","time":627.510183057,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":627.51018789,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":628.495803463,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":628.495842774,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":628.495847977,"data":"\n"}
+,{"stream_name":"stderr","time":628.495852205,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":628.495857119,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":629.477856106,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":629.477893427,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":629.477898262,"data":"\n"}
+,{"stream_name":"stderr","time":629.477902376,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":629.477907104,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":630.453286204,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":630.453345359,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":630.453351407,"data":"\n"}
+,{"stream_name":"stderr","time":630.45335543,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":630.453360042,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":631.485603306,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":631.48563551,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":631.48564095,"data":"\n"}
+,{"stream_name":"stderr","time":631.488701458,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":631.488732707,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":632.477285323,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":632.477324643,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":632.477330439,"data":"\n"}
+,{"stream_name":"stderr","time":632.477335816,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":632.477342108,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":633.486221484,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":633.486261738,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":633.486267677,"data":"\n"}
+,{"stream_name":"stderr","time":633.486411281,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":633.486420329,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":634.464939964,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":634.464982228,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":634.464988158,"data":"\n"}
+,{"stream_name":"stderr","time":634.467731754,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":634.467769813,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":635.4310164,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":635.431053398,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":635.431059192,"data":"\n"}
+,{"stream_name":"stderr","time":635.431202236,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":635.431212216,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":636.242884162,"data":"base_reg_streams  zero_shot  25 sites  [603 s]\n"}
+,{"stream_name":"stderr","time":636.440181105,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":636.440241289,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":636.440246638,"data":"\n"}
+,{"stream_name":"stderr","time":636.440250866,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":636.440255573,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":638.255872901,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":638.25591736,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":638.255923591,"data":"\n"}
+,{"stream_name":"stderr","time":638.255928612,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":638.255934262,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":640.008003202,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":640.008047797,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":640.008053932,"data":"\n"}
+,{"stream_name":"stderr","time":640.008059024,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":640.008064771,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":640.870660279,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":640.870697733,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":640.870703538,"data":"\n"}
+,{"stream_name":"stderr","time":640.870708086,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":640.870712894,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":642.031700891,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":642.031762261,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":642.031768462,"data":"\n"}
+,{"stream_name":"stderr","time":642.031773374,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":642.031778752,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":642.965564762,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":642.965605392,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":642.965629402,"data":"\n"}
+,{"stream_name":"stderr","time":642.965634437,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":642.965639957,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":643.882292734,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":643.882331303,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":643.88233687,"data":"\n"}
+,{"stream_name":"stderr","time":643.882341628,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":643.882347094,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":644.794695522,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":644.794734821,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":644.794740739,"data":"\n"}
+,{"stream_name":"stderr","time":644.794745396,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":644.794750752,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":645.705713981,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":645.705758405,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":645.705764625,"data":"\n"}
+,{"stream_name":"stderr","time":645.705769511,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":645.705775156,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":646.620435557,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":646.620478843,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":646.620484597,"data":"\n"}
+,{"stream_name":"stderr","time":646.620489442,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":646.620494885,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":647.561607461,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":647.561650048,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":647.561655355,"data":"\n"}
+,{"stream_name":"stderr","time":647.561660105,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":647.561665622,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":648.495333746,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":648.495390011,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":648.495394851,"data":"\n"}
+,{"stream_name":"stderr","time":648.495398676,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":648.495403227,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":649.419242128,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":649.419282606,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":649.419288041,"data":"\n"}
+,{"stream_name":"stderr","time":649.420682606,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":649.420713538,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":650.359679926,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":650.359737638,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":650.35974323,"data":"\n"}
+,{"stream_name":"stderr","time":650.359747545,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":650.35975279,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":651.319603633,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":651.319671357,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":651.319677363,"data":"\n"}
+,{"stream_name":"stderr","time":651.319682062,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":651.319687211,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":652.277225486,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":652.277275367,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":652.277281382,"data":"\n"}
+,{"stream_name":"stderr","time":652.278664163,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":652.278691332,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":653.206965706,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":653.207005878,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":653.207011702,"data":"\n"}
+,{"stream_name":"stderr","time":653.207016484,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":653.207040771,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":654.121175659,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":654.121216463,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":654.121222068,"data":"\n"}
+,{"stream_name":"stderr","time":654.121226905,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":654.121232511,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":654.865574131,"data":"base_reg_streams  empty_cal  25 sites  [621 s]\n"}
+,{"stream_name":"stderr","time":655.06632407,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":655.066361694,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":655.066367795,"data":"\n"}
+,{"stream_name":"stderr","time":655.066372955,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":655.066377918,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280763838,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280802404,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280807759,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280812573,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280816704,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280821091,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280824883,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280829319,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280833038,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280837291,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280841214,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280845547,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280849332,"data":"\n"}
+,{"stream_name":"stderr","time":656.280853414,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280879114,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280883264,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280887681,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280891476,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280895793,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280899825,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280904133,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280909103,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280913672,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":656.280917589,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":656.280921849,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":657.476159835,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":657.479589975,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":657.479631032,"data":"\n"}
+,{"stream_name":"stderr","time":657.479636749,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":657.479642692,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":658.68774272,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":658.687782369,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":658.687790905,"data":"\n"}
+,{"stream_name":"stderr","time":658.687798218,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":658.687805667,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":659.773180812,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":659.773340574,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":659.773358308,"data":"\n"}
+,{"stream_name":"stderr","time":659.774863974,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":659.774891436,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":660.868166342,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":660.868228906,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":660.868235607,"data":"\n"}
+,{"stream_name":"stderr","time":660.868240152,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":660.868245717,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":662.302681378,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":662.302713995,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":662.302719118,"data":"\n"}
+,{"stream_name":"stderr","time":662.302723231,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":662.302727757,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":663.454286913,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":663.454370041,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":663.454377921,"data":"\n"}
+,{"stream_name":"stderr","time":663.454383706,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":663.454390155,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":664.794725439,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":664.794789102,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":664.794796565,"data":"\n"}
+,{"stream_name":"stderr","time":664.796676361,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":664.796689358,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":666.007999344,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":666.008041607,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":666.008048483,"data":"\n"}
+,{"stream_name":"stderr","time":666.009504611,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":666.009554792,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":667.14469756,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":667.144767602,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":667.14477447,"data":"\n"}
+,{"stream_name":"stderr","time":667.144780078,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":667.144806044,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":668.330575658,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":668.330616527,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":668.330622069,"data":"\n"}
+,{"stream_name":"stderr","time":668.330626674,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":668.330631815,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":669.506448536,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":669.506489859,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":669.506495818,"data":"\n"}
+,{"stream_name":"stderr","time":669.508690748,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":669.508722969,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":670.702702724,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":670.702742012,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":670.703567312,"data":"\n"}
+,{"stream_name":"stderr","time":670.704670014,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":670.704696271,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":672.105465037,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":672.105508396,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":672.105530509,"data":"\n"}
+,{"stream_name":"stderr","time":672.105536814,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":672.105541604,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":673.272689449,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":673.272727809,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":673.27273346,"data":"\n"}
+,{"stream_name":"stderr","time":673.272738213,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":673.272743804,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":674.427341401,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":674.427381608,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":674.427386839,"data":"\n"}
+,{"stream_name":"stderr","time":674.429686696,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":674.429719983,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":675.590203611,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":675.590247312,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":675.590253027,"data":"\n"}
+,{"stream_name":"stderr","time":675.5927312,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":675.592760167,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":676.751687607,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":676.751727194,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":676.751732689,"data":"\n"}
+,{"stream_name":"stderr","time":676.751743556,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":676.751748877,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":677.894675843,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":677.894713597,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":677.894718254,"data":"\n"}
+,{"stream_name":"stderr","time":677.894722587,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":677.894727189,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":678.846929337,"data":"mem_reg           zero_shot  25 sites  [645 s]\n"}
+,{"stream_name":"stderr","time":679.042973134,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":679.043011139,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":679.043016798,"data":"\n"}
+,{"stream_name":"stderr","time":679.043021499,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":679.04302643,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":681.414838758,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":681.414879786,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":681.414885041,"data":"\n"}
+,{"stream_name":"stderr","time":681.414889805,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":681.414895348,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":683.648565414,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":683.648600791,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":683.648605051,"data":"\n"}
+,{"stream_name":"stderr","time":683.648608357,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":683.648611956,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":684.663910284,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":684.663949426,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":684.663955384,"data":"\n"}
+,{"stream_name":"stderr","time":684.663960171,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":684.663965325,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":685.934261837,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":685.934302893,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":685.934307461,"data":"\n"}
+,{"stream_name":"stderr","time":685.934310892,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":685.934314631,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":687.085201423,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":687.085246123,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":687.085252197,"data":"\n"}
+,{"stream_name":"stderr","time":687.08525681,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":687.085262005,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":688.270856957,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":688.27089966,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":688.270905692,"data":"\n"}
+,{"stream_name":"stderr","time":688.270909912,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":688.270915205,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":689.489505252,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":689.48957017,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":689.489576686,"data":"\n"}
+,{"stream_name":"stderr","time":689.489600866,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":689.489605155,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":690.705484135,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":690.705544405,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":690.705552717,"data":"\n"}
+,{"stream_name":"stderr","time":690.705557427,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":690.705563018,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":692.034359453,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":692.03439763,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":692.034403523,"data":"\n"}
+,{"stream_name":"stderr","time":692.034408691,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":692.03441404,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":693.201663602,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":693.201696748,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":693.201702213,"data":"\n"}
+,{"stream_name":"stderr","time":693.201711505,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":693.201717352,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":694.338548172,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":694.338589919,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":694.338596788,"data":"\n"}
+,{"stream_name":"stderr","time":694.338603034,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":694.33860962,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":695.474921926,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":695.474965152,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":695.474972281,"data":"\n"}
+,{"stream_name":"stderr","time":695.474978106,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":695.47498944,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":696.639140009,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":696.639202027,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":696.639209604,"data":"\n"}
+,{"stream_name":"stderr","time":696.639214174,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":696.639219434,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":697.78827291,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":697.788314582,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":697.788320539,"data":"\n"}
+,{"stream_name":"stderr","time":697.788325275,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":697.788330448,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":698.969490237,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":698.969547057,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":698.96955621,"data":"\n"}
+,{"stream_name":"stderr","time":698.969561322,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":698.969566916,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":700.128145202,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":700.128186942,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":700.128192843,"data":"\n"}
+,{"stream_name":"stderr","time":700.128196147,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":700.128199637,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":701.312973199,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":701.313009607,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":701.313015467,"data":"\n"}
+,{"stream_name":"stderr","time":701.313020223,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":701.313025964,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":702.303583911,"data":"mem_reg           empty_cal  25 sites  [669 s]\n"}
+,{"stream_name":"stderr","time":702.511870971,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":702.511901033,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":702.511904615,"data":"\n"}
+,{"stream_name":"stderr","time":702.511907925,"data":"/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names\n"}
+,{"stream_name":"stderr","time":702.51192404,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":770.610497187,"data":"967231 predictions\n"}
+,{"stream_name":"stdout","time":771.790990756,"data":"rows with a two-point calibration: 580836 / 955407\n"}
+,{"stream_name":"stdout","time":788.932289565,"data":"saved /kaggle/working/phase5/PHASE5_RESULTS.md\n"}
+,{"stream_name":"stdout","time":788.932338379,"data":"  PHASE5_RESULTS.md\n"}
+,{"stream_name":"stdout","time":788.932345808,"data":"  all_scores.csv\n"}
+,{"stream_name":"stdout","time":788.932351237,"data":"  figures\n"}
+,{"stream_name":"stdout","time":788.932356386,"data":"  per_count_two_point.csv\n"}
+,{"stream_name":"stdout","time":788.93236219,"data":"  upgrades_vs_baseline.csv\n"}
+,{"stream_name":"stdout","time":788.932367405,"data":"  verdicts.csv\n"}
+,{"stream_name":"stderr","time":793.26664697,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":793.266702162,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":793.50506523,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":793.505099303,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":794.458418573,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":794.61608389,"data":"[NbConvertApp] Writing 328342 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":798.171087088,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":799.127234997,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":799.127270964,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":799.127603632,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":799.127827959,"data":"[NbConvertApp] Writing 619146 bytes to __results__.html\n"}
+]

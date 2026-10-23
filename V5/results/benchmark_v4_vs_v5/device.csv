@@ -1,0 +1,10 @@
+item,V4,V5
+input rate / window / hop,20 Hz / 3 s / 1 s,50 Hz / 5 s / 2.5 s
+smoothing (display),median of 5 windows (~5 s),median of 12 windows (30 s)
+first answer after start,~3 s,15 s (10 s warm-up + 5 s window)
+install step,none for counting,20 s empty room
+counting model size,LightGBM 3 seeds x 6 classes: 101066 nodes (~1086 KB as arrays); gap-CNN 48902 params (~191 KB fp32),"300 trees, 8700 nodes (~77 KB)"
+"CPU time per window (this Kaggle CPU, Python)",features 4.71 ms + LightGBM 4.36 ms,features 2.17 ms + trees 16.79 ms
+on-chip code,none (Python + PyTorch),C header with trees + input prep; cues still Python
+bad-signal handling,window marked 'unknown' (gap > 0.5 s or > 25 % missing),window skipped (> 20 % missing); gaps <= 60 ms filled
+presence model,"yes, separate (4 presence datasets)",no (count 0 = empty)

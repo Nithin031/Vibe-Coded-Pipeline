@@ -1,0 +1,13 @@
+upgrade,mode,helps,better_on,worse_on,wicount_d_mae
+2 links vs 1 link (base_reg),empty_cal,False,,,
+2 links vs 1 link (base_reg),zero_shot,True,"csibench, mat80",,
+3 links vs 1 link (base_reg),empty_cal,False,mat80,,
+3 links vs 1 link (base_reg),zero_shot,True,"csibench, mat80",,
+base_clf4 vs base_reg (0/1/2/3+ scale),empty_cal,False,wicount,mat80,-0.129
+base_clf4 vs base_reg (0/1/2/3+ scale),zero_shot,True,"csibench, wicount",countfi,-0.053
+extra_reg vs base_reg,empty_cal,False,mat80,,-0.029
+extra_reg vs base_reg,zero_shot,True,"csibench, mat80, wicount",countfi,-0.103
+mem_reg vs base_reg_streams,empty_cal,False,mat80,wicount,0.073
+mem_reg vs base_reg_streams,zero_shot,False,,countfi,0.026
+two-point calibration vs none,empty_cal,False,,"mat80, wicount, wimans",0.076
+two-point calibration vs none,zero_shot,False,wicount,"mat80, wimans",-0.416

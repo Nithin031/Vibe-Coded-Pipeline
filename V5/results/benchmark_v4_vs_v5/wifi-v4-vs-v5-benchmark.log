@@ -1,0 +1,231 @@
+[{"stream_name":"stderr","time":8.932390544,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":8.932454684,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":10.176904404,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.176934454,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.176939484,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.176943424,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.877460082,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.877490942,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.877495542,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.877499122,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":12.211109925,"data":"Writing /kaggle/working/esp32_counter.py\n"}
+,{"stream_name":"stderr","time":19.248892455,"data":"Cloning into '/kaggle/working/vcp'...\n"}
+,{"stream_name":"stdout","time":19.407334582,"data":"attached datasets: ['datasets', 'notebooks']\n"}
+,{"stream_name":"stderr","time":19.452086131,"data":"Cloning into '/kaggle/working/vcp'...\n"}
+,{"stream_name":"stderr","time":19.452117461,"data":"\n"}
+,{"stream_name":"stderr","time":19.452121721,"data":"Cloning into '/kaggle/working/vcp'...\n"}
+,{"stream_name":"stdout","time":24.960779872,"data":"V4 commit: f81302dad3f213126d13aa40a1c3a7cc767ed269\n"}
+,{"stream_name":"stdout","time":45.427901418,"data":"WiCount: /kaggle/input/datasets/wizard1803/wifi-csi/WiCount/WiCount/data\n"}
+,{"stream_name":"stdout","time":46.487130757,"data":"[14:28:06]   wicount/2023-12-21_19-23-53-985_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":47.509788157,"data":"[14:28:07]   wicount/2023-12-21_19-27-21-930_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":48.466563048,"data":"[14:28:08]   wicount/2023-12-21_19-31-17-706_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":49.472554048,"data":"[14:28:09]   wicount/2023-12-21_19-34-42-783_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":50.470827408,"data":"[14:28:10]   wicount/2023-12-21_19-37-36-861_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":51.466056019,"data":"[14:28:11]   wicount/2023-12-21_19-40-12-110_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":52.44258123,"data":"[14:28:12]   wicount/2023-12-21_19-42-28-267_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":53.49572728,"data":"[14:28:13]   wicount/2023-12-21_19-45-07-501_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":54.450507091,"data":"[14:28:14]   wicount/2023-12-21_19-47-14-669_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":55.413018002,"data":"[14:28:15]   wicount/2023-12-21_19-49-37-940_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":56.436514522,"data":"[14:28:16]   wicount/2023-12-21_19-54-01-269_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":57.440552602,"data":"[14:28:17]   wicount/2023-12-21_19-56-22-903_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":58.459450062,"data":"[14:28:18]   wicount/2023-12-21_20-02-00-329_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":59.503551212,"data":"[14:28:19]   wicount/2023-12-21_20-04-39-406_104_1: 58 windows, 58 valid\n"}
+,{"stream_name":"stdout","time":60.152786299,"data":"[14:28:19]   wicount/2023-12-21_20-07-25-709_104_1: 57 windows, 53 valid\n"}
+,{"stream_name":"stdout","time":62.709696369,"data":"V4 windows: 869 (valid 99.5%) | V5 windows: 281\n"}
+,{"stream_name":"stdout","time":94.242970596,"data":"V5 extra training rows: {'mat80': 63440, 'wimans': 50598}\n"}
+,{"stream_name":"stdout","time":94.262952407,"data":"B1_v4_folds 3 folds\n"}
+,{"stream_name":"stdout","time":94.262987647,"data":"B2_new_session 15 folds\n"}
+,{"stream_name":"stdout","time":108.819548637,"data":"[14:29:08]     bench-gapcnn gapcnn epoch  0 loss 1.6655\n"}
+,{"stream_name":"stdout","time":109.416542028,"data":"[14:29:09]     bench-gapcnn gapcnn epoch  5 loss 0.7844\n"}
+,{"stream_name":"stdout","time":110.03320424,"data":"[14:29:09]     bench-gapcnn gapcnn epoch 10 loss 0.2910\n"}
+,{"stream_name":"stdout","time":110.648111842,"data":"[14:29:10]     bench-gapcnn gapcnn epoch 15 loss 0.2756\n"}
+,{"stream_name":"stdout","time":111.262069335,"data":"[14:29:11]     bench-gapcnn gapcnn epoch 20 loss 0.2701\n"}
+,{"stream_name":"stdout","time":111.854539628,"data":"[14:29:11]     bench-gapcnn gapcnn epoch 25 loss 0.2639\n"}
+,{"stream_name":"stdout","time":112.341706452,"data":"[14:29:12]     bench-gapcnn gapcnn epoch 29 loss 0.2633\n"}
+,{"stream_name":"stdout","time":113.723942063,"data":"B1_v4_folds     fold0                            [19 s]\n"}
+,{"stream_name":"stdout","time":123.994229873,"data":"[14:29:23]     bench-gapcnn gapcnn epoch  0 loss 1.6577\n"}
+,{"stream_name":"stdout","time":124.677091503,"data":"[14:29:24]     bench-gapcnn gapcnn epoch  5 loss 0.8095\n"}
+,{"stream_name":"stdout","time":125.348329308,"data":"[14:29:25]     bench-gapcnn gapcnn epoch 10 loss 0.3899\n"}
+,{"stream_name":"stdout","time":125.974540315,"data":"[14:29:25]     bench-gapcnn gapcnn epoch 15 loss 0.3014\n"}
+,{"stream_name":"stdout","time":126.677113165,"data":"[14:29:26]     bench-gapcnn gapcnn epoch 20 loss 0.2800\n"}
+,{"stream_name":"stdout","time":127.351952648,"data":"[14:29:27]     bench-gapcnn gapcnn epoch 25 loss 0.2881\n"}
+,{"stream_name":"stdout","time":127.914967376,"data":"[14:29:27]     bench-gapcnn gapcnn epoch 29 loss 0.2705\n"}
+,{"stream_name":"stdout","time":129.169788749,"data":"B1_v4_folds     fold1                            [35 s]\n"}
+,{"stream_name":"stdout","time":139.344937545,"data":"[14:29:39]     bench-gapcnn gapcnn epoch  0 loss 1.6569\n"}
+,{"stream_name":"stdout","time":140.044565606,"data":"[14:29:39]     bench-gapcnn gapcnn epoch  5 loss 0.7952\n"}
+,{"stream_name":"stdout","time":140.704377756,"data":"[14:29:40]     bench-gapcnn gapcnn epoch 10 loss 0.3820\n"}
+,{"stream_name":"stdout","time":141.391559794,"data":"[14:29:41]     bench-gapcnn gapcnn epoch 15 loss 0.3278\n"}
+,{"stream_name":"stdout","time":142.068743936,"data":"[14:29:41]     bench-gapcnn gapcnn epoch 20 loss 0.2876\n"}
+,{"stream_name":"stdout","time":142.74214508,"data":"[14:29:42]     bench-gapcnn gapcnn epoch 25 loss 0.2979\n"}
+,{"stream_name":"stdout","time":143.260914619,"data":"[14:29:42]     bench-gapcnn gapcnn epoch 29 loss 0.2785\n"}
+,{"stream_name":"stdout","time":144.550243817,"data":"B1_v4_folds     fold2                            [50 s]\n"}
+,{"stream_name":"stdout","time":157.490890787,"data":"[14:29:57]     bench-gapcnn gapcnn epoch  0 loss 1.6657\n"}
+,{"stream_name":"stdout","time":158.3812926,"data":"[14:29:58]     bench-gapcnn gapcnn epoch  5 loss 0.6412\n"}
+,{"stream_name":"stdout","time":159.256349435,"data":"[14:29:58]     bench-gapcnn gapcnn epoch 10 loss 0.3090\n"}
+,{"stream_name":"stdout","time":160.138322439,"data":"[14:29:59]     bench-gapcnn gapcnn epoch 15 loss 0.2766\n"}
+,{"stream_name":"stdout","time":160.997728425,"data":"[14:30:00]     bench-gapcnn gapcnn epoch 20 loss 0.2658\n"}
+,{"stream_name":"stdout","time":161.892663809,"data":"[14:30:01]     bench-gapcnn gapcnn epoch 25 loss 0.2601\n"}
+,{"stream_name":"stdout","time":162.614736958,"data":"[14:30:02]     bench-gapcnn gapcnn epoch 29 loss 0.2612\n"}
+,{"stream_name":"stdout","time":163.803232043,"data":"B2_new_session  2023-12-21_19-23-53-985_104_1    [69 s]\n"}
+,{"stream_name":"stdout","time":177.575155882,"data":"[14:30:17]     bench-gapcnn gapcnn epoch  0 loss 1.6422\n"}
+,{"stream_name":"stdout","time":178.467485555,"data":"[14:30:18]     bench-gapcnn gapcnn epoch  5 loss 0.6575\n"}
+,{"stream_name":"stdout","time":179.34120082,"data":"[14:30:19]     bench-gapcnn gapcnn epoch 10 loss 0.3488\n"}
+,{"stream_name":"stdout","time":180.219968535,"data":"[14:30:19]     bench-gapcnn gapcnn epoch 15 loss 0.2986\n"}
+,{"stream_name":"stdout","time":181.144652415,"data":"[14:30:20]     bench-gapcnn gapcnn epoch 20 loss 0.2901\n"}
+,{"stream_name":"stdout","time":182.017307889,"data":"[14:30:21]     bench-gapcnn gapcnn epoch 25 loss 0.2809\n"}
+,{"stream_name":"stdout","time":182.723396921,"data":"[14:30:22]     bench-gapcnn gapcnn epoch 29 loss 0.2788\n"}
+,{"stream_name":"stdout","time":183.886445138,"data":"B2_new_session  2023-12-21_19-27-21-930_104_1    [90 s]\n"}
+,{"stream_name":"stdout","time":196.991968222,"data":"[14:30:36]     bench-gapcnn gapcnn epoch  0 loss 1.6422\n"}
+,{"stream_name":"stdout","time":197.874002186,"data":"[14:30:37]     bench-gapcnn gapcnn epoch  5 loss 0.6433\n"}
+,{"stream_name":"stdout","time":198.75610553,"data":"[14:30:38]     bench-gapcnn gapcnn epoch 10 loss 0.3334\n"}
+,{"stream_name":"stdout","time":199.612213526,"data":"[14:30:39]     bench-gapcnn gapcnn epoch 15 loss 0.2876\n"}
+,{"stream_name":"stdout","time":200.493331591,"data":"[14:30:40]     bench-gapcnn gapcnn epoch 20 loss 0.2760\n"}
+,{"stream_name":"stdout","time":201.384880854,"data":"[14:30:41]     bench-gapcnn gapcnn epoch 25 loss 0.2630\n"}
+,{"stream_name":"stdout","time":202.088482716,"data":"[14:30:41]     bench-gapcnn gapcnn epoch 29 loss 0.2664\n"}
+,{"stream_name":"stdout","time":203.268286871,"data":"B2_new_session  2023-12-21_19-31-17-706_104_1    [109 s]\n"}
+,{"stream_name":"stdout","time":216.740515484,"data":"[14:30:56]     bench-gapcnn gapcnn epoch  0 loss 1.6410\n"}
+,{"stream_name":"stdout","time":217.590069997,"data":"[14:30:57]     bench-gapcnn gapcnn epoch  5 loss 0.6635\n"}
+,{"stream_name":"stdout","time":218.464541328,"data":"[14:30:58]     bench-gapcnn gapcnn epoch 10 loss 0.3552\n"}
+,{"stream_name":"stdout","time":219.270711784,"data":"[14:30:59]     bench-gapcnn gapcnn epoch 15 loss 0.2972\n"}
+,{"stream_name":"stdout","time":220.147398996,"data":"[14:30:59]     bench-gapcnn gapcnn epoch 20 loss 0.2995\n"}
+,{"stream_name":"stdout","time":221.053099444,"data":"[14:31:00]     bench-gapcnn gapcnn epoch 25 loss 0.2715\n"}
+,{"stream_name":"stdout","time":221.7463595,"data":"[14:31:01]     bench-gapcnn gapcnn epoch 29 loss 0.2831\n"}
+,{"stream_name":"stdout","time":223.045600948,"data":"B2_new_session  2023-12-21_19-34-42-783_104_1    [129 s]\n"}
+,{"stream_name":"stdout","time":236.699690982,"data":"[14:31:16]     bench-gapcnn gapcnn epoch  0 loss 1.6407\n"}
+,{"stream_name":"stdout","time":237.557450394,"data":"[14:31:17]     bench-gapcnn gapcnn epoch  5 loss 0.6640\n"}
+,{"stream_name":"stdout","time":238.410605537,"data":"[14:31:18]     bench-gapcnn gapcnn epoch 10 loss 0.3640\n"}
+,{"stream_name":"stdout","time":239.315024436,"data":"[14:31:19]     bench-gapcnn gapcnn epoch 15 loss 0.3026\n"}
+,{"stream_name":"stdout","time":240.202885696,"data":"[14:31:19]     bench-gapcnn gapcnn epoch 20 loss 0.3008\n"}
+,{"stream_name":"stdout","time":241.064824228,"data":"[14:31:20]     bench-gapcnn gapcnn epoch 25 loss 0.2731\n"}
+,{"stream_name":"stdout","time":241.781786492,"data":"[14:31:21]     bench-gapcnn gapcnn epoch 29 loss 0.2847\n"}
+,{"stream_name":"stdout","time":243.059452541,"data":"B2_new_session  2023-12-21_19-37-36-861_104_1    [149 s]\n"}
+,{"stream_name":"stdout","time":256.28036609,"data":"[14:31:36]     bench-gapcnn gapcnn epoch  0 loss 1.6404\n"}
+,{"stream_name":"stdout","time":257.136798852,"data":"[14:31:36]     bench-gapcnn gapcnn epoch  5 loss 0.6665\n"}
+,{"stream_name":"stdout","time":258.005801774,"data":"[14:31:37]     bench-gapcnn gapcnn epoch 10 loss 0.3592\n"}
+,{"stream_name":"stdout","time":258.8155338,"data":"[14:31:38]     bench-gapcnn gapcnn epoch 15 loss 0.3000\n"}
+,{"stream_name":"stdout","time":259.674638083,"data":"[14:31:39]     bench-gapcnn gapcnn epoch 20 loss 0.2998\n"}
+,{"stream_name":"stdout","time":260.527120586,"data":"[14:31:40]     bench-gapcnn gapcnn epoch 25 loss 0.2734\n"}
+,{"stream_name":"stdout","time":261.246523549,"data":"[14:31:40]     bench-gapcnn gapcnn epoch 29 loss 0.2841\n"}
+,{"stream_name":"stdout","time":262.417799706,"data":"B2_new_session  2023-12-21_19-40-12-110_104_1    [168 s]\n"}
+,{"stream_name":"stdout","time":275.961215578,"data":"[14:31:55]     bench-gapcnn gapcnn epoch  0 loss 1.6399\n"}
+,{"stream_name":"stdout","time":276.800983215,"data":"[14:31:56]     bench-gapcnn gapcnn epoch  5 loss 0.6652\n"}
+,{"stream_name":"stdout","time":277.670888752,"data":"[14:31:57]     bench-gapcnn gapcnn epoch 10 loss 0.3564\n"}
+,{"stream_name":"stdout","time":278.550417248,"data":"[14:31:58]     bench-gapcnn gapcnn epoch 15 loss 0.3018\n"}
+,{"stream_name":"stdout","time":279.394771175,"data":"[14:31:59]     bench-gapcnn gapcnn epoch 20 loss 0.3017\n"}
+,{"stream_name":"stdout","time":280.262403772,"data":"[14:32:00]     bench-gapcnn gapcnn epoch 25 loss 0.2733\n"}
+,{"stream_name":"stdout","time":280.964125091,"data":"[14:32:00]     bench-gapcnn gapcnn epoch 29 loss 0.2851\n"}
+,{"stream_name":"stdout","time":282.276303941,"data":"B2_new_session  2023-12-21_19-42-28-267_104_1    [188 s]\n"}
+,{"stream_name":"stdout","time":295.966689932,"data":"[14:32:15]     bench-gapcnn gapcnn epoch  0 loss 1.6392\n"}
+,{"stream_name":"stdout","time":296.867315548,"data":"[14:32:16]     bench-gapcnn gapcnn epoch  5 loss 0.6649\n"}
+,{"stream_name":"stdout","time":297.752684685,"data":"[14:32:17]     bench-gapcnn gapcnn epoch 10 loss 0.3547\n"}
+,{"stream_name":"stdout","time":298.628768551,"data":"[14:32:18]     bench-gapcnn gapcnn epoch 15 loss 0.3015\n"}
+,{"stream_name":"stdout","time":299.522901087,"data":"[14:32:19]     bench-gapcnn gapcnn epoch 20 loss 0.3056\n"}
+,{"stream_name":"stdout","time":300.394917344,"data":"[14:32:20]     bench-gapcnn gapcnn epoch 25 loss 0.2722\n"}
+,{"stream_name":"stdout","time":301.146507003,"data":"[14:32:20]     bench-gapcnn gapcnn epoch 29 loss 0.2834\n"}
+,{"stream_name":"stdout","time":302.350632924,"data":"B2_new_session  2023-12-21_19-45-07-501_104_1    [208 s]\n"}
+,{"stream_name":"stdout","time":315.824299458,"data":"[14:32:35]     bench-gapcnn gapcnn epoch  0 loss 1.6399\n"}
+,{"stream_name":"stdout","time":316.710671074,"data":"[14:32:36]     bench-gapcnn gapcnn epoch  5 loss 0.6450\n"}
+,{"stream_name":"stdout","time":317.578198611,"data":"[14:32:37]     bench-gapcnn gapcnn epoch 10 loss 0.3135\n"}
+,{"stream_name":"stdout","time":318.451527058,"data":"[14:32:38]     bench-gapcnn gapcnn epoch 15 loss 0.2957\n"}
+,{"stream_name":"stdout","time":319.338685904,"data":"[14:32:39]     bench-gapcnn gapcnn epoch 20 loss 0.2733\n"}
+,{"stream_name":"stdout","time":320.235020011,"data":"[14:32:39]     bench-gapcnn gapcnn epoch 25 loss 0.2644\n"}
+,{"stream_name":"stdout","time":320.96311623,"data":"[14:32:40]     bench-gapcnn gapcnn epoch 29 loss 0.2752\n"}
+,{"stream_name":"stdout","time":322.305003709,"data":"B2_new_session  2023-12-21_19-47-14-669_104_1    [228 s]\n"}
+,{"stream_name":"stdout","time":335.221527811,"data":"[14:32:54]     bench-gapcnn gapcnn epoch  0 loss 1.6417\n"}
+,{"stream_name":"stdout","time":336.118865018,"data":"[14:32:55]     bench-gapcnn gapcnn epoch  5 loss 0.6753\n"}
+,{"stream_name":"stdout","time":337.007888734,"data":"[14:32:56]     bench-gapcnn gapcnn epoch 10 loss 0.3240\n"}
+,{"stream_name":"stdout","time":337.908493118,"data":"[14:32:57]     bench-gapcnn gapcnn epoch 15 loss 0.2983\n"}
+,{"stream_name":"stdout","time":338.802021693,"data":"[14:32:58]     bench-gapcnn gapcnn epoch 20 loss 0.2773\n"}
+,{"stream_name":"stdout","time":339.689099487,"data":"[14:32:59]     bench-gapcnn gapcnn epoch 25 loss 0.2663\n"}
+,{"stream_name":"stdout","time":340.397133792,"data":"[14:33:00]     bench-gapcnn gapcnn epoch 29 loss 0.2766\n"}
+,{"stream_name":"stdout","time":341.769075084,"data":"B2_new_session  2023-12-21_19-49-37-940_104_1    [247 s]\n"}
+,{"stream_name":"stdout","time":355.370079037,"data":"[14:33:15]     bench-gapcnn gapcnn epoch  0 loss 1.6416\n"}
+,{"stream_name":"stdout","time":356.223694542,"data":"[14:33:15]     bench-gapcnn gapcnn epoch  5 loss 0.6727\n"}
+,{"stream_name":"stdout","time":357.100589876,"data":"[14:33:16]     bench-gapcnn gapcnn epoch 10 loss 0.3354\n"}
+,{"stream_name":"stdout","time":357.95564084,"data":"[14:33:17]     bench-gapcnn gapcnn epoch 15 loss 0.2998\n"}
+,{"stream_name":"stdout","time":358.829080325,"data":"[14:33:18]     bench-gapcnn gapcnn epoch 20 loss 0.2804\n"}
+,{"stream_name":"stdout","time":359.681870049,"data":"[14:33:19]     bench-gapcnn gapcnn epoch 25 loss 0.2670\n"}
+,{"stream_name":"stdout","time":360.388041425,"data":"[14:33:20]     bench-gapcnn gapcnn epoch 29 loss 0.2799\n"}
+,{"stream_name":"stdout","time":361.616169427,"data":"B2_new_session  2023-12-21_19-54-01-269_104_1    [267 s]\n"}
+,{"stream_name":"stdout","time":375.848433116,"data":"[14:33:35]     bench-gapcnn gapcnn epoch  0 loss 1.6420\n"}
+,{"stream_name":"stdout","time":376.86948874,"data":"[14:33:36]     bench-gapcnn gapcnn epoch  5 loss 0.6733\n"}
+,{"stream_name":"stdout","time":377.888764414,"data":"[14:33:37]     bench-gapcnn gapcnn epoch 10 loss 0.3334\n"}
+,{"stream_name":"stdout","time":378.918505527,"data":"[14:33:38]     bench-gapcnn gapcnn epoch 15 loss 0.2947\n"}
+,{"stream_name":"stdout","time":379.918683881,"data":"[14:33:39]     bench-gapcnn gapcnn epoch 20 loss 0.2811\n"}
+,{"stream_name":"stdout","time":380.876906325,"data":"[14:33:40]     bench-gapcnn gapcnn epoch 25 loss 0.2676\n"}
+,{"stream_name":"stdout","time":381.67936194,"data":"[14:33:41]     bench-gapcnn gapcnn epoch 29 loss 0.2793\n"}
+,{"stream_name":"stdout","time":382.892507622,"data":"B2_new_session  2023-12-21_19-56-22-903_104_1    [289 s]\n"}
+,{"stream_name":"stdout","time":396.748756584,"data":"[14:33:56]     bench-gapcnn gapcnn epoch  0 loss 1.6416\n"}
+,{"stream_name":"stdout","time":397.663720478,"data":"[14:33:57]     bench-gapcnn gapcnn epoch  5 loss 0.6687\n"}
+,{"stream_name":"stdout","time":398.580054722,"data":"[14:33:58]     bench-gapcnn gapcnn epoch 10 loss 0.3347\n"}
+,{"stream_name":"stdout","time":399.471873076,"data":"[14:33:59]     bench-gapcnn gapcnn epoch 15 loss 0.2927\n"}
+,{"stream_name":"stdout","time":400.37897298,"data":"[14:34:00]     bench-gapcnn gapcnn epoch 20 loss 0.2826\n"}
+,{"stream_name":"stdout","time":401.315086764,"data":"[14:34:01]     bench-gapcnn gapcnn epoch 25 loss 0.2674\n"}
+,{"stream_name":"stdout","time":402.00396018,"data":"[14:34:01]     bench-gapcnn gapcnn epoch 29 loss 0.2781\n"}
+,{"stream_name":"stdout","time":403.282809342,"data":"B2_new_session  2023-12-21_20-02-00-329_104_1    [309 s]\n"}
+,{"stream_name":"stdout","time":416.761696946,"data":"[14:34:16]     bench-gapcnn gapcnn epoch  0 loss 1.6360\n"}
+,{"stream_name":"stdout","time":417.69290832,"data":"[14:34:17]     bench-gapcnn gapcnn epoch  5 loss 0.6736\n"}
+,{"stream_name":"stdout","time":418.575994694,"data":"[14:34:18]     bench-gapcnn gapcnn epoch 10 loss 0.3243\n"}
+,{"stream_name":"stdout","time":419.465494189,"data":"[14:34:19]     bench-gapcnn gapcnn epoch 15 loss 0.2946\n"}
+,{"stream_name":"stdout","time":420.338020173,"data":"[14:34:20]     bench-gapcnn gapcnn epoch 20 loss 0.2818\n"}
+,{"stream_name":"stdout","time":421.291202757,"data":"[14:34:21]     bench-gapcnn gapcnn epoch 25 loss 0.2668\n"}
+,{"stream_name":"stdout","time":422.026003403,"data":"[14:34:21]     bench-gapcnn gapcnn epoch 29 loss 0.2780\n"}
+,{"stream_name":"stdout","time":423.283650905,"data":"B2_new_session  2023-12-21_20-04-39-406_104_1    [329 s]\n"}
+,{"stream_name":"stdout","time":433.636803629,"data":"[14:34:33]     bench-gapcnn gapcnn epoch  0 loss 1.6804\n"}
+,{"stream_name":"stdout","time":434.547824213,"data":"[14:34:34]     bench-gapcnn gapcnn epoch  5 loss 0.4849\n"}
+,{"stream_name":"stdout","time":435.415331967,"data":"[14:34:35]     bench-gapcnn gapcnn epoch 10 loss 0.3119\n"}
+,{"stream_name":"stdout","time":436.339176891,"data":"[14:34:36]     bench-gapcnn gapcnn epoch 15 loss 0.2879\n"}
+,{"stream_name":"stdout","time":437.226525996,"data":"[14:34:36]     bench-gapcnn gapcnn epoch 20 loss 0.2759\n"}
+,{"stream_name":"stdout","time":438.11678271,"data":"[14:34:37]     bench-gapcnn gapcnn epoch 25 loss 0.2739\n"}
+,{"stream_name":"stdout","time":438.850780015,"data":"[14:34:38]     bench-gapcnn gapcnn epoch 29 loss 0.2702\n"}
+,{"stream_name":"stdout","time":440.140517797,"data":"B2_new_session  2023-12-21_20-07-25-709_104_1    [346 s]\n"}
+,{"stream_name":"stdout","time":440.210620577,"data":"harness check - V4 LightGBM, B1, all V4 windows: exact 0.843 (published 0.84)\n"}
+,{"stream_name":"stdout","time":445.522632193,"data":"packet_loss       level 1  [5 s]\n"}
+,{"stream_name":"stdout","time":450.259516463,"data":"packet_loss       level 2  [10 s]\n"}
+,{"stream_name":"stdout","time":454.861156674,"data":"packet_loss       level 3  [15 s]\n"}
+,{"stream_name":"stdout","time":460.11696239,"data":"agc_jumps         level 1  [20 s]\n"}
+,{"stream_name":"stdout","time":465.410278616,"data":"agc_jumps         level 2  [25 s]\n"}
+,{"stream_name":"stdout","time":470.532188308,"data":"agc_jumps         level 3  [30 s]\n"}
+,{"stream_name":"stdout","time":475.84745392,"data":"impulses          level 1  [36 s]\n"}
+,{"stream_name":"stdout","time":481.168145772,"data":"impulses          level 2  [41 s]\n"}
+,{"stream_name":"stdout","time":486.452198932,"data":"impulses          level 3  [46 s]\n"}
+,{"stream_name":"stdout","time":491.810565857,"data":"white_noise       level 1  [52 s]\n"}
+,{"stream_name":"stdout","time":497.069324825,"data":"white_noise       level 2  [57 s]\n"}
+,{"stream_name":"stdout","time":502.434430851,"data":"white_noise       level 3  [62 s]\n"}
+,{"stream_name":"stdout","time":507.636589905,"data":"fan               level 1  [67 s]\n"}
+,{"stream_name":"stdout","time":512.902759304,"data":"fan               level 2  [73 s]\n"}
+,{"stream_name":"stdout","time":518.15150094,"data":"fan               level 3  [78 s]\n"}
+,{"stream_name":"stdout","time":523.335692163,"data":"jitter            level 1  [83 s]\n"}
+,{"stream_name":"stdout","time":528.511893834,"data":"jitter            level 2  [88 s]\n"}
+,{"stream_name":"stdout","time":533.765099372,"data":"jitter            level 3  [94 s]\n"}
+,{"stream_name":"stdout","time":538.868820888,"data":"dead_subcarriers  level 1  [99 s]\n"}
+,{"stream_name":"stdout","time":543.905787109,"data":"dead_subcarriers  level 2  [104 s]\n"}
+,{"stream_name":"stdout","time":548.80413014,"data":"dead_subcarriers  level 3  [109 s]\n"}
+,{"stream_name":"stdout","time":553.361910085,"data":"crazy             level 3  [113 s]\n"}
+,{"stream_name":"stdout","time":567.318593621,"data":"[14:36:47]     all gapcnn epoch  0 loss 1.6223\n"}
+,{"stream_name":"stdout","time":568.248024591,"data":"[14:36:47]     all gapcnn epoch  5 loss 0.6359\n"}
+,{"stream_name":"stdout","time":569.193606122,"data":"[14:36:48]     all gapcnn epoch 10 loss 0.3465\n"}
+,{"stream_name":"stdout","time":570.145309775,"data":"[14:36:49]     all gapcnn epoch 15 loss 0.2914\n"}
+,{"stream_name":"stdout","time":571.061257394,"data":"[14:36:50]     all gapcnn epoch 20 loss 0.2753\n"}
+,{"stream_name":"stdout","time":571.980546013,"data":"[14:36:51]     all gapcnn epoch 25 loss 0.2797\n"}
+,{"stream_name":"stdout","time":572.73671692,"data":"[14:36:52]     all gapcnn epoch 29 loss 0.2716\n"}
+,{"stream_name":"stdout","time":577.168052726,"data":"saved /kaggle/working/benchmark/BENCHMARK.md\n"}
+,{"stream_name":"stdout","time":577.215746619,"data":"  BENCHMARK.md\n"}
+,{"stream_name":"stdout","time":577.215783659,"data":"  device.csv\n"}
+,{"stream_name":"stdout","time":577.215789039,"data":"  figures\n"}
+,{"stream_name":"stdout","time":577.21579333,"data":"  main_scores.csv\n"}
+,{"stream_name":"stdout","time":577.21579777,"data":"  noise_scores.csv\n"}
+,{"stream_name":"stdout","time":577.21580197,"data":"  window_predictions.csv\n"}
+,{"stream_name":"stdout","time":577.21580631,"data":"  winners.csv\n"}
+,{"stream_name":"stderr","time":582.533590987,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":582.533626997,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":582.756441094,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":582.756477004,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":583.530393451,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":583.625316128,"data":"[NbConvertApp] Writing 317269 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":586.103335102,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":586.763140732,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":586.763180752,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":586.763324462,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":586.763675232,"data":"[NbConvertApp] Writing 570866 bytes to __results__.html\n"}
+]

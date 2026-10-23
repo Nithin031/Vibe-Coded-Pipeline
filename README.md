@@ -5,7 +5,9 @@
 | **V5** (2026-10-23, latest) | People counting 0 / 1 / 2 / 3+ from one ESP32-S3 link; trained on WiCount + 80 MHz set + WiMANS, rooms held out; C header for the trees | [`V5/`](V5/README.md) |
 | V4 | Presence (empty / occupied) + counting 0-2 in one room; noise suite, "unknown" gate | this folder (deploy) + [`V4/`](V4/) |
 
-V5 does not replace V4's presence model. A head-to-head benchmark (V4's own code vs V5 on the same data and noise) is running; results will be added to `V5/results/`.
+V5 does not replace V4's presence model. Head-to-head counting benchmark (V4's own code vs V5, same data):
+V5 is better on a clean signal in a new session (exact 0.85 vs 0.78, and it still finds the empty room);
+V4's gap-CNN is clearly better under noise (0.73 vs 0.50). Details: [`V5/results/README.md`](V5/results/README.md#v4-vs-v5-benchmark-kaggle-2026-10-23).
 
 ---
 

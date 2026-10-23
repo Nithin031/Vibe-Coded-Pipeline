@@ -360,8 +360,9 @@ for kind, level in CONDS:
         sq.append(q)
         gp.append(g)
     nt, ns, ng = pd.DataFrame(rows4), np.concatenate(sq), np.concatenate(gp)
-    nv5 = pd.concat([v5_windows(rec) for rec in noisy if len(rec.t) > ec.FS], ignore_index=True)
-    noisy_offset = v5_offset(nv5)                              # calibration done in the same conditions
+    nv5_parts = [v5_windows(rec) for rec in noisy if len(rec.t) > ec.FS]
+    nv5 = pd.concat(nv5_parts, ignore_index=True) if nv5_parts else v5.iloc[:0]
+    noisy_offset = v5_offset(nv5)          # calibration in the same conditions (None -> the clean install offset)
 
     frames = []
     for k in range(N_FOLDS):
@@ -372,25 +373,33 @@ for kind, level in CONDS:
         keep = sub["valid"].to_numpy()                          # V4 answers 'unknown' on bad windows
         sub, s_seq, s_gap = sub[keep].reset_index(drop=True), ns[pos[pos >= 0]][keep], ng[pos[pos >= 0]][keep]
         for name in ["V4 LightGBM", "V4 gap-CNN"]:
+            if not len(sub):                                    # every window 'unknown' in this fold
+                continue
             p = FOLD_MODELS[fold][name](sub, s_seq, s_gap)
             frames.append(frame(name, sub, p, sub["t0"].values, 3.0, smooth_v4(sub, p)))
 
         _, te5 = v5_fold_masks(nv5, k)
         sub5 = nv5[te5].sort_values(["recording", "window"]).reset_index(drop=True)
         for name in ["V5 WiCount-only", "V5 final"]:
+            if not len(sub5):                                   # every window skipped in this fold
+                continue
             fn = FOLD_MODELS[fold][name]
             p = fn(sub5, noisy_offset) if name == "V5 final" else fn(sub5)
             frames.append(frame(name, sub5, p, sub5["t_start_s"].values, ec.WIN_S, smooth_v5(sub5, p)))
 
-    for system, f in pd.concat(frames, ignore_index=True).groupby("system"):
-        f = common_span(f)
-        noise_rows.append({"noise": kind, "level": level, "system": system,
-                           "answered": len(f) / clean_answered[system], **score(f)})
+    answered = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=["system"])
+    for system in SYSTEM_NAMES:
+        f = common_span(answered[answered["system"] == system])
+        row = {"noise": kind, "level": level, "system": system, "answered": len(f) / clean_answered[system]}
+        if len(f):                                              # no answer at all -> scores stay empty
+            row.update(score(f))
+        row["exact_all"] = row.get("exact", 0.0) * min(row["answered"], 1.0)   # 'unknown' / skipped = wrong
+        noise_rows.append(row)
     print(f"{kind:17s} level {level}  [{time.time() - t0:.0f} s]", flush=True)
 
 NOISE = pd.DataFrame(noise_rows)
 NOISE["system"] = pd.Categorical(NOISE["system"], SYSTEM_NAMES, ordered=True)
-noise_summary = NOISE.groupby("system", observed=True)[["exact", "mae", "f1_4", "answered"]].mean()
+noise_summary = NOISE.groupby("system", observed=True)[["exact", "mae", "f1_4", "answered", "exact_all"]].mean()
 display(noise_summary.round(3))
 NOISE.pivot_table(index=["noise", "level"], columns="system", values="exact", observed=True).round(3)'''
 
@@ -499,8 +508,8 @@ for proto, g in MAIN.groupby("protocol"):
                              "best": ", ".join(str(s) for s, v in vals.items() if abs(v - best) < 1e-9),
                              **{str(s): round(float(v), 3) for s, v in vals.items()}})
 ns = noise_summary.reset_index()
-for metric, better in [("exact", max), ("mae", min), ("answered", max)]:
-    vals = ns.set_index("system")[metric]
+for metric, better in [("exact", max), ("mae", min), ("answered", max), ("exact_all", max)]:
+    vals = ns.set_index("system")[metric].dropna()
     best = better(vals)
     win_rows.append({"benchmark": "B3_noise (mean of 22)", "metric": metric,
                      "best": ", ".join(str(s) for s, v in vals.items() if abs(v - best) < 1e-9),
@@ -532,7 +541,8 @@ lines = [
     "- B1 tests counts 0 and 3 on time blocks of the SAME recording the other blocks trained on (easy for those counts).",
     "- B2 holds out whole files: an ESP32-only model has no 0- or 3-person training file when that file is tested.",
     "- 'answered' = share of the clean scored windows that still get an answer under noise "
-    "(V4 says 'unknown', V5 skips the window).",
+    "(V4 says 'unknown', V5 skips the window). exact / mae are over answered windows only; "
+    "exact_all counts every unanswered window as wrong.",
     "- V5 final also trains on mat80 + WiMANS (other rooms, other hardware); V5 WiCount-only uses exactly V4's data.",
     "- Not compared: presence on the V4 presence datasets (V5 has no presence model), V4's WiCount -> OTH cross-room "
     "test (the OTH files are not available).",
