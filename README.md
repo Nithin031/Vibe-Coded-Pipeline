@@ -2,12 +2,66 @@
 
 | Version | What | Where |
 |---|---|---|
-| **V5** (2026-10-23, latest) | People counting 0 / 1 / 2 / 3+ from one ESP32-S3 link; trained on WiCount + 80 MHz set + WiMANS, rooms held out; C header for the trees | [`V5/`](V5/README.md) |
+| **V5** (2026-10-23, latest) | People counting 0 / 1 / 2 / 3+ from one ESP32-S3 link; trained on WiCount + 80 MHz set + WiMANS, rooms held out; C header for the trees | model + code: [`V5/deploy/`](V5/deploy/README.md) · everything else: [`V5/`](V5/README.md) |
 | V4 | Presence (empty / occupied) + counting 0-2 in one room; noise suite, "unknown" gate | this folder (deploy) + [`V4/`](V4/) |
 
 V5 does not replace V4's presence model. Head-to-head counting benchmark (V4's own code vs V5, same data):
 V5 is better on a clean signal in a new session (exact 0.85 vs 0.78, and it still finds the empty room);
 V4's gap-CNN is clearly better under noise (0.73 vs 0.50). Details: [`V5/results/README.md`](V5/results/README.md#v4-vs-v5-benchmark-kaggle-2026-10-23).
+
+**Which one to use**
+
+| You want | Use |
+|---|---|
+| Empty vs occupied, with an "unknown" answer when the signal breaks | V4 presence (this folder) |
+| How many people (empty / 1 / 2 / 3+), quiet room, a new room with only a 20 s empty calibration | **V5** (`V5/deploy/`) |
+| How many people in a room with fans, machines or heavy interference | V4 noisy counter (`--env noisy`) - only reliable in the room it was trained in |
+
+---
+
+# V5 deploy folder (`V5/deploy/`)
+
+The V5 counter and everything needed to run it - self-contained, no other folder needed.
+Like V4, it has **only been tested on recorded files**, not on a live ESP32.
+
+```
+V5/deploy/
+  README.md          deployment guide: hardware (2 or 3 ESP32-S3), input format, calibration, Python + C
+  infer.py           run the model on a recorded ESP32 CSV
+  trees.json         the model for Python (300 trees, no LightGBM needed)
+  counter_model.h    the same model for ESP32 firmware (cc_prepare() + cc_predict(), ~77 KB flash)
+  model.txt          LightGBM native file (retraining / inspection)
+  model_card.json    settings, calibration, training data, held-out results, caveats
+  src/
+    data.py          read ESP32 CSV, causal preprocessing, the 10 window cues
+    calibration.py   empty-room offset: compute, save / load
+    metrics.py       30 s median, count, honest label, scores vs a known count
+    models.py        tree model, bundle, C header export, StreamingCounter (the device path)
+  tests/
+    test_deploy.py   src == training code, model files consistent, infer.py end to end
+```
+
+Run it (Python 3.9+, numpy, pandas, scipy):
+
+```powershell
+cd V5/deploy
+python infer.py session.csv --calibrate-start --save-offset offset_linkA.json   # first 30 s of the file = empty room
+python infer.py later.csv --offset offset_linkA.json --out counts.csv          # reuse that calibration
+python infer.py two_people.csv --empty empty.csv --count 2                     # separate empty file + scores
+```
+
+Input: the same esp-csi `CSI_DATA` CSV as V4 (`local_timestamp` + raw I/Q `data`, `len` 104 or 128+).
+Output: one row per 2.5 s window - `t_start_s, t_end_s, raw, smoothed, count, label`
+(label = empty / 1 / 2 / 3+, the 30 s median of the window estimates).
+
+| | V5 |
+|---|---|
+| Held-out results | ESP32-S3 (WiCount) MAE 0.29, 85 % exact, 100 % within ±1 · unseen WiMANS room MAE 1.01 · empty room found 93-100 % |
+| Install | **20 s empty-room calibration required** (redo after moving a board, cable or big furniture) |
+| Packet rate | ≥ 100 packets/s best, ≥ 50/s minimum |
+| Limits | estimates bunch together above 2-3 people (show "3+"); breaks under strong synthetic noise (white noise, impulses, fans) - a noise-robust version is being tested; only one room of real ESP32-S3 data |
+
+Full guide: [`V5/deploy/README.md`](V5/deploy/README.md). How the model was built and tested: [`V5/README.md`](V5/README.md).
 
 ---
 
