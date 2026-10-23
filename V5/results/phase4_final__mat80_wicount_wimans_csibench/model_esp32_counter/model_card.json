@@ -1,0 +1,259 @@
+{
+ "name": "esp32_people_counter",
+ "phase": 4,
+ "created": "2026-10-23 13:08",
+ "model": "LightGBM regression on 10 window features, exported as flat trees",
+ "input": "ESP32-S3 CSI amplitude, 52 tones (HT20 L-LTF data tones), >= 50 packets/s",
+ "output": "people count 0-10, updated every 2.5 s (median of the last 30 s)",
+ "training_data": [
+  "wicount",
+  "mat80",
+  "wimans"
+ ],
+ "n_training_windows": 99992,
+ "calibration": "empty_cal",
+ "calibration_howto": "Leave the room empty, start the counter, call begin_calibration(); the next 7 windows (20 s after the 10 s warm-up) set the offset.",
+ "gbm_params": {
+  "objective": "regression",
+  "n_estimators": 300,
+  "learning_rate": 0.05,
+  "num_leaves": 15,
+  "min_child_samples": 40,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.8,
+  "random_state": 0,
+  "verbose": -1
+ },
+ "selection": {
+  "rule": "sites with an empty recording; WiCount MAE within 0.1 of the best; then lowest mean relative MAE over datasets; within 0.02 prefer zero_shot, then the pool with more data",
+  "candidates": [
+   {
+    "experiment": "all4",
+    "mode": "empty_cal",
+    "mae_mat80": 2.6684801302,
+    "mae_wicount": 0.293826024,
+    "mae_wimans": 1.0108534575,
+    "rel_mae_mean": 0.7442351776,
+    "datasets_scored": 3,
+    "esp32_ok": true
+   },
+   {
+    "experiment": "all4",
+    "mode": "zero_shot",
+    "mae_mat80": 1.7961170578,
+    "mae_wicount": 0.8439649098,
+    "mae_wimans": 1.0863693935,
+    "rel_mae_mean": 0.9582229801,
+    "datasets_scored": 3,
+    "esp32_ok": false
+   },
+   {
+    "experiment": "esp32+mat80",
+    "mode": "empty_cal",
+    "mae_mat80": 2.7611500879,
+    "mae_wicount": 0.3058504223,
+    "mae_wimans": 1.449463257,
+    "rel_mae_mean": 0.8676947897,
+    "datasets_scored": 3,
+    "esp32_ok": true
+   },
+   {
+    "experiment": "esp32+mat80",
+    "mode": "zero_shot",
+    "mae_mat80": 1.6482079606,
+    "mae_wicount": 0.3600387235,
+    "mae_wimans": 1.6199362827,
+    "rel_mae_mean": 0.7975254372,
+    "datasets_scored": 3,
+    "esp32_ok": true
+   },
+   {
+    "experiment": "esp32+mat80+wimans",
+    "mode": "empty_cal",
+    "mae_mat80": 2.6684801302,
+    "mae_wicount": 0.293826024,
+    "mae_wimans": 1.0108534575,
+    "rel_mae_mean": 0.7442351776,
+    "datasets_scored": 3,
+    "esp32_ok": true
+   },
+   {
+    "experiment": "esp32+mat80+wimans",
+    "mode": "zero_shot",
+    "mae_mat80": 1.7039996132,
+    "mae_wicount": 0.9164123408,
+    "mae_wimans": 1.0610140817,
+    "rel_mae_mean": 0.9808396128,
+    "datasets_scored": 3,
+    "esp32_ok": false
+   },
+   {
+    "experiment": "esp32+wimans+csibench",
+    "mode": "empty_cal",
+    "mae_mat80": 4.0605714258,
+    "mae_wicount": 0.2891381914,
+    "mae_wimans": 1.0059649655,
+    "rel_mae_mean": 0.917040473,
+    "datasets_scored": 3,
+    "esp32_ok": true
+   },
+   {
+    "experiment": "esp32+wimans+csibench",
+    "mode": "zero_shot",
+    "mae_mat80": 3.6155104894,
+    "mae_wicount": 0.9746636698,
+    "mae_wimans": 1.0642497172,
+    "rel_mae_mean": 1.256551977,
+    "datasets_scored": 3,
+    "esp32_ok": false
+   },
+   {
+    "experiment": "esp32_only",
+    "mode": "empty_cal",
+    "mae_mat80": 3.9190157197,
+    "mae_wicount": 0.3403614395,
+    "mae_wimans": 1.2209717414,
+    "rel_mae_mean": 0.9791014238,
+    "datasets_scored": 3,
+    "esp32_ok": true
+   },
+   {
+    "experiment": "esp32_only",
+    "mode": "zero_shot",
+    "mae_mat80": 3.8581091638,
+    "mae_wicount": 0.3403006561,
+    "mae_wimans": 1.4921816245,
+    "rel_mae_mean": 1.0362694445,
+    "datasets_scored": 3,
+    "esp32_ok": true
+   }
+  ],
+  "chosen": [
+   "all4",
+   "empty_cal"
+  ]
+ },
+ "held_out_results": [
+  {
+   "experiment": "all4",
+   "mode": "empty_cal",
+   "test": "mat80",
+   "sites": "all",
+   "level": "smoothed",
+   "train": "wicount + mat80 + wimans + csibench",
+   "n": 49120,
+   "mae": 2.6684801302,
+   "exact": 0.1855863192,
+   "within1": 0.3790105863,
+   "f1_4": 0.45336003,
+   "mae_const": 2.6277583847,
+   "rel_mae": 1.0154967617,
+   "spearman_rec": 0.4981055334
+  },
+  {
+   "experiment": "all4",
+   "mode": "empty_cal",
+   "test": "wicount",
+   "sites": "all",
+   "level": "smoothed",
+   "train": "wicount + mat80 + wimans + csibench",
+   "n": 274,
+   "mae": 0.293826024,
+   "exact": 0.8540145985,
+   "within1": 1.0,
+   "f1_4": 0.6871924213,
+   "mae_const": 0.5981671906,
+   "rel_mae": 0.4912105322,
+   "spearman_rec": 0.9151502609
+  },
+  {
+   "experiment": "all4",
+   "mode": "empty_cal",
+   "test": "wimans",
+   "sites": "all",
+   "level": "smoothed",
+   "train": "wicount + mat80 + wimans + csibench",
+   "n": 50598,
+   "mae": 1.0108534575,
+   "exact": 0.3129175066,
+   "within1": 0.7509190087,
+   "f1_4": 0.5796220078,
+   "mae_const": 1.3923635117,
+   "rel_mae": 0.7259982389,
+   "spearman_rec": 0.6616137561
+  }
+ ],
+ "clip_check": [
+  {
+   "input": "causal (device)",
+   "n": 1774,
+   "mae": 1.4757432914,
+   "exact": 0.2429537768,
+   "within1": 0.5760992108,
+   "mean_abs_diff_vs_causal": 0.0
+  },
+  {
+   "input": "clip mean, 5 s",
+   "n": 1774,
+   "mae": 1.4688575972,
+   "exact": 0.2519729425,
+   "within1": 0.5783540023,
+   "mean_abs_diff_vs_causal": 0.2146092661
+  },
+  {
+   "input": "clip mean, 3 s",
+   "n": 1774,
+   "mae": 1.5370263578,
+   "exact": 0.2311161218,
+   "within1": 0.5693348365,
+   "mean_abs_diff_vs_causal": 0.4997932815
+  }
+ ],
+ "export_parity_max_abs": 1.1949186220050478e-05,
+ "caveats": [
+  "WiCount is the only ESP32-S3 data: one room, one evening, counts 0-3 (0 and 3 one file each); it was also used in the selection rule.",
+  "WiMANS / CSI-Bench rows use clip-mean normalisation (3 s / 5 s clips), not the device's 30 s causal baseline - see clip_check for the size of that difference.",
+  "Packet times of WiMANS (1 kHz) and CSI-Bench (100 Hz) are assumed uniform (no timestamps).",
+  "Counts above 3 come from router / Intel 5300 data only.",
+  "Re-validate on your own ESP32-S3 recordings before trusting the count."
+ ],
+ "settings": {
+  "fs_hz": 50,
+  "win_s": 5.0,
+  "hop_s": 2.5,
+  "n_tones": 52,
+  "max_gap_bins": 3,
+  "max_missing": 0.2,
+  "tau_s": 30.0,
+  "warmup_s": 10.0,
+  "cal_s": 20.0,
+  "n_cal_windows": 7,
+  "smooth_s": 30.0,
+  "smooth_n": 12,
+  "feature_names": [
+   "cv_median",
+   "cv_p90",
+   "cv_p10",
+   "diff_energy",
+   "pc1_frac",
+   "n_pc_90",
+   "tone_corr",
+   "low_freq_frac",
+   "high_freq_frac",
+   "mean_std"
+  ],
+  "log_features": [
+   "cv_median",
+   "cv_p90",
+   "cv_p10",
+   "diff_energy",
+   "mean_std"
+  ]
+ },
+ "n_trees": 300,
+ "n_nodes": 8700,
+ "flash_bytes_est": 78900,
+ "header_file_bytes": 261328,
+ "training_data_note": "Pool 'all4' with empty_cal: CSI-Bench has no empty recording, so its rows get no offset and are dropped - the model is identical to pool esp32+mat80+wimans / empty_cal. mat80 setup PC2a (no empty recording) is also left out."
+}

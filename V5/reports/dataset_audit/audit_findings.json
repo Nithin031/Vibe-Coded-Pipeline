@@ -1,0 +1,2406 @@
+{
+ "audit_date": "2026-10-19",
+ "datasets_root": "D:/wifi/Datasets",
+ "scope_note": "EHUNAM is referenced in D:/wifi notebooks but not present locally; excluded.",
+ "environment": {
+  "disk_free_gib_D": 8.3,
+  "ram_total_gib": 15.6,
+  "ram_free_gib_at_start": 2.0,
+  "python": "3.12.10",
+  "added_packages": [
+   "h5py 3.16.0",
+   "dpkt 1.9.8"
+  ]
+ },
+ "summary": {
+  "datasets_discovered": 7,
+  "fully_audited": [
+   "WiCount",
+   "80MHz PC",
+   "IIT-BHU",
+   "CSI HAR",
+   "Haron98",
+   "CountFi (signal; labels unverified)"
+  ],
+  "partially_audited": [
+   "WiMANS"
+  ],
+  "removed_from_disk_2026_10_19": [
+   "WiMANS (Wiman/)",
+   "Haron98"
+  ],
+  "blocked": [],
+  "direct_counting_candidates": [
+   "80MHz PC (0,2-10)",
+   "WiCount (0-3, ESP32-S3)",
+   "CountFi (conditional on label verification)",
+   "WiMANS (only after annotation.csv)"
+  ],
+  "related_task_only": [
+   "IIT-BHU (activity; 1-3 user scenarios)",
+   "CSI HAR (presence/HAR)",
+   "Haron98 (undefined labels)"
+  ]
+ },
+ "datasets": [
+  {
+   "dataset": "WiCount",
+   "path": "D:/wifi/Datasets/WiCount",
+   "audit_status": "fully_audited",
+   "disk": {
+    "files": 21,
+    "bytes": 42066174,
+    "gib": 0.039,
+    "extensions": {
+     ".csv": 15,
+     ".py": 4,
+     ".md": 2
+    },
+    "archives": 0
+   },
+   "measured": {
+    "by_label": {
+     "0": {
+      "recordings": 1,
+      "rows": 5218,
+      "seconds": 59.98
+     },
+     "1": {
+      "recordings": 7,
+      "rows": 36559,
+      "seconds": 419.92
+     },
+     "2": {
+      "recordings": 6,
+      "rows": 31935,
+      "seconds": 359.94
+     },
+     "3": {
+      "recordings": 1,
+      "rows": 4906,
+      "seconds": 59.8
+     }
+    },
+    "csi_value_range": [
+     -36,
+     36
+    ],
+    "always_zero_positions": []
+   },
+   "findings": [
+    {
+     "claim": "15 CSV recordings, 60 s each; classes 0:1, 1:7, 2:6, 3:1 files",
+     "evidence": "verified_file",
+     "source": "scripts/02_wicount.py"
+    },
+    {
+     "claim": "Folder name = number of people (0-3)",
+     "evidence": "verified_local_doc",
+     "source": "WiCount/README.md"
+    },
+    {
+     "claim": "ESP32-S3 receiver, 1 antenna, 2.4 GHz, 20 MHz, 52 subcarriers, ~100 Hz nominal",
+     "evidence": "external",
+     "source": "https://arxiv.org/abs/2412.06861"
+    },
+    {
+     "claim": "Observed packet spacing median 11.99 ms (~83 Hz), mean rate 80-94 Hz",
+     "evidence": "verified_file",
+     "source": "scripts/02_wicount.py"
+    },
+    {
+     "claim": "All frames legacy non-HT (sig_mode=0, MCS 0), channel 12; 22 of 28 columns constant",
+     "evidence": "verified_file",
+     "source": "scripts/02_wicount.py"
+    },
+    {
+     "claim": "Single TX MAC / single receiver stream although README mentions multiple receivers",
+     "evidence": "verified_file",
+     "source": "scripts/02_wicount.py"
+    },
+    {
+     "claim": "CSI has 104 ints with no always-zero position: null tones already removed; tone indices undocumented",
+     "evidence": "verified_file",
+     "source": "scripts/02_wicount.py"
+    },
+    {
+     "claim": "Espressif stores each CSI item as imaginary then real; README states real then imaginary",
+     "evidence": "external",
+     "source": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/wifi-driver/wifi-vendor-features.html"
+    },
+    {
+     "claim": "process1.py builds imag part from x[2i-1] (should be x[2i+1]) - indexing bug",
+     "evidence": "verified_local_doc",
+     "source": "WiCount/data_process_example/process1.py"
+    },
+    {
+     "claim": "Recordings made in order 0->1->2->3 people within 45 min of one evening: count confounded with time",
+     "evidence": "verified_file",
+     "source": "filenames/timestamps"
+    },
+    {
+     "claim": "Paper says TX is a home router; README says ESP32-S3 TX",
+     "evidence": "external",
+     "source": "https://arxiv.org/abs/2412.06861",
+     "note": "conflict between primary sources"
+    }
+   ],
+   "uncertainties": [
+    "which 52 of 64 tones are kept",
+    "TX hardware",
+    "room geometry"
+   ]
+  },
+  {
+   "dataset": "80MHz Human Sensing - PC folders",
+   "path": "D:/wifi/Datasets/Dataset",
+   "audit_status": "fully_audited_structure",
+   "disk": {
+    "files": 40,
+    "bytes": 5962294531,
+    "gib": 5.553,
+    "extensions": {
+     ".mat": 40
+    },
+    "archives": 0
+   },
+   "measured": {
+    "PC-1a/PC1a_n00.mat": {
+     "shape": [
+      203924,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.7871137041250662e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2486,
+      "2": 0.4899,
+      "3": 0.2485,
+      "4": 0.9972,
+      "8": 0.9963
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n02.mat": {
+     "shape": [
+      192276,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.5755892571095718e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2337,
+      "2": 0.3833,
+      "3": 0.2337,
+      "4": 0.9917,
+      "8": 0.9821
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n03.mat": {
+     "shape": [
+      169820,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.656765251442704e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2667,
+      "2": 0.398,
+      "3": 0.2655,
+      "4": 0.9833,
+      "8": 0.9631
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n04.mat": {
+     "shape": [
+      199812,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.72717291754249e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3004,
+      "2": 0.4218,
+      "3": 0.2988,
+      "4": 0.9842,
+      "8": 0.9676
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n05.mat": {
+     "shape": [
+      178197,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.8278043401404062e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3186,
+      "2": 0.4459,
+      "3": 0.3159,
+      "4": 0.9819,
+      "8": 0.9655
+     },
+     "rows_divisible_by_4": false
+    },
+    "PC-1a/PC1a_n06.mat": {
+     "shape": [
+      174252,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.5219402072859996e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2938,
+      "2": 0.4432,
+      "3": 0.2898,
+      "4": 0.9636,
+      "8": 0.9145
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n07.mat": {
+     "shape": [
+      178892,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.2600053384164747e-06,
+     "lag_corr_amplitude": {
+      "1": 0.316,
+      "2": 0.3944,
+      "3": 0.314,
+      "4": 0.9444,
+      "8": 0.8691
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n08.mat": {
+     "shape": [
+      205876,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.343264270726068e-06,
+     "lag_corr_amplitude": {
+      "1": 0.375,
+      "2": 0.4689,
+      "3": 0.3695,
+      "4": 0.9511,
+      "8": 0.8854
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n09.mat": {
+     "shape": [
+      169088,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.2639838427327782e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3106,
+      "2": 0.39,
+      "3": 0.3068,
+      "4": 0.9594,
+      "8": 0.8997
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-1a/PC1a_n10.mat": {
+     "shape": [
+      196732,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.4819615009251165e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3668,
+      "2": 0.4231,
+      "3": 0.365,
+      "4": 0.983,
+      "8": 0.9562
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n00.mat": {
+     "shape": [
+      1,
+      256
+     ],
+     "complex": false,
+     "real_stored_type": "u1",
+     "real_range": [
+      0.0,
+      0.0
+     ],
+     "low_energy_bins": [],
+     "saturated_fraction": 0.0,
+     "lag_corr_amplitude": {},
+     "rows_divisible_by_4": false
+    },
+    "PC-2a/PC2a_n02.mat": {
+     "shape": [
+      195996,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.5809678513847223e-06,
+     "lag_corr_amplitude": {
+      "1": 0.0791,
+      "2": 0.3849,
+      "3": 0.0666,
+      "4": 0.9414,
+      "8": 0.9231
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n03.mat": {
+     "shape": [
+      176584,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.886816614189281e-06,
+     "lag_corr_amplitude": {
+      "1": 0.0616,
+      "2": 0.3698,
+      "3": 0.0517,
+      "4": 0.9304,
+      "8": 0.9156
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n04.mat": {
+     "shape": [
+      198584,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.9604128479635823e-06,
+     "lag_corr_amplitude": {
+      "1": 0.1631,
+      "2": 0.3274,
+      "3": 0.1484,
+      "4": 0.9244,
+      "8": 0.8916
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n05.mat": {
+     "shape": [
+      170448,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.624059097202666e-06,
+     "lag_corr_amplitude": {
+      "1": 0.0524,
+      "2": 0.3678,
+      "3": 0.0445,
+      "4": 0.9358,
+      "8": 0.8923
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n06.mat": {
+     "shape": [
+      167456,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.974195460300019e-06,
+     "lag_corr_amplitude": {
+      "1": 0.1137,
+      "2": 0.3934,
+      "3": 0.0999,
+      "4": 0.9137,
+      "8": 0.8666
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n07.mat": {
+     "shape": [
+      185680,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.4508731419646706e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2282,
+      "2": 0.4018,
+      "3": 0.2047,
+      "4": 0.8457,
+      "8": 0.7744
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n08.mat": {
+     "shape": [
+      196652,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.711404536948518e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2574,
+      "2": 0.3601,
+      "3": 0.2411,
+      "4": 0.9097,
+      "8": 0.846
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n09.mat": {
+     "shape": [
+      159648,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.0095506990378835e-06,
+     "lag_corr_amplitude": {
+      "1": 0.088,
+      "2": 0.2982,
+      "3": 0.08,
+      "4": 0.9187,
+      "8": 0.8549
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-2a/PC2a_n10.mat": {
+     "shape": [
+      181720,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.8052257594100815e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2786,
+      "2": 0.2131,
+      "3": 0.2676,
+      "4": 0.9478,
+      "8": 0.9188
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n00.mat": {
+     "shape": [
+      204284,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 5.44967422803548e-07,
+     "lag_corr_amplitude": {
+      "1": 0.2851,
+      "2": 0.5462,
+      "3": 0.2852,
+      "4": 0.9998,
+      "8": 0.9998
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n02.mat": {
+     "shape": [
+      194208,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 1.8102369624320316e-06,
+     "lag_corr_amplitude": {
+      "1": 0.4372,
+      "2": 0.5062,
+      "3": 0.4367,
+      "4": 0.995,
+      "8": 0.9855
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n03.mat": {
+     "shape": [
+      171268,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.3948212742602236e-06,
+     "lag_corr_amplitude": {
+      "1": 0.4197,
+      "2": 0.5075,
+      "3": 0.4184,
+      "4": 0.9901,
+      "8": 0.9773
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n04.mat": {
+     "shape": [
+      202268,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 1.7863830413115272e-06,
+     "lag_corr_amplitude": {
+      "1": 0.4114,
+      "2": 0.4945,
+      "3": 0.4106,
+      "4": 0.9821,
+      "8": 0.9565
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n05.mat": {
+     "shape": [
+      180580,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 1.6007448222394506e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3956,
+      "2": 0.4275,
+      "3": 0.3937,
+      "4": 0.9771,
+      "8": 0.9434
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n06.mat": {
+     "shape": [
+      175600,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.079922408883827e-06,
+     "lag_corr_amplitude": {
+      "1": 0.391,
+      "2": 0.47,
+      "3": 0.3919,
+      "4": 0.9659,
+      "8": 0.9133
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n07.mat": {
+     "shape": [
+      179748,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 1.7928746077842313e-06,
+     "lag_corr_amplitude": {
+      "1": 0.4031,
+      "2": 0.4855,
+      "3": 0.402,
+      "4": 0.9635,
+      "8": 0.9149
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n08.mat": {
+     "shape": [
+      207496,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.183777036665767e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3998,
+      "2": 0.4754,
+      "3": 0.3988,
+      "4": 0.9768,
+      "8": 0.9465
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n09.mat": {
+     "shape": [
+      170168,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 1.7445994546565748e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3899,
+      "2": 0.4492,
+      "3": 0.3867,
+      "4": 0.9623,
+      "8": 0.9018
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-3a/PC3a_n10.mat": {
+     "shape": [
+      199336,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.0576125235782798e-06,
+     "lag_corr_amplitude": {
+      "1": 0.4149,
+      "2": 0.4706,
+      "3": 0.4148,
+      "4": 0.9966,
+      "8": 0.9926
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n00.mat": {
+     "shape": [
+      203800,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 4.504262757605495e-06,
+     "lag_corr_amplitude": {
+      "1": 0.3186,
+      "2": 0.0446,
+      "3": 0.3101,
+      "4": 0.9589,
+      "8": 0.9519
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n02.mat": {
+     "shape": [
+      200168,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.2589812057871388e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2441,
+      "2": 0.1181,
+      "3": 0.24,
+      "4": 0.9227,
+      "8": 0.8846
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n03.mat": {
+     "shape": [
+      180384,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.869312827080007e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2396,
+      "2": 0.1609,
+      "3": 0.2343,
+      "4": 0.9109,
+      "8": 0.8735
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n04.mat": {
+     "shape": [
+      204020,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.1878768012939908e-06,
+     "lag_corr_amplitude": {
+      "1": 0.294,
+      "2": 0.1565,
+      "3": 0.2847,
+      "4": 0.9323,
+      "8": 0.9042
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n05.mat": {
+     "shape": [
+      173760,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.731799608655617e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2877,
+      "2": 0.2337,
+      "3": 0.2807,
+      "4": 0.9117,
+      "8": 0.8395
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n06.mat": {
+     "shape": [
+      170772,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.2595544058744995e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2993,
+      "2": 0.1896,
+      "3": 0.289,
+      "4": 0.8979,
+      "8": 0.8471
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n07.mat": {
+     "shape": [
+      193020,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 2.802899310952233e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2963,
+      "2": 0.2431,
+      "3": 0.2733,
+      "4": 0.8204,
+      "8": 0.739
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n08.mat": {
+     "shape": [
+      204440,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.1717741146546664e-06,
+     "lag_corr_amplitude": {
+      "1": 0.2876,
+      "2": 0.2964,
+      "3": 0.2758,
+      "4": 0.8982,
+      "8": 0.8313
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n09.mat": {
+     "shape": [
+      162956,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.1042697108421906e-06,
+     "lag_corr_amplitude": {
+      "1": 0.275,
+      "2": 0.2842,
+      "3": 0.2658,
+      "4": 0.8861,
+      "8": 0.7798
+     },
+     "rows_divisible_by_4": true
+    },
+    "PC-4a/PC4a_n10.mat": {
+     "shape": [
+      184764,
+      256
+     ],
+     "complex": true,
+     "real_stored_type": "<i2",
+     "real_range": [
+      -2047.0,
+      2047.0
+     ],
+     "low_energy_bins": [
+      1,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      255
+     ],
+     "saturated_fraction": 3.0867079084670175e-06,
+     "lag_corr_amplitude": {
+      "1": 0.214,
+      "2": 0.3316,
+      "3": 0.2064,
+      "4": 0.9542,
+      "8": 0.932
+     },
+     "rows_divisible_by_4": true
+    }
+   },
+   "findings": [
+    {
+     "claim": "Each MAT holds one variable csi_buff (N x 256), complex, stored int16, range +-2047",
+     "evidence": "verified_file",
+     "source": "scripts/07_mat80.py"
+    },
+    {
+     "claim": "Rows interleave 4 RX chains: lag-4 amplitude correlation 0.82-0.9998 vs lag-1 0.05-0.44",
+     "evidence": "verified_file",
+     "source": "scripts/07_mat80.py"
+    },
+    {
+     "claim": "SHARP code reads rows with stride n_ss*n_core and deletes 14 bins after fftshift; negates upper columns",
+     "evidence": "external",
+     "source": "https://github.com/francescamen/SHARP/blob/main/Python_code/CSI_phase_sanitization_signal_preprocessing.py"
+    },
+    {
+     "claim": "Low-energy bins 1,123-133,255 in natural FFT order (guards + DC) -> 242 usable tones",
+     "evidence": "verified_file",
+     "source": "scripts/07_mat80.py"
+    },
+    {
+     "claim": "Filename PCxy_nN: N = concurrent people; 802.11ac ch42 80 MHz; 173 pkt/s; monitor RT-AC86U 4 antennas",
+     "evidence": "external",
+     "source": "https://ieee-dataport.org/documents/csi-dataset-wireless-human-sensing-80-mhz-wi-fi-channels"
+    },
+    {
+     "claim": "n01 absent in all four PC setups",
+     "evidence": "verified_file",
+     "source": "inventory"
+    },
+    {
+     "claim": "PC2a_n00.mat contains a single all-zero 1x256 uint8 row",
+     "evidence": "verified_file",
+     "source": "scripts/07_mat80.py"
+    },
+    {
+     "claim": "PC1a_n05 has 178,197 rows (not divisible by 4)",
+     "evidence": "verified_file",
+     "source": "scripts/07_mat80.py"
+    },
+    {
+     "claim": "No timestamps, RSSI or packet metadata stored",
+     "evidence": "verified_file",
+     "source": "scripts/07_mat80.py"
+    }
+   ],
+   "uncertainties": [
+    "meaning of setups PC-1a..PC-4a (set_names.pdf not local)",
+    "monitor chipset not named on page",
+    "people behaviour in PC traces (secondary source: moving)"
+   ]
+  },
+  {
+   "dataset": "CountFi (local Apr-2025 subset)",
+   "path": "D:/wifi/Datasets/CountFi",
+   "audit_status": "fully_audited_signal_labels_unverified",
+   "disk": {
+    "files": 4754,
+    "bytes": 5214113856,
+    "gib": 4.856,
+    "extensions": {
+     ".pcap": 4754
+    },
+    "archives": 0
+   },
+   "measured": {
+    "aggregate": {
+     "chanspec": {
+      "0xe02a": 4740000
+     },
+     "chip": {
+      "0x0065": 4740000
+     },
+     "core_ss": {
+      "0": 4740000
+     },
+     "fctl": {
+      "0x94": 2508503,
+      "0x88": 2141887,
+      "0x80": 34762,
+      "0x50": 52986,
+      "0x08": 1854,
+      "0xd0": 4,
+      "0xb0": 2,
+      "0x10": 2
+     },
+     "payload_lengths": {
+      "1042": 4740000
+     },
+     "src_macs": {
+      "80:cc:9c:bf:ab:de": 4740000
+     },
+     "status": {
+      "ok": 4740,
+      "header_only": 4,
+      "empty": 10
+     },
+     "chanspec_decoded": {
+      "0xe02a": {
+       "chanspec": "0xe02a",
+       "channel": 42,
+       "bw_mhz": 80,
+       "band": "5G"
+      }
+     }
+    },
+    "csi_sample": {
+     "n_sampled_packets": 402,
+     "n_bins": 256,
+     "int16_range": [
+      -32640.0,
+      14375.0
+     ],
+     "low_energy_bins": [
+      3,
+      4,
+      5,
+      32,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      96,
+      123,
+      124,
+      125,
+      126,
+      127,
+      132,
+      133,
+      160,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      224,
+      251,
+      252,
+      253,
+      254,
+      255
+     ],
+     "n_low_energy_bins": 41,
+     "median_amp_active": 582.3558133320146,
+     "example_packet_bins_0_6": [
+      [
+       -2011.0,
+       0.0
+      ],
+      [
+       -13056.0,
+       -32640.0
+      ],
+      [
+       128.0,
+       0.0
+      ],
+      [
+       1.0,
+       -3.0
+      ],
+      [
+       8.0,
+       -10.0
+      ],
+      [
+       -2.0,
+       -8.0
+      ]
+     ]
+    }
+   },
+   "findings": [
+    {
+     "claim": "4,740 pcaps x 1,000 Nexmon-CSI UDP packets; 10 empty and 4 header-only files",
+     "evidence": "verified_file",
+     "source": "scripts/08_countfi.py"
+    },
+    {
+     "claim": "chanspec 0xe02a (5 GHz ch42 80 MHz), core/ss 0, single source MAC in 100% of packets",
+     "evidence": "verified_file",
+     "source": "scripts/08_countfi.py"
+    },
+    {
+     "claim": "CSI is int16 (real, imag) pairs: smooth VHT80 spectrum on QoS frames; packed-float decode yields noise",
+     "evidence": "verified_file",
+     "source": "scripts/08b_countfi_decode_test.py"
+    },
+    {
+     "claim": "53% of packets are Block-Acks whose CSI has non-HT-duplicate 4x20 MHz structure",
+     "evidence": "verified_file",
+     "source": "scripts/08b_countfi_decode_test.py",
+     "note": "frame-type interpretation inferred from 802.11ac duplicate format"
+    },
+    {
+     "claim": "Capture rate ~1 kHz; all captures on 2025-04-08 06:37-09:43 UTC",
+     "evidence": "verified_file",
+     "source": "scripts/08_countfi.py"
+    },
+    {
+     "claim": "head/end folders are simultaneous receivers (start times within ~20 ms)",
+     "evidence": "verified_file",
+     "source": "scripts/08_countfi.py"
+    },
+    {
+     "claim": "Apr-2025 set = mixed moving/stationary; _xm suffix where x = section; 1,000 samples per pcap; ground truth manually recorded",
+     "evidence": "external",
+     "source": "https://guojingtao-1997.github.io/CountFi/"
+    },
+    {
+     "claim": "Numbered subfolders are contiguous time blocks that change along the trip; interpreted as passenger count",
+     "evidence": "inferred",
+     "source": "scripts/08_countfi.py",
+     "note": "not documented; ground-truth log absent"
+    },
+    {
+     "claim": "Licence CC BY-NC 4.0",
+     "evidence": "external",
+     "source": "https://guojingtao-1997.github.io/CountFi/"
+    },
+    {
+     "claim": "Full decode of all 4.74M packets: 0 truncated/invalid packets, 0 all-zero CSI, 0 repeated payloads, no int16 saturation",
+     "evidence": "verified_file",
+     "source": "scripts/08c_countfi_full_decode.py"
+    },
+    {
+     "claim": "Bins 0-1 carry junk values in every packet; bins 125-131 constant over time in both receivers; standard 14-null removal leaves 242 clean tones",
+     "evidence": "verified_file",
+     "source": "scripts/08c_countfi_full_decode.py"
+    },
+    {
+     "claim": "head vs end differ only in constant guard-bin values and receiver gain profile",
+     "evidence": "verified_file",
+     "source": "scripts/08c_countfi_full_decode.py"
+    }
+   ],
+   "uncertainties": [
+    "subfolder semantics",
+    "condition codes ms, mm_v2, mm_v3, and '48'",
+    "chip id 0x0065 model",
+    "labels only - signal fully decoded"
+   ]
+  },
+  {
+   "dataset": "WiMANS (amplitude subset)",
+   "path": "D:/wifi/Datasets/Wiman",
+   "audit_status": "partially_audited_labels_absent",
+   "disk": {
+    "files": 3058,
+    "bytes": 9590129394,
+    "gib": 8.932,
+    "extensions": {
+     ".npy": 3057,
+     ".txt": 1
+    },
+    "archives": 0
+   },
+   "measured": {
+    "n_files": 3057,
+    "header_dtypes": {
+     "float32": 3057
+    },
+    "first_id_range": [
+     1,
+     206
+    ],
+    "n_first_ids": 31,
+    "files_per_first_id": {
+     "99": 30,
+     "87": 1
+    },
+    "header_errors": []
+   },
+   "findings": [
+    {
+     "claim": "3,057 float32 arrays of shape (T,3,3,30), T 2,772-2,986; headers read for all files",
+     "evidence": "verified_file",
+     "source": "scripts/06_wiman.py"
+    },
+    {
+     "claim": "Axis order time x TX x RX x subcarrier; 1 kHz, 3 s; Intel 5300; 11,286 samples; users 0-5",
+     "evidence": "external",
+     "source": "https://arxiv.org/abs/2402.09430"
+    },
+    {
+     "claim": "Max amplitude 179.605 = sqrt(127^2+127^2): unnormalised magnitude of 8-bit I/Q",
+     "evidence": "verified_file",
+     "source": "scripts/06_wiman.py"
+    },
+    {
+     "claim": "annotation.csv, raw .mat and video are not present: no labels locally",
+     "evidence": "verified_file",
+     "source": "inventory"
+    },
+    {
+     "claim": "act_24_89.npy failed earlier validation and is now absent; act_24 has 87 files",
+     "evidence": "verified_file",
+     "source": "Wiman/validation_summary.txt + listing"
+    },
+    {
+     "claim": "Lag-1 temporal autocorrelation ~0 for groups 1,10-18,201-206 vs 0.37-0.95 for 19-24,100-108",
+     "evidence": "verified_file",
+     "source": "scripts/06_wiman.py",
+     "note": "cause unknown"
+    }
+   ],
+   "uncertainties": [
+    "labels",
+    "cause of low temporal autocorrelation",
+    "which band/environment each group is"
+   ]
+  },
+  {
+   "dataset": "IIT-BHU multi-human activity",
+   "path": "D:/wifi/Datasets/IIT-BHU",
+   "audit_status": "fully_audited_files_no_local_docs",
+   "disk": {
+    "files": 928,
+    "bytes": 1221310254,
+    "gib": 1.137,
+    "extensions": {
+     ".csv": 928
+    },
+    "archives": 0
+   },
+   "measured": {
+    "csi_len": {
+     "128": 31035,
+     "384": 930141,
+     "256": 21,
+     "335": 1,
+     "358": 1,
+     "357": 2,
+     "346": 2,
+     "339": 1,
+     "337": 2,
+     "369": 2,
+     "192": 2,
+     "376": 1,
+     "324": 1,
+     "366": 3,
+     "382": 1,
+     "353": 1,
+     "631": 1,
+     "211": 1,
+     "317": 1,
+     "224": 1,
+     "316": 1,
+     "354": 1,
+     "250": 1,
+     "331": 1,
+     "309": 1,
+     "344": 1,
+     "380": 1,
+     "359": 1,
+     "351": 1
+    },
+    "rows_per_file": {
+     "min": 120,
+     "median": 1029.0,
+     "max": 5909
+    },
+    "duration_s": {
+     "min": 12.017014503479004,
+     "median": 36.646347999572754,
+     "max": 276.92503547668457
+    },
+    "rate_hz": {
+     "min": 4.1,
+     "median": 27.7,
+     "max": 51.6
+    },
+    "n_users_by_group": {
+     "2_users": 23,
+     "3_users": 48,
+     "single_user": 19
+    },
+    "user_overlap_between_groups": {
+     "2_users&3_users": [],
+     "2_users&single_user": [
+      31,
+      32,
+      33,
+      73,
+      74
+     ],
+     "3_users&single_user": [
+      59,
+      60,
+      61
+     ]
+    },
+    "bad_lines": 2452,
+    "mac_mix": {
+     "n_files": 925,
+     "dominant_share_quantiles": {
+      "0": 0.557,
+      "0.05": 0.9585400000000001,
+      "0.25": 0.9796,
+      "0.5": 0.9849,
+      "0.75": 0.989,
+      "1": 1.0
+     },
+     "files_dominant_share_lt_0.9": 11,
+     "files_dominant_share_lt_0.5": 0,
+     "ht_share_quantiles": {
+      "0": 0.3966,
+      "0.05": 0.91142,
+      "0.25": 0.962,
+      "0.5": 0.9747,
+      "0.75": 0.9803,
+      "1": 0.9963
+     },
+     "files_mixed_mode_(0.02<ht<0.98)": 675,
+     "files_mostly_legacy": 1,
+     "dominant_mac_by_files": {
+      "3C:71:BF:FD:18:85": 653,
+      "3C:71:BF:FD:03:79": 175,
+      "A4:CF:12:6D:EF:DD": 97
+     },
+     "files_with_multiple_channels": 888
+    }
+   },
+   "findings": [
+    {
+     "claim": "ESP32-CSI-Tool CSI_RAW line format with host epoch appended",
+     "evidence": "verified_file",
+     "source": "scripts/04_iitbhu.py"
+    },
+    {
+     "claim": "Format of the tool's CSI_DATA line",
+     "evidence": "external",
+     "source": "https://github.com/StevenMHernandez/ESP32-CSI-Tool"
+    },
+    {
+     "claim": "384-value rows (HT40 LLTF+HT-LTF) 96.8%, 128-value 3.2%, ~40 corrupt lengths, 2,452 garbled lines",
+     "evidence": "verified_file",
+     "source": "scripts/04_iitbhu.py"
+    },
+    {
+     "claim": "Packet rate per file 4.1-51.6 Hz (median 27.7)",
+     "evidence": "verified_file",
+     "source": "scripts/04_iitbhu.py"
+    },
+    {
+     "claim": "Dominant TX MAC median 98.5% of rows; 3 different dominant TX MACs across files",
+     "evidence": "verified_file",
+     "source": "scripts/04b_iitbhu_macs.py"
+    },
+    {
+     "claim": "11 byte-identical file pairs carry different user-ID filenames; 3 empty files",
+     "evidence": "verified_file",
+     "source": "scripts/01_inventory.py"
+    },
+    {
+     "claim": "Dataset: ESP32 NodeMCU, ESP32-CSI Toolkit, 80+ participants, 6 activities, 1/2/3-user scenarios",
+     "evidence": "external",
+     "source": "https://ieee-dataport.org/documents/channel-state-information-dataset-multi-human-activity-recognition-indoor-environments"
+    },
+    {
+     "claim": "No 0-person recordings",
+     "evidence": "verified_file",
+     "source": "listing"
+    }
+   ],
+   "uncertainties": [
+    "room layout",
+    "how activity order maps to users in multi-user files",
+    "licence terms beyond DataPort"
+   ]
+  },
+  {
+   "dataset": "CSI HAR (Zhuravchak & Kapshii)",
+   "path": "D:/wifi/Datasets/CSI HAR",
+   "audit_status": "fully_audited_files",
+   "disk": {
+    "files": 32,
+    "bytes": 1179326175,
+    "gib": 1.098,
+    "extensions": {
+     ".csv": 29,
+     "(none)": 3
+    },
+    "archives": 0
+   },
+   "measured": {
+    "sessions": [
+     {
+      "session": "room_1/1",
+      "data_rows": 5230,
+      "label_rows": 5229,
+      "label_boxes_rows": 5230,
+      "label_distribution": {
+       "walking": 2480,
+       "lying": 625,
+       "no_person": 600,
+       "standing": 524,
+       "sitting": 460,
+       "get_down": 275,
+       "get_up": 265
+      }
+     },
+     {
+      "session": "room_1/2",
+      "data_rows": 4304,
+      "label_rows": 4303,
+      "label_boxes_rows": 4310,
+      "label_distribution": {
+       "walking": 2205,
+       "lying": 560,
+       "no_person": 540,
+       "standing": 423,
+       "get_down": 200,
+       "sitting": 200,
+       "get_up": 175
+      }
+     },
+     {
+      "session": "room_1/3",
+      "data_rows": 4616,
+      "label_rows": 4615,
+      "label_boxes_rows": 4620,
+      "label_distribution": {
+       "walking": 1920,
+       "no_person": 990,
+       "lying": 590,
+       "standing": 445,
+       "sitting": 280,
+       "get_down": 210,
+       "get_up": 180
+      }
+     },
+     {
+      "session": "room_1/4",
+      "data_rows": 7663,
+      "label_rows": 7662,
+      "label_boxes_rows": 7670,
+      "label_distribution": {
+       "walking": 3140,
+       "standing": 1482,
+       "sitting": 1290,
+       "no_person": 780,
+       "lying": 570,
+       "get_down": 210,
+       "get_up": 190
+      }
+     },
+     {
+      "session": "room_2/1",
+      "data_rows": 12994,
+      "label_rows": 12993,
+      "label_boxes_rows": null,
+      "label_distribution": {
+       "walking": 5660,
+       "standing": 2298,
+       "sitting": 1475,
+       "no_person": 1310,
+       "lying": 1040,
+       "get_down": 715,
+       "get_up": 495
+      }
+     },
+     {
+      "session": "room_3/1",
+      "data_rows": 4035,
+      "label_rows": 4034,
+      "label_boxes_rows": 4040,
+      "label_distribution": {
+       "walking": 2200,
+       "sitting": 735,
+       "no_person": 570,
+       "standing": 304,
+       "get_down": 125,
+       "get_up": 100
+      }
+     },
+     {
+      "session": "room_3/2",
+      "data_rows": 10058,
+      "label_rows": 10057,
+      "label_boxes_rows": 10060,
+      "label_distribution": {
+       "walking": 3400,
+       "sitting": 2460,
+       "lying": 1945,
+       "no_person": 1480,
+       "get_up": 335,
+       "standing": 227,
+       "get_down": 210
+      }
+     },
+     {
+      "session": "room_3/3",
+      "data_rows": 7214,
+      "label_rows": 7213,
+      "label_boxes_rows": 7220,
+      "label_distribution": {
+       "walking": 2840,
+       "lying": 1035,
+       "no_person": 960,
+       "sitting": 850,
+       "standing": 683,
+       "get_down": 425,
+       "get_up": 420
+      }
+     },
+     {
+      "session": "room_3/4",
+      "data_rows": 5472,
+      "label_rows": 5471,
+      "label_boxes_rows": 5480,
+      "label_distribution": {
+       "walking": 3720,
+       "sitting": 660,
+       "no_person": 580,
+       "standing": 271,
+       "get_down": 130,
+       "get_up": 110
+      }
+     },
+     {
+      "session": "room_3/5",
+      "data_rows": 5863,
+      "label_rows": 5862,
+      "label_boxes_rows": 5870,
+      "label_distribution": {
+       "walking": 1880,
+       "lying": 1035,
+       "sitting": 930,
+       "no_person": 810,
+       "standing": 732,
+       "get_down": 250,
+       "get_up": 225
+      }
+     }
+    ]
+   },
+   "findings": [
+    {
+     "claim": "Rows = 114 constant index ints + 4x114 amplitudes + 4x114 phases",
+     "evidence": "verified_file",
+     "source": "scripts/05_csihar.py"
+    },
+    {
+     "claim": "Amplitude/phase are exact polar form of integer I/Q (|I|,|Q| <= ~404)",
+     "evidence": "verified_file",
+     "source": "scripts/05_csihar.py"
+    },
+    {
+     "claim": "TP-Link TL-WDR4300, Atheros CSI Tool, 5 GHz ch60, 40 MHz, 2x2, 114 subcarriers, 1 person, 3 rooms",
+     "evidence": "external",
+     "source": "https://doi.org/10.6084/m9.figshare.14386892"
+    },
+    {
+     "claim": "Each CSI packet labelled with an activity and a camera bounding box",
+     "evidence": "external",
+     "source": "https://doi.org/10.1016/j.procs.2021.12.211"
+    },
+    {
+     "claim": "label.csv has one row fewer than data.csv in every session; label_boxes differs by 0-8 rows; room_2 lacks boxes",
+     "evidence": "verified_file",
+     "source": "scripts/05_csihar.py"
+    },
+    {
+     "claim": "No timestamps or RSSI: sampling rate cannot be determined",
+     "evidence": "verified_file",
+     "source": "scripts/05_csihar.py"
+    }
+   ],
+   "uncertainties": [
+    "packet rate",
+    "antenna-pair order of the 4 blocks",
+    "exact label alignment"
+   ]
+  },
+  {
+   "dataset": "Haron98 WiFi CSI Router Reception",
+   "path": "D:/wifi/Datasets/Haron98_WIFI-CSI-Dataset",
+   "audit_status": "fully_audited_files_label_semantics_unknown",
+   "disk": {
+    "files": 4802,
+    "bytes": 228854166,
+    "gib": 0.213,
+    "extensions": {
+     ".data": 4800,
+     "(none)": 1,
+     ".md": 1
+    },
+    "archives": 0
+   },
+   "measured": {
+    "lines_total": 480000,
+    "lines_valid": 479402,
+    "frame_interval_s": {
+     "median": 0.03900003433227539,
+     "p5": 0.03299999237060547,
+     "p95": 0.04400014877319336,
+     "max": 1.3610000610351562,
+     "n_nonpositive": 0
+    },
+    "trial_duration_s": {
+     "median": 3.9760000705718994,
+     "min": 3.263000011444092,
+     "max": 7.329999923706055
+    },
+    "time_range": [
+     "2026-04-18 20:17:59.599000+03:00",
+     "2026-04-18 23:21:01.561000+03:00"
+    ],
+    "dev1_amplitude_by_label": {
+     "label_00": {
+      "trials": 400,
+      "amp_mean": 18.89,
+      "temporal_std_mean": 2.381
+     },
+     "label_01": {
+      "trials": 400,
+      "amp_mean": 12.9,
+      "temporal_std_mean": 3.222
+     },
+     "label_02": {
+      "trials": 400,
+      "amp_mean": 14.39,
+      "temporal_std_mean": 3.123
+     },
+     "label_03": {
+      "trials": 400,
+      "amp_mean": 13.95,
+      "temporal_std_mean": 3.324
+     }
+    },
+    "rssi_by_label": {
+     "label_00": {
+      "mean": -50.34,
+      "std": 7.9
+     },
+     "label_01": {
+      "mean": -48.58,
+      "std": 4.99
+     },
+     "label_02": {
+      "mean": -48.42,
+      "std": 5.03
+     },
+     "label_03": {
+      "mean": -48.08,
+      "std": 5.61
+     }
+    }
+   },
+   "findings": [
+    {
+     "claim": "4,800 files x 100 lines; 479,402 valid; malformed always line 1",
+     "evidence": "verified_file",
+     "source": "scripts/03_haron.py"
+    },
+    {
+     "claim": "ESP32 LLTF 64 tones; zero pairs 0 and 27-37 match ESP-IDF ordering",
+     "evidence": "verified_file",
+     "source": "scripts/03_haron.py"
+    },
+    {
+     "claim": "Passive router traffic: HT, MCS 7, ch 6, 20 MHz; ~25 Hz",
+     "evidence": "verified_file",
+     "source": "scripts/03_haron.py"
+    },
+    {
+     "claim": "label_00..03 meanings are TODO; licence contradictory",
+     "evidence": "verified_local_doc",
+     "source": "README.md"
+    },
+    {
+     "claim": "label_00 recorded last (22:44-23:21) for all subjects; higher mean amplitude, lower temporal variance",
+     "evidence": "verified_file",
+     "source": "scripts/03_haron.py",
+     "note": "consistent with an empty/static baseline but confounded with time - not a label definition"
+    }
+   ],
+   "uncertainties": [
+    "label meanings",
+    "ESP32 model",
+    "room"
+   ]
+  }
+ ],
+ "resources": {
+  "note": "RAM figures are estimates (labelled), disk figures measured",
+  "per_dataset_ram_estimate_mb": {
+   "WiCount": "<50 (whole dataset)",
+   "80MHz PC": "largest file as complex128 ~850; complex64 ~425; streaming reader <150 (measured run)",
+   "CountFi": "~1 per pcap; whole set as int16 ~4,850",
+   "WiMANS": "~3.3 per sample; whole local set ~9,000",
+   "IIT-BHU": "whole set as int16 ~750",
+   "CSI HAR": "largest session float64 ~107; all ~555",
+   "Haron98": "whole set int16 ~125"
+  },
+  "temporary_disk_needed": "none for audit (no archives); conversions should write float16/int16 to keep < 5 GB",
+  "cloud_recommended_for": [
+   "full WiMANS download incl. annotation/raw (~tens of GB > 8.3 GiB free)",
+   "any full 80MHz or CountFi tensor materialisation in float32"
+  ]
+ }
+}

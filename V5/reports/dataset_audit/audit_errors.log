@@ -1,0 +1,45 @@
+[EMPTY/TINY] CountFi/48/48_end_fm/3/55.pcap (24 bytes)
+[EMPTY/TINY] CountFi/48/48_end_mm_v2/8/35.pcap (24 bytes)
+[EMPTY/TINY] CountFi/48/48_end_rm/10/68.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_end_rm/10/69.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_end_rm/10/70.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_end_rm/10/71.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_end_rm/10/72.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_head_fm/3/55.pcap (24 bytes)
+[EMPTY/TINY] CountFi/48/48_head_mm_v2/8/35.pcap (24 bytes)
+[EMPTY/TINY] CountFi/48/48_head_rm/10/68.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_head_rm/10/69.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_head_rm/10/70.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_head_rm/10/71.pcap (0 bytes)
+[EMPTY/TINY] CountFi/48/48_head_rm/10/72.pcap (0 bytes)
+[EMPTY/TINY] Dataset/PC-2a/PC2a_n00.mat (183 bytes)
+[EMPTY/TINY] Wiman/validation_summary.txt (138 bytes)
+[EMPTY/TINY] IIT-BHU/wifi_dataset_Collected/3_users/User_59_60_61_clap_wave_move (1).csv (0 bytes)
+[EMPTY/TINY] IIT-BHU/wifi_dataset_Collected/3_users/User_68_69_70_stretch_bend_run (14).csv (0 bytes)
+[EMPTY/TINY] IIT-BHU/wifi_dataset_Collected/3_users/User_69_70_68_stretch_bend_run (6).csv (0 bytes)
+[PCAP] CountFi/48/48_end_fm/3/55.pcap: status=header_only (no packets)
+[PCAP] CountFi/48/48_end_mm_v2/8/35.pcap: status=header_only (no packets)
+[PCAP] CountFi/48/48_end_rm/10/68.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_end_rm/10/69.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_end_rm/10/70.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_end_rm/10/71.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_end_rm/10/72.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_head_fm/3/55.pcap: status=header_only (no packets)
+[PCAP] CountFi/48/48_head_mm_v2/8/35.pcap: status=header_only (no packets)
+[PCAP] CountFi/48/48_head_rm/10/68.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_head_rm/10/69.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_head_rm/10/70.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_head_rm/10/71.pcap: status=empty (no packets)
+[PCAP] CountFi/48/48_head_rm/10/72.pcap: status=empty (no packets)
+[PARSE] Haron98: 598 malformed lines (always line 1 of a file) - skipped by parser
+[PARSE] IIT-BHU: 2452 lines with garbled/truncated CSI tokens skipped; 54 lines with non-standard CSI length
+[MISSING] Wiman/amp/act_24_89.npy: listed as failed (WinError 8, out of memory) in Wiman/validation_summary.txt and no longer present on disk; act_24 has 87/99 files
+[MISSING] Wiman: annotation.csv (labels), wifi_csi/mat (raw CSI) and video/ not present locally
+[MISSING] Dataset/: set_names.pdf (setup descriptions for PC-1a..PC-4a) not present; n01 absent in all PC folders
+[CONTENT] Dataset/PC-2a/PC2a_n00.mat: valid MAT, csi_buff is a single all-zero 1x256 uint8 row (no data)
+[DOC] Haron98: label_00..03 meanings are 'TODO' in README; license contradictory (YAML MIT vs body 'no license')
+[DOC] CountFi, IIT-BHU, CSI HAR, Wiman, Dataset/: no README/licence/docs present locally (documented from web)
+[UNRESOLVED] CountFi: meaning of numbered subfolders (1..10) and condition codes fm/mm/mm_v2/mm_v3/ms/rm not documented
+[UNRESOLVED] CSI HAR: packet rate / timestamps absent; label.csv has 1 row fewer than data.csv in every session; label_boxes.csv row count exceeds data.csv by 0-8 rows
+[REMOVED] Wiman/ and Haron98_WIFI-CSI-Dataset/ permanently deleted from D:/wifi/Datasets on 2026-10-19 at the user's request (datasets kept in Google Colab); findings retained as a record
+[ENV] Python -I hides user site-packages; dpkt/h5py scripts run with -P -E instead

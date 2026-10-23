@@ -1,0 +1,24 @@
+Event,Info,Duration (seconds),Date,Start Time (UTC),End Time (UTC)
+walking,at 0.5m(0-1m) from the IoT Devices,180.0,2025-04-28,12:17:06,12:20:09
+walking,at 0.5m(0-1m) from the  IoT Devices,180.0,2025-04-28,12:20:14,12:23:18
+walking,1.5m(1-2m) from the  IoT Devices,180.0,2025-04-28,12:23:51,12:26:58
+walking,1.5m(1-2m) from the  IoT Devices,180.0,2025-04-28,12:27:09,12:30:12
+walking,2.5m(2-3m) from the  IoT Devices,180.0,2025-04-28,12:40:45,12:43:50
+walking,2.5m(2-3m) from the  IoT Devices,180.0,2025-04-28,12:44:01,12:47:04
+walking,3.5m(3-4m) from the  IoT Devices,180.0,2025-04-28,12:51:53,12:54:56
+walking,3.5m(3-4m) from the  IoT Devices,180.0,2025-04-28,13:25:17,13:28:21
+seated-breathing,about 1.5m from the  IoT Devices (on chair),180.0,2025-04-28,13:29:43,13:32:49
+seated-breathing,about 1.5m from the IoT Devices(on chair),180.0,2025-04-28,13:32:55,13:36:00
+jumping,about 1.5m from the  IoT Devices,90.0,2025-04-28,13:37:27,13:39:02
+jumping,about 1.5m from the  IoT Devices,90.0,2025-04-28,13:40:49,13:42:24
+jumping,about 1.5m from the  IoT Devices,90.0,2025-04-28,13:43:40,13:45:22
+wavinghand,about 1.5m from the  IoT Devices,180.0,2025-04-28,13:46:00,13:49:05
+wavinghand,about 1.5m from the  IoT Devices,180.0,2025-04-28,13:49:09,13:52:13
+running,about 1.5m from the  IoT Devices ,90.0,2025-04-28,13:54:02,13:55:35
+running,about 1.5m from the  IoT Devices ,90.0,2025-04-28,13:55:43,13:57:17
+running,about 1.5m from the  IoT Devices,90.0,2025-04-28,13:57:25,13:59:00
+running,about 1.5m from the  IoT Devices ,90.0,2025-04-28,13:59:07,14:00:42
+,,,,,
+,,,,,
+Tester,Enviornment,,,,
+U06,E06,,,,

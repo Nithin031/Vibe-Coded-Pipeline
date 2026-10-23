@@ -1,0 +1,27 @@
+{
+ "single": {
+  "input": [
+   52,
+   150
+  ],
+  "window_s": 3.0,
+  "params": 35575,
+  "macs_per_window": 2891968,
+  "weights_fp32_kb": 139.0,
+  "weights_int8_kb": 34.7,
+  "onnx": "ok"
+ },
+ "multi": {
+  "input": [
+   9,
+   52,
+   150
+  ],
+  "window_s": 3.0,
+  "params": 35575,
+  "macs_per_window": 26024128,
+  "weights_fp32_kb": 139.0,
+  "weights_int8_kb": 34.7,
+  "onnx": "ok"
+ }
+}

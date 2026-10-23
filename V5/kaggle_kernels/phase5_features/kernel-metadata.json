@@ -1,0 +1,15 @@
+{
+  "id": "wizard1803/wifi-phase5-features",
+  "title": "WiFi Phase5 Features",
+  "code_file": "wifi-phase5-features.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": ["wizard1803/wifi-csi", "shuokanghuang/wimans", "guozhenjennzhu/csi-bench"],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

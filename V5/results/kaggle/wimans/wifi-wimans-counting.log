@@ -1,0 +1,82 @@
+[{"stream_name":"stderr","time":9.684273842,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":9.684328659,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":11.120933435,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.120954578,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.120960045,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.120964487,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.898906691,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.898942923,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.898948418,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.898952555,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":36.319965986,"data":"attached datasets: ['datasets']\n"}
+,{"stream_name":"stdout","time":36.87706097,"data":"WiMANS root: /kaggle/input/datasets/shuokanghuang/wimans\n"}
+,{"stream_name":"stdout","time":38.062798672,"data":"amp dir    : /kaggle/input/datasets/shuokanghuang/wimans/wifi_csi/amp   files: 11286\n"}
+,{"stream_name":"stdout","time":38.062830515,"data":"device     : cuda   cpus: 4\n"}
+,{"stream_name":"stdout","time":38.629641721,"data":"(11286, 17)\n"}
+,{"stream_name":"stdout","time":38.629674389,"data":"['#', 'label', 'environment', 'wifi_band', 'number_of_users', 'user_1_location', 'user_2_location', 'user_3_location', 'user_4_location', 'user_5_location', 'user_6_location', 'user_1_activity', 'user_2_activity', 'user_3_activity', 'user_4_activity', 'user_5_activity', 'user_6_activity']\n"}
+,{"stream_name":"stdout","time":40.658427578,"data":"annotation rows with an amp file: 11286 / 11286\n"}
+,{"stream_name":"stdout","time":40.689034075,"data":"sessions: 114 | sessions spanning \u003e1 env: 0 | \u003e1 band: 0 | with \u003e1 count: 0\n"}
+,{"stream_name":"stdout","time":40.70106592,"data":"activities: ['jump', 'lie_down', 'nothing', 'pick_up', 'rotation', 'sit_down', 'stand_up', 'walk', 'wave']\n"}
+,{"stream_name":"stdout","time":64.559471683,"data":"shapes seen: {'(2972, 3, 3, 30)': 6, '(2865, 3, 3, 30)': 5, '(2976, 3, 3, 30)': 5, '(2967, 3, 3, 30)': 5, '(2901, 3, 3, 30)': 4}\n"}
+,{"stream_name":"stdout","time":64.559534401,"data":"T range: 2495 - 2992 | max value: 179.61068725585938\n"}
+,{"stream_name":"stdout","time":64.624049609,"data":"sub-band bins: [(134, 185), (198, 249), (6, 57), (70, 121)]\n"}
+,{"stream_name":"stdout","time":64.65137764,"data":"samples to convert: 5643 bands: ['5']\n"}
+,{"stream_name":"stdout","time":73.08732243,"data":"     0 / 5643   [8 s]\n"}
+,{"stream_name":"stdout","time":199.792198684,"data":"  1000 / 5643   [135 s]\n"}
+,{"stream_name":"stdout","time":334.64160837,"data":"  2000 / 5643   [270 s]\n"}
+,{"stream_name":"stdout","time":459.426650045,"data":"  3000 / 5643   [395 s]\n"}
+,{"stream_name":"stdout","time":590.475439228,"data":"  4000 / 5643   [526 s]\n"}
+,{"stream_name":"stdout","time":718.715663184,"data":"  5000 / 5643   [654 s]\n"}
+,{"stream_name":"stdout","time":795.991580469,"data":"done in 731 s; samples with \u003e= 80 % valid bins: 5643 / 5643\n"}
+,{"stream_name":"stderr","time":796.600449144,"data":"/tmp/ipykernel_23/1506406785.py:16: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.\n"}
+,{"stream_name":"stderr","time":796.600480446,"data":"  display(cue.groupby([\"env\", \"band\"]).apply(\n"}
+,{"stream_name":"stderr","time":796.600489251,"data":"\n"}
+,{"stream_name":"stderr","time":796.600498525,"data":"/tmp/ipykernel_23/1506406785.py:16: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.\n"}
+,{"stream_name":"stderr","time":796.600503963,"data":"  display(cue.groupby([\"env\", \"band\"]).apply(\n"}
+,{"stream_name":"stdout","time":821.771147387,"data":"extra cues for 5643 samples in 25 s\n"}
+,{"stream_name":"stdout","time":823.920881313,"data":"sessions per room and count:\n"}
+,{"stream_name":"stdout","time":823.943835652,"data":"5643 samples, 50787 rows, 15 calibration sessions, test samples: 4158\n"}
+,{"stream_name":"stdout","time":880.981425249,"data":"calib=none     features=base10       [57 s]\n"}
+,{"stream_name":"stdout","time":951.88611493,"data":"calib=none     features=single_link  [128 s]\n"}
+,{"stream_name":"stdout","time":1028.628350568,"data":"calib=none     features=multi_link   [205 s]\n"}
+,{"stream_name":"stdout","time":1085.492246731,"data":"calib=group_z  features=base10       [261 s]\n"}
+,{"stream_name":"stdout","time":1158.430009922,"data":"calib=group_z  features=single_link  [334 s]\n"}
+,{"stream_name":"stdout","time":1236.356030752,"data":"calib=group_z  features=multi_link   [412 s]\n"}
+,{"stream_name":"stdout","time":1236.520476713,"data":"TinyCNN parameters: 35575\n"}
+,{"stream_name":"stdout","time":1353.889749494,"data":"cnn_single zero_shot left out classroom      [117 s]\n"}
+,{"stream_name":"stdout","time":1425.316671388,"data":"cnn_single zero_shot left out empty_room     [189 s]\n"}
+,{"stream_name":"stdout","time":1496.857456645,"data":"cnn_single zero_shot left out meeting_room   [260 s]\n"}
+,{"stream_name":"stdout","time":1568.55443741,"data":"cnn_single cal_empty left out classroom      [332 s]\n"}
+,{"stream_name":"stdout","time":1640.563229568,"data":"cnn_single cal_empty left out empty_room     [404 s]\n"}
+,{"stream_name":"stdout","time":1712.261099898,"data":"cnn_single cal_empty left out meeting_room   [476 s]\n"}
+,{"stream_name":"stdout","time":1783.574578521,"data":"cnn_single cal_all   left out classroom      [547 s]\n"}
+,{"stream_name":"stdout","time":1854.568315793,"data":"cnn_single cal_all   left out empty_room     [618 s]\n"}
+,{"stream_name":"stdout","time":1925.645873111,"data":"cnn_single cal_all   left out meeting_room   [689 s]\n"}
+,{"stream_name":"stdout","time":1999.79591888,"data":"cnn_multi  zero_shot left out classroom      [763 s]\n"}
+,{"stream_name":"stdout","time":2073.746871886,"data":"cnn_multi  zero_shot left out empty_room     [837 s]\n"}
+,{"stream_name":"stdout","time":2148.026069901,"data":"cnn_multi  zero_shot left out meeting_room   [911 s]\n"}
+,{"stream_name":"stdout","time":2223.60755226,"data":"cnn_multi  cal_empty left out classroom      [987 s]\n"}
+,{"stream_name":"stdout","time":2299.546932726,"data":"cnn_multi  cal_empty left out empty_room     [1063 s]\n"}
+,{"stream_name":"stdout","time":2375.683418929,"data":"cnn_multi  cal_empty left out meeting_room   [1139 s]\n"}
+,{"stream_name":"stdout","time":2451.411357324,"data":"cnn_multi  cal_all   left out classroom      [1215 s]\n"}
+,{"stream_name":"stdout","time":2526.977266758,"data":"cnn_multi  cal_all   left out empty_room     [1290 s]\n"}
+,{"stream_name":"stdout","time":2602.353344643,"data":"cnn_multi  cal_all   left out meeting_room   [1366 s]\n"}
+,{"stream_name":"stderr","time":2673.346184829,"data":"/tmp/ipykernel_23/3593997981.py:23: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter has become the default. Learn more about the new export logic: https://docs.pytorch.org/docs/stable/onnx_export.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html\n"}
+,{"stream_name":"stderr","time":2673.346223316,"data":"  torch.onnx.export(model, x, path, dynamo=False, **kwargs)\n"}
+,{"stream_name":"stderr","time":2673.34623045,"data":"\n"}
+,{"stream_name":"stderr","time":2673.346235994,"data":"/tmp/ipykernel_23/3593997981.py:23: DeprecationWarning: You are using the legacy TorchScript-based ONNX export. Starting in PyTorch 2.9, the new torch.export-based ONNX exporter has become the default. Learn more about the new export logic: https://docs.pytorch.org/docs/stable/onnx_export.html. For exporting control flow: https://pytorch.org/tutorials/beginner/onnx/export_control_flow_model_to_onnx_tutorial.html\n"}
+,{"stream_name":"stderr","time":2673.346242442,"data":"  torch.onnx.export(model, x, path, dynamo=False, **kwargs)\n"}
+,{"stream_name":"stderr","time":2750.689914528,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2750.689944905,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2750.917619777,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2750.917640494,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2751.764306244,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2751.863541364,"data":"[NbConvertApp] Writing 730536 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2754.327726648,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2755.12868674,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":2755.128721835,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":2755.129120799,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":2755.129517942,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":2755.129753146,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":2755.130105868,"data":"[NbConvertApp] Writing 556633 bytes to __results__.html\n"}
+]

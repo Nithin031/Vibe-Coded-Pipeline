@@ -1,0 +1,90 @@
+dataset,label_type,class,label_source,recordings_or_sessions,files,rows_or_packets,seconds,row_unit,notes
+WiCount,people_count,0,documented (README: folder = number of people),1,1,5218,60.0,packets,
+WiCount,people_count,1,documented (README: folder = number of people),7,7,36559,419.9,packets,
+WiCount,people_count,2,documented (README: folder = number of people),6,6,31935,359.9,packets,
+WiCount,people_count,3,documented (README: folder = number of people),1,1,4906,59.8,packets,
+80MHz (Dataset/),people_count,0,"documented (DataPort: PCxy_nN, N = concurrent people)",3,4,612008,884.4,rows (4 per packet); seconds estimated at published 173 pkt/s,PC2a_n00 holds 1 all-zero row -> only 3 usable n00 recordings
+80MHz (Dataset/),people_count,1,"documented (DataPort: PCxy_nN, N = concurrent people)",0,0,0,,rows (4 per packet),MISSING in all 4 setups (n01 not in PC folders)
+80MHz (Dataset/),people_count,2,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,782648,1131.0,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,3,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,698056,1008.8,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,4,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,804684,1162.8,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,5,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,702985,1015.9,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,6,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,688080,994.3,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,7,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,737340,1065.5,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,8,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,814464,1177.0,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,9,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,661860,956.4,rows (4 per packet); seconds estimated at published 173 pkt/s,
+80MHz (Dataset/),people_count,10,"documented (DataPort: PCxy_nN, N = concurrent people)",4,4,762552,1102.0,rows (4 per packet); seconds estimated at published 173 pkt/s,
+CountFi (local subset),subfolder_number (very likely passenger count),1,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,6,286,286000,314.0,packets (rear 'end' receiver only),"conditions: fm,mm,mm_v2,mm_v3,ms,rm; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),2,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,1,108,108000,115.3,packets (rear 'end' receiver only),conditions: mm; 'head' receiver has the same seconds
+CountFi (local subset),subfolder_number (very likely passenger count),3,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,5,320,320000,334.2,packets (rear 'end' receiver only),"conditions: fm,mm,mm_v2,mm_v3,rm; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),4,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,5,452,452000,457.2,packets (rear 'end' receiver only),"conditions: fm,mm,mm_v2,mm_v3,rm; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),5,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,6,276,276000,291.7,packets (rear 'end' receiver only),"conditions: fm,mm,mm_v2,mm_v3,ms,rm; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),6,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,2,212,212000,212.1,packets (rear 'end' receiver only),"conditions: mm,mm_v3; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),7,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,2,66,66000,63.0,packets (rear 'end' receiver only),"conditions: mm,mm_v3; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),8,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,6,282,282000,289.5,packets (rear 'end' receiver only),"conditions: fm,mm,mm_v2,mm_v3,ms,rm; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),10,inferred (medium-high): page says ground-truth counts are included; the Apr-2025 download 48.zip holds only numbered folders,5,368,368000,379.2,packets (rear 'end' receiver only),"conditions: fm,mm,mm_v2,mm_v3,rm; 'head' receiver has the same seconds"
+CountFi (local subset),subfolder_number (very likely passenger count),0,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),9,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),11,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),12,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),13,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),14,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),15,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),16,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),17,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),18,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),19,absent locally,0,0,0,,,paper reports classes up to 20
+CountFi (local subset),subfolder_number (very likely passenger count),20,absent locally,0,0,0,,,paper reports classes up to 20
+IIT-BHU,users_in_scenario (folder),1,documented on DataPort abstract (1/2/3-user scenarios); per-file count from folder name,300,300,265979,10296.8,packets,no 0-person class; 11 duplicate file pairs; 3 empty files excluded
+IIT-BHU,users_in_scenario (folder),2,documented on DataPort abstract (1/2/3-user scenarios); per-file count from folder name,257,257,275934,9933.2,packets,no 0-person class; 11 duplicate file pairs; 3 empty files excluded
+IIT-BHU,users_in_scenario (folder),3,documented on DataPort abstract (1/2/3-user scenarios); per-file count from folder name,368,368,419317,14376.8,packets,no 0-person class; 11 duplicate file pairs; 3 empty files excluded
+IIT-BHU,activity_string (filename),2_users:bend_run,filename,40,40,,,,
+IIT-BHU,activity_string (filename),2_users:clap_move,filename,60,60,,,,
+IIT-BHU,activity_string (filename),2_users:clap_wave,filename,30,30,,,,
+IIT-BHU,activity_string (filename),2_users:stretch_bend,filename,35,35,,,,
+IIT-BHU,activity_string (filename),2_users:stretch_run,filename,52,52,,,,
+IIT-BHU,activity_string (filename),2_users:wave_move,filename,40,40,,,,
+IIT-BHU,activity_string (filename),3_users:clap_wave_move,filename,158,158,,,,
+IIT-BHU,activity_string (filename),3_users:stretch_bend_run,filename,210,210,,,,
+IIT-BHU,activity_string (filename),single_user:bend,filename,55,55,,,,
+IIT-BHU,activity_string (filename),single_user:clap,filename,46,46,,,,
+IIT-BHU,activity_string (filename),single_user:move,filename,60,60,,,,
+IIT-BHU,activity_string (filename),single_user:pen,filename,5,5,,,,
+IIT-BHU,activity_string (filename),single_user:run,filename,45,45,,,,
+IIT-BHU,activity_string (filename),single_user:stretch,filename,30,30,,,,
+IIT-BHU,activity_string (filename),single_user:wave,filename,59,59,,,,
+CSI HAR,activity_per_row,room_1:walking,label.csv (camera-assisted per packet),,,9745,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_1:lying,label.csv (camera-assisted per packet),,,2345,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_1:no_person,label.csv (camera-assisted per packet),,,2910,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_1:standing,label.csv (camera-assisted per packet),,,2874,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_1:sitting,label.csv (camera-assisted per packet),,,2230,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_1:get_down,label.csv (camera-assisted per packet),,,895,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_1:get_up,label.csv (camera-assisted per packet),,,810,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_2:walking,label.csv (camera-assisted per packet),,,5660,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_2:standing,label.csv (camera-assisted per packet),,,2298,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_2:sitting,label.csv (camera-assisted per packet),,,1475,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_2:no_person,label.csv (camera-assisted per packet),,,1310,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_2:lying,label.csv (camera-assisted per packet),,,1040,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_2:get_down,label.csv (camera-assisted per packet),,,715,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_2:get_up,label.csv (camera-assisted per packet),,,495,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_3:walking,label.csv (camera-assisted per packet),,,14040,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_3:sitting,label.csv (camera-assisted per packet),,,5635,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_3:no_person,label.csv (camera-assisted per packet),,,4400,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_3:standing,label.csv (camera-assisted per packet),,,2217,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_3:get_down,label.csv (camera-assisted per packet),,,1140,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_3:get_up,label.csv (camera-assisted per packet),,,1190,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row,room_3:lying,label.csv (camera-assisted per packet),,,4015,,rows (packets),sampling rate not documented -> seconds unknown
+CSI HAR,activity_per_row (all rooms),get_down,label.csv,,,2750,,rows,
+CSI HAR,activity_per_row (all rooms),get_up,label.csv,,,2495,,rows,
+CSI HAR,activity_per_row (all rooms),lying,label.csv,,,7400,,rows,
+CSI HAR,activity_per_row (all rooms),no_person,label.csv,,,8620,,rows,
+CSI HAR,activity_per_row (all rooms),sitting,label.csv,,,9340,,rows,
+CSI HAR,activity_per_row (all rooms),standing,label.csv,,,7389,,rows,
+CSI HAR,activity_per_row (all rooms),walking,label.csv,,,29445,,rows,
+CSI HAR,derived presence (no_person vs any activity),0 people,inferred from 'no_person',,,8620,,rows,single-subject dataset: occupancy only 0 or 1
+CSI HAR,derived presence (no_person vs any activity),1 person,inferred,,,58819,,rows,
+Haron98,label_dir (semantics UNDEFINED),label_00,README: 'TODO',400,1200,,,trials x 3 receivers,label_00 recorded last for all 4 subjects (22:44-23:21)
+Haron98,label_dir (semantics UNDEFINED),label_01,README: 'TODO',400,1200,,,trials x 3 receivers,
+Haron98,label_dir (semantics UNDEFINED),label_02,README: 'TODO',400,1200,,,trials x 3 receivers,
+Haron98,label_dir (semantics UNDEFINED),label_03,README: 'TODO',400,1200,,,trials x 3 receivers,
+WiMANS (Wiman/),number_of_users,0..5 (published),annotation.csv NOT PRESENT locally,3057,3057,,9171.0,3-s samples,"published totals (all 11,286 samples): 0:594, 1:3564, 2-5:1782 each - cannot be mapped to local files"

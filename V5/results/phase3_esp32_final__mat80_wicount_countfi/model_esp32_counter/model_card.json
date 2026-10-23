@@ -1,0 +1,146 @@
+{
+ "name": "esp32_people_counter",
+ "created": "2026-10-23 01:00",
+ "model": "LightGBM regression on 10 window features, exported as flat trees",
+ "input": "ESP32-S3 CSI amplitude, 52 tones (HT20 L-LTF data tones), >= 50 packets/s",
+ "output": "people count 0-10, updated every 2.5 s (median of the last 30 s)",
+ "training_data": [
+  "mat80",
+  "wicount"
+ ],
+ "n_training_windows": 49394,
+ "calibration": "empty_cal",
+ "calibration_howto": "Leave the room empty, start the counter, call begin_calibration(); the next 7 windows (20 s after the 10 s warm-up) set the offset.",
+ "gbm_params": {
+  "objective": "regression",
+  "n_estimators": 300,
+  "learning_rate": 0.05,
+  "num_leaves": 15,
+  "min_child_samples": 40,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.8,
+  "random_state": 0,
+  "verbose": -1
+ },
+ "selection": {
+  "rule": "lowest smoothed MAE on WiCount held-out files; within 0.05 prefer the earlier candidate (more data, no install step)",
+  "candidates": [
+   {
+    "experiment": "E4_mat80_plus_esp32",
+    "mode": "zero_shot",
+    "n": 274,
+    "mae": 0.3600387235,
+    "exact": 0.704379562,
+    "within1": 0.9927007299
+   },
+   {
+    "experiment": "E4_mat80_plus_esp32",
+    "mode": "empty_cal",
+    "n": 274,
+    "mae": 0.3058504223,
+    "exact": 0.8065693431,
+    "within1": 1.0
+   },
+   {
+    "experiment": "E3_mat80_to_esp32",
+    "mode": "zero_shot",
+    "n": 274,
+    "mae": 0.7714947789,
+    "exact": 0.3649635036,
+    "within1": 0.8905109489
+   },
+   {
+    "experiment": "E3_mat80_to_esp32",
+    "mode": "empty_cal",
+    "n": 274,
+    "mae": 1.0684692567,
+    "exact": 0.1240875912,
+    "within1": 0.802919708
+   },
+   {
+    "experiment": "E2_esp32_only",
+    "mode": "zero_shot",
+    "n": 274,
+    "mae": 0.3403006561,
+    "exact": 0.8175182482,
+    "within1": 1.0
+   }
+  ],
+  "chosen": [
+   "E4_mat80_plus_esp32",
+   "empty_cal"
+  ]
+ },
+ "held_out_results": [
+  {
+   "experiment": "E4_mat80_plus_esp32",
+   "mode": "empty_cal",
+   "test": "wicount",
+   "sites": "all",
+   "level": "raw",
+   "train": "mat80 + wicount other files",
+   "n": 274,
+   "mae": 0.3752675644,
+   "exact": 0.6788321168,
+   "within1": 0.996350365
+  },
+  {
+   "experiment": "E4_mat80_plus_esp32",
+   "mode": "empty_cal",
+   "test": "wicount",
+   "sites": "all",
+   "level": "smoothed",
+   "train": "mat80 + wicount other files",
+   "n": 274,
+   "mae": 0.3058504223,
+   "exact": 0.8065693431,
+   "within1": 1.0
+  }
+ ],
+ "export_parity_max_abs": 1.2836522080839075e-05,
+ "caveats": [
+  "The WiCount score of the chosen model is optimistic: the same files were used to choose it.",
+  "WiCount = one room, one evening, counts 0-3; counts 0 and 3 have one file each.",
+  "No ESP32 data above 3 people; higher counts come from 4-antenna 80 MHz router data only.",
+  "80 MHz setup PC2a has no empty recording; PC4a_n00 looked occupied in the audit.",
+  "Re-validate on your own ESP32-S3 recordings before trusting the count."
+ ],
+ "settings": {
+  "fs_hz": 50,
+  "win_s": 5.0,
+  "hop_s": 2.5,
+  "n_tones": 52,
+  "max_gap_bins": 3,
+  "max_missing": 0.2,
+  "tau_s": 30.0,
+  "warmup_s": 10.0,
+  "cal_s": 20.0,
+  "n_cal_windows": 7,
+  "smooth_s": 30.0,
+  "smooth_n": 12,
+  "feature_names": [
+   "cv_median",
+   "cv_p90",
+   "cv_p10",
+   "diff_energy",
+   "pc1_frac",
+   "n_pc_90",
+   "tone_corr",
+   "low_freq_frac",
+   "high_freq_frac",
+   "mean_std"
+  ],
+  "log_features": [
+   "cv_median",
+   "cv_p90",
+   "cv_p10",
+   "diff_energy",
+   "mean_std"
+  ]
+ },
+ "n_trees": 300,
+ "n_nodes": 8700,
+ "flash_bytes_est": 78900,
+ "header_file_bytes": 260834
+}

@@ -1,0 +1,5 @@
+item,value,limit,ok
+flash: model arrays,77 KB,512 KB,True
+RAM: counter state,75 KB,128 KB,True
+compute per 2.5 s window,3.0 M flops,25 M (~10 % of one core),True
+packet rate (WiCount median),87 Hz,>= 50 Hz,True

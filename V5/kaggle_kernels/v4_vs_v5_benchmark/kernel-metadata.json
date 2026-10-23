@@ -1,0 +1,15 @@
+{
+  "id": "wizard1803/wifi-v4-vs-v5-benchmark",
+  "title": "WiFi V4 vs V5 Benchmark",
+  "code_file": "wifi-v4-vs-v5-benchmark.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["wizard1803/wifi-csi"],
+  "kernel_sources": ["wizard1803/wifi-phase5-features"],
+  "competition_sources": [],
+  "model_sources": []
+}

@@ -1,0 +1,8 @@
+source,cv_median,diff_energy,tone_corr,n_pc_90
+CSI-Bench loc: 1 people,0.1844,0.1645,0.033,10.0
+CSI-Bench loc: 2 people,0.2008,0.1674,0.026,10.0
+ESP32 fall clips: Fall,0.0711,0.063,0.1276,8.0
+ESP32 fall clips: Nonfall,0.0493,0.0419,0.125,15.0
+WiMANS 5 GHz: 0 people,0.0094,0.0122,0.1547,6.0
+WiMANS 5 GHz: 1 people,0.0802,0.0368,0.0624,5.0
+WiMANS 5 GHz: 2 people,0.1332,0.054,0.0438,5.0

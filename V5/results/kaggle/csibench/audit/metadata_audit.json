@@ -1,0 +1,776 @@
+{
+ "BreathingDetection": {
+  "rows": 100000,
+  "columns": [
+   "id",
+   "file_path",
+   "subject",
+   "user",
+   "activity",
+   "environment",
+   "device",
+   "num_sub",
+   "c_freq",
+   "difficulty",
+   "deplyoment",
+   "session",
+   "is_multi_subject",
+   "label",
+   "date",
+   "act",
+   "env",
+   "freq",
+   "abs_path",
+   "task"
+  ],
+  "splits": {
+   "test_easy_id": 6689,
+   "test_hard_id": 3906,
+   "test_id": 15000,
+   "test_medium_id": 4405,
+   "train_id": 70000,
+   "val_id": 15000
+  },
+  "files_base": "/kaggle/input/datasets/guozhenjennzhu/csi-bench/BreathingDetection",
+  "value_counts": {
+   "user": {
+    "U06": 71842,
+    "U23": 27188,
+    "U24": 970
+   },
+   "activity": {
+    "sleep": 80580,
+    "empty": 19420
+   },
+   "environment": {
+    "E10": 71842,
+    "E09": 27188,
+    "E05": 970
+   },
+   "device": {
+    "EchoPlus": 6797,
+    "EchoDot_3gen": 6797,
+    "EchoDot_2gen": 6797,
+    "GoogleNestHub": 6797,
+    "Hex_1cd6be1df32b": 6797,
+    "Hex_1cd6be1df3db": 6796,
+    "Hex_1cd6be1df323": 5826,
+    "Hex_1cd6be1df4c7": 5826,
+    "Hex_1cd6be1df3e1": 5825,
+    "Hex_1cd6be1df583": 5825,
+    "Hex_1cd6be198a27": 5825,
+    "Hex_1cd6be1df335": 4854,
+    "Hex_1cd6be198999": 3883,
+    "Hex_1cd6be1df36d": 3883,
+    "Hex_1cd6be198a91": 2912,
+    "Hex_1cd6be198a63": 2912,
+    "Hex_1cd6be198a5f": 2912,
+    "Hex_1cd6be198931": 2912,
+    "Hex_1cd6be198a97": 2912,
+    "Hex_1cd6be1df30d": 971,
+    "Hex_1cd6be1df605": 971,
+    "Lyra": 970
+   },
+   "num_sub": {
+    "208": 71842,
+    "240": 20386,
+    "112": 6797,
+    "416": 970,
+    "56": 5
+   },
+   "difficulty": {
+    "easy": 44657,
+    "medium": 30099,
+    "hard": 25244
+   },
+   "deplyoment": {
+    "HC_near_Fridge": 27183,
+    "HC_near_Faucet": 10681,
+    "HC_on_DiningTable": 9710,
+    "Set1": 9703,
+    "Set3": 7768,
+    "NLOS_FanOff": 7768,
+    "LOS_FanOff": 7768,
+    "NLOS_FanOn": 7768,
+    "Set2": 6797,
+    "LOS_FanOn": 3884,
+    "crossbed": 970
+   },
+   "label": {
+    "sleep": 80580,
+    "empty": 19420
+   },
+   "date": {
+    "nan": 35926,
+    "2023_01_15": 5121,
+    "2023_01_11": 4589,
+    "2023_01_17": 4529,
+    "2023_02_01": 3377,
+    "2023_01_25": 3215,
+    "2023_01_31": 3087,
+    "2023_02_02": 2775,
+    "2023_01_30": 2588,
+    "2023_01_27": 2482,
+    "2023_01_26": 2400,
+    "2023_01_19": 2013,
+    "2023_01_24": 1924,
+    "2022_03_09": 1806,
+    "2022_03_21": 1804,
+    "2022_03_04": 1717,
+    "2022_03_14": 1708,
+    "2023_01_18": 1706,
+    "2022_02_26": 1624,
+    "2022_03_17": 1585,
+    "2022_03_18": 1532,
+    "2022_03_24": 1468,
+    "2022_03_11": 1386,
+    "2022_03_16": 1379,
+    "2022_03_15": 1316,
+    "2022_03_10": 1309,
+    "2022_03_12": 1078,
+    "2022_03_08": 990,
+    "2022_03_07": 806,
+    "2022_03_03": 790,
+    "2022_03_01": 763,
+    "2022_02_28": 638,
+    "2022_02_25": 569
+   }
+  }
+ },
+ "FallDetection": {
+  "rows": 6700,
+  "columns": [
+   "id",
+   "file_path",
+   "subject",
+   "user",
+   "activity",
+   "environment",
+   "device",
+   "session",
+   "is_multi_subject",
+   "label",
+   "Difficulty",
+   "act",
+   "env",
+   "freq",
+   "abs_path",
+   "task"
+  ],
+  "splits": {
+   "test_easy": 915,
+   "test_hard": 73,
+   "test_id": 1005,
+   "test_medium": 17,
+   "train_id": 4690,
+   "val_id": 1005
+  },
+  "files_base": "/kaggle/input/datasets/guozhenjennzhu/csi-bench/FallDetection",
+  "value_counts": {
+   "user": {
+    "U11": 1426,
+    "U21": 1007,
+    "U17": 767,
+    "U14": 512,
+    "U09": 495,
+    "U13": 491,
+    "U16": 429,
+    "U10": 367,
+    "U22": 320,
+    "U19": 182,
+    "U08": 152,
+    "U12": 150,
+    "U18": 142,
+    "U20": 91,
+    "U06": 80,
+    "U07": 63,
+    "U15": 26
+   },
+   "activity": {
+    "Nonfall": 3930,
+    "Fall": 2770
+   },
+   "environment": {
+    "E23": 3679,
+    "E22": 1731,
+    "E24": 699,
+    "E21": 441,
+    "E25": 124,
+    "E26": 26
+   },
+   "device": {
+    "HP": 6206,
+    "ESP32": 494
+   },
+   "label": {
+    "Nonfall": 3930,
+    "Fall": 2770
+   },
+   "Difficulty": {
+    "Easy": 6082,
+    "Hard": 494,
+    "Medium": 124
+   },
+   "act": {
+    "Nonfall": 3930,
+    "Fall": 2770
+   },
+   "env": {
+    "E23": 3679,
+    "E22": 1731,
+    "E24": 699,
+    "E21": 441,
+    "E25": 124,
+    "E26": 26
+   },
+   "freq": {
+    "232": 6206,
+    "64": 494
+   }
+  }
+ },
+ "Localization": {
+  "rows": 10732,
+  "columns": [
+   "id",
+   "file_path",
+   "subject",
+   "user",
+   "activity",
+   "environment",
+   "num_sub",
+   "c_freq",
+   "difficulty",
+   "deplyoment",
+   "session",
+   "is_multi_subject",
+   "label",
+   "device",
+   "act",
+   "env",
+   "freq",
+   "abs_path",
+   "task",
+   "count"
+  ],
+  "splits": {
+   "test_easy_id": 677,
+   "test_hard_id": 405,
+   "test_id": 1610,
+   "test_medium_id": 528,
+   "train_id": 7512,
+   "val_id": 1610
+  },
+  "files_base": "/kaggle/input/datasets/guozhenjennzhu/csi-bench/Localization",
+  "value_counts": {
+   "user": {
+    "U06": 3836,
+    "U05": 1304,
+    "U01": 1244,
+    "U04": 1144,
+    "Empty": 824,
+    "UM04": 620,
+    "UM01": 600,
+    "UM05": 509,
+    "UM02": 365,
+    "UM03": 286
+   },
+   "activity": {
+    "singleuser_walking": 7528,
+    "twouser_walking": 2380,
+    "empty": 824
+   },
+   "environment": {
+    "E08": 3746,
+    "E01": 1864,
+    "E03": 1744,
+    "E04": 1669,
+    "E06": 1454,
+    "E07": 255
+   },
+   "num_sub": {
+    "168": 6731,
+    "2496": 4001
+   },
+   "c_freq": {
+    "5G": 7532,
+    "2G": 3200
+   },
+   "difficulty": {
+    "easy": 4467,
+    "medium": 3735,
+    "hard": 2530
+   },
+   "deplyoment": {
+    "case1": 8000,
+    "case2": 1015,
+    "case3": 934,
+    "case4": 783
+   },
+   "is_multi_subject": {
+    "False": 8352,
+    "True": 2380
+   },
+   "label": {
+    "100": 2653,
+    "1": 2550,
+    "10": 2325,
+    "11": 976,
+    "0": 824,
+    "101": 781,
+    "110": 623
+   },
+   "device": {
+    "EchoDot3rd-5G_EchoDot3rd-5G_EchoDot3rd-5G": 4001,
+    "EchoShow8-5G_AppleHomePod-5G_EchoSpot-5G": 902,
+    "GoveePlug-2G_AmazonPlug-2G_WyzePlug-2G": 902,
+    "GoveePlug-2G_EightreePlug-2G_WyzePlug-2G": 902,
+    "Googlenest-5G_AppleHomePod-5G_EchoSpot-5G": 902,
+    "AmazonPlug-2G_GoveePlug-2G_WyzePlug-2G": 364,
+    "EightreePlug-2G_GoveePlug-2G_WyzePlug-2G": 364,
+    "AppleHomePod-5G_EchoShow8-5G_EchoSpot-5G": 363,
+    "AppleHomePod-5G_Googlenest-5G_EchoSpot-5G": 363,
+    "EchoShow8-5G_EchoSpot-5G_AppleHomePod-5G": 334,
+    "EchoShow8-5G_Echoplus-5G_AppleHomePod-5G": 334,
+    "GoveePlug-2G_WyzePlug-2G_AmazonPlug-2G": 334,
+    "GoveePlug-2G_WyzePlug-2G_EightreePlug-2G": 334,
+    "Googlenest-5G_Echoplus-5G_AppleHomePod-5G": 333
+   },
+   "count": {
+    "1": 7528,
+    "2": 2380,
+    "0": 824
+   }
+  }
+ },
+ "MotionSourceRecognition": {
+  "rows": 60858,
+  "columns": [
+   "id",
+   "file_path",
+   "subject",
+   "user",
+   "activity",
+   "environment",
+   "device",
+   "session",
+   "label",
+   "difficulty",
+   "act",
+   "env",
+   "freq",
+   "abs_path",
+   "task"
+  ],
+  "splits": {
+   "test_easy": 865,
+   "test_hard": 2004,
+   "test_id": 9131,
+   "test_medium": 6262,
+   "train_id": 42599,
+   "val_id": 9128
+  },
+  "files_base": "/kaggle/input/datasets/guozhenjennzhu/csi-bench/MotionSourceRecognition",
+  "value_counts": {
+   "subject": {
+    "Human": 28154,
+    "Pet": 26759,
+    "IRobot": 4306,
+    "Fan": 1639
+   },
+   "environment": {
+    "E13": 18531,
+    "E20": 16326,
+    "E11": 6342,
+    "E19": 5567,
+    "E18": 4397,
+    "E17": 2344,
+    "E16": 2343,
+    "E12": 1792,
+    "E14": 1717,
+    "E15": 1499
+   },
+   "label": {
+    "Human": 28154,
+    "Pet": 26759,
+    "IRobot": 4306,
+    "Fan": 1639
+   },
+   "difficulty": {
+    "medium": 41738,
+    "hard": 13360,
+    "easy": 5760
+   },
+   "env": {
+    "E13": 18531,
+    "E20": 16326,
+    "E11": 6342,
+    "E19": 5567,
+    "E18": 4397,
+    "E17": 2344,
+    "E16": 2343,
+    "E12": 1792,
+    "E14": 1717,
+    "E15": 1499
+   }
+  }
+ },
+ "Multitask/HumanActivityRecognition": {
+  "rows": 55684,
+  "columns": [
+   "id",
+   "file_path",
+   "subject",
+   "user",
+   "activity",
+   "distance",
+   "num_sub",
+   "c_freq",
+   "environment",
+   "device",
+   "session",
+   "is_multi_subject",
+   "label",
+   "act",
+   "env",
+   "freq",
+   "abs_path",
+   "task"
+  ],
+  "splits": {
+   "dev_brand": 1617,
+   "dev_env": 2171,
+   "dev_instance": 4635,
+   "dev_split_info": 5,
+   "dev_user": 2171,
+   "dev_user_env": 2171,
+   "p5_info": 4,
+   "test_cross_device": 9631,
+   "test_cross_env": 6650,
+   "test_cross_user": 12109,
+   "test_cross_user_env": 18759,
+   "test_id": 4602,
+   "test_instance": 2559,
+   "train_id": 21473,
+   "train_id_p2": 19302,
+   "train_id_p3": 19302,
+   "train_id_p4": 19302,
+   "train_id_p5": 19331,
+   "train_id_p6": 19856,
+   "val_id": 4601
+  },
+  "files_base": "/kaggle/input/datasets/guozhenjennzhu/csi-bench/Multitask",
+  "value_counts": {
+   "user": {
+    "U05": 13738,
+    "U02": 12109,
+    "U01": 7152,
+    "U22": 6562,
+    "U04": 6287,
+    "U06": 6275,
+    "U03": 3561
+   },
+   "activity": {
+    "walking": 28351,
+    "running": 7492,
+    "wavinghand": 7471,
+    "seated-breathing": 7033,
+    "jumping": 5337
+   },
+   "distance": {
+    "1.5": 41497,
+    "2.5": 7358,
+    "3.5": 6829
+   },
+   "num_sub": {
+    "56": 42019,
+    "232": 13665
+   },
+   "c_freq": {
+    "5G": 37302,
+    "2G": 18382
+   },
+   "environment": {
+    "E01": 19261,
+    "E04": 7088,
+    "E05": 6650,
+    "E27": 6562,
+    "E03": 6287,
+    "E06": 6275,
+    "E02": 3561
+   },
+   "device": {
+    "HP": 13665,
+    "EchoShow": 4900,
+    "AppleHomePod": 4899,
+    "EchoSpot": 4895,
+    "GoogleNest": 4893,
+    "AmazonPlug": 4736,
+    "WyzePlug": 4701,
+    "GoveePlug": 4635,
+    "EightreePlug": 4310,
+    "EchoPlus": 4050
+   },
+   "label": {
+    "walking": 28351,
+    "running": 7492,
+    "wavinghand": 7471,
+    "seated-breathing": 7033,
+    "jumping": 5337
+   },
+   "act": {
+    "running": 7492,
+    "wavinghand": 7471,
+    "walking-case3": 7358,
+    "walking-case2": 7151,
+    "seated-breathing": 7033,
+    "walking-case1": 7013,
+    "walking-case4": 6829,
+    "jumping": 5337
+   },
+   "env": {
+    "E01": 19261,
+    "E04": 7088,
+    "E05": 6650,
+    "E27": 6562,
+    "E03": 6287,
+    "E06": 6275,
+    "E02": 3561
+   },
+   "freq": {
+    "56": 42019,
+    "232": 13665
+   }
+  }
+ },
+ "Multitask/HumanIdentification": {
+  "rows": 55684,
+  "columns": [
+   "id",
+   "file_path",
+   "subject",
+   "user",
+   "activity",
+   "distance",
+   "num_sub",
+   "c_freq",
+   "environment",
+   "device",
+   "session",
+   "is_multi_subject",
+   "label",
+   "act",
+   "env",
+   "freq",
+   "abs_path",
+   "task"
+  ],
+  "splits": {
+   "test_cross_device": 9631,
+   "test_cross_env": 6650,
+   "test_cross_user": 12109,
+   "test_id": 4602,
+   "train_id": 21473,
+   "val_id": 4601
+  },
+  "files_base": "/kaggle/input/datasets/guozhenjennzhu/csi-bench/Multitask",
+  "value_counts": {
+   "user": {
+    "U05": 13738,
+    "U02": 12109,
+    "U01": 7152,
+    "U22": 6562,
+    "U04": 6287,
+    "U06": 6275,
+    "U03": 3561
+   },
+   "activity": {
+    "walking": 28351,
+    "running": 7492,
+    "wavinghand": 7471,
+    "seated-breathing": 7033,
+    "jumping": 5337
+   },
+   "distance": {
+    "1.5": 41497,
+    "2.5": 7358,
+    "3.5": 6829
+   },
+   "num_sub": {
+    "56": 42019,
+    "232": 13665
+   },
+   "c_freq": {
+    "5G": 37302,
+    "2G": 18382
+   },
+   "environment": {
+    "E01": 19261,
+    "E04": 7088,
+    "E05": 6650,
+    "E27": 6562,
+    "E03": 6287,
+    "E06": 6275,
+    "E02": 3561
+   },
+   "device": {
+    "HP": 13665,
+    "EchoShow": 4900,
+    "AppleHomePod": 4899,
+    "EchoSpot": 4895,
+    "GoogleNest": 4893,
+    "AmazonPlug": 4736,
+    "WyzePlug": 4701,
+    "GoveePlug": 4635,
+    "EightreePlug": 4310,
+    "EchoPlus": 4050
+   },
+   "label": {
+    "U05": 13738,
+    "U02": 12109,
+    "U01": 7152,
+    "U22": 6562,
+    "U04": 6287,
+    "U06": 6275,
+    "U03": 3561
+   },
+   "act": {
+    "running": 7492,
+    "wavinghand": 7471,
+    "walking-case3": 7358,
+    "walking-case2": 7151,
+    "seated-breathing": 7033,
+    "walking-case1": 7013,
+    "walking-case4": 6829,
+    "jumping": 5337
+   },
+   "env": {
+    "E01": 19261,
+    "E04": 7088,
+    "E05": 6650,
+    "E27": 6562,
+    "E03": 6287,
+    "E06": 6275,
+    "E02": 3561
+   },
+   "freq": {
+    "56": 42019,
+    "232": 13665
+   }
+  }
+ },
+ "Multitask/ProximityRecognition": {
+  "rows": 55684,
+  "columns": [
+   "id",
+   "file_path",
+   "subject",
+   "user",
+   "activity",
+   "distance",
+   "num_sub",
+   "c_freq",
+   "environment",
+   "device",
+   "session",
+   "is_multi_subject",
+   "label",
+   "act",
+   "env",
+   "freq",
+   "abs_path",
+   "task"
+  ],
+  "splits": {
+   "test_cross_device": 9631,
+   "test_cross_env": 6650,
+   "test_cross_user": 12109,
+   "test_id": 4602,
+   "train_id": 21473,
+   "val_id": 4601
+  },
+  "files_base": "/kaggle/input/datasets/guozhenjennzhu/csi-bench/Multitask",
+  "value_counts": {
+   "user": {
+    "U05": 13738,
+    "U02": 12109,
+    "U01": 7152,
+    "U22": 6562,
+    "U04": 6287,
+    "U06": 6275,
+    "U03": 3561
+   },
+   "activity": {
+    "walking": 28351,
+    "running": 7492,
+    "wavinghand": 7471,
+    "seated-breathing": 7033,
+    "jumping": 5337
+   },
+   "distance": {
+    "1.5": 34484,
+    "2.5": 7358,
+    "0.5": 7013,
+    "3.5": 6829
+   },
+   "num_sub": {
+    "56": 42019,
+    "232": 13665
+   },
+   "c_freq": {
+    "5G": 37302,
+    "2G": 18382
+   },
+   "environment": {
+    "E01": 19261,
+    "E04": 7088,
+    "E05": 6650,
+    "E27": 6562,
+    "E03": 6287,
+    "E06": 6275,
+    "E02": 3561
+   },
+   "device": {
+    "HP": 13665,
+    "EchoShow": 4900,
+    "AppleHomePod": 4899,
+    "EchoSpot": 4895,
+    "GoogleNest": 4893,
+    "AmazonPlug": 4736,
+    "WyzePlug": 4701,
+    "GoveePlug": 4635,
+    "EightreePlug": 4310,
+    "EchoPlus": 4050
+   },
+   "label": {
+    "1.5": 34484,
+    "2.5": 7358,
+    "0.5": 7013,
+    "3.5": 6829
+   },
+   "act": {
+    "running": 7492,
+    "wavinghand": 7471,
+    "walking-case3": 7358,
+    "walking-case2": 7151,
+    "seated-breathing": 7033,
+    "walking-case1": 7013,
+    "walking-case4": 6829,
+    "jumping": 5337
+   },
+   "env": {
+    "E01": 19261,
+    "E04": 7088,
+    "E05": 6650,
+    "E27": 6562,
+    "E03": 6287,
+    "E06": 6275,
+    "E02": 3561
+   },
+   "freq": {
+    "56": 42019,
+    "232": 13665
+   }
+  }
+ }
+}

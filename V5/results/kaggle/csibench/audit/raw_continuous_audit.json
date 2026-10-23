@@ -1,0 +1,161 @@
+{
+ "exists": true,
+ "groundtruth": {
+  "U06_E06": {
+   "shape": [
+    23,
+    6
+   ],
+   "columns": [
+    "Event",
+    "Info",
+    "Duration (seconds)",
+    "Date",
+    "Start Time (UTC)",
+    "End Time (UTC)"
+   ]
+  },
+  "U04_E03": {
+   "shape": [
+    23,
+    6
+   ],
+   "columns": [
+    "Event",
+    "Info",
+    "Duration (seconds)",
+    "Date",
+    "Start Time (UTC)",
+    "End Time (UTC)"
+   ]
+  },
+  "U05_E04": {
+   "shape": [
+    23,
+    6
+   ],
+   "columns": [
+    "Event",
+    "Info",
+    "Duration (seconds)",
+    "Date",
+    "Start Time (UTC)",
+    "End Time (UTC)"
+   ]
+  },
+  "U05_E05": {
+   "shape": [
+    23,
+    6
+   ],
+   "columns": [
+    "Event",
+    "Info",
+    "Duration (seconds)",
+    "Date",
+    "Start Time (UTC)",
+    "End Time (UTC)"
+   ]
+  },
+  "U03_E02": {
+   "shape": [
+    19,
+    6
+   ],
+   "columns": [
+    "Event",
+    "Info",
+    "Duration (seconds)",
+    "Date",
+    "Start Time (UTC)",
+    "End Time (UTC)"
+   ]
+  },
+  "U01_E01": {
+   "shape": [
+    26,
+    6
+   ],
+   "columns": [
+    "Event",
+    "Info",
+    "Duration (seconds)",
+    "Date",
+    "Start Time (UTC)",
+    "End Time (UTC)"
+   ]
+  },
+  "U02_E01": {
+   "shape": [
+    36,
+    6
+   ],
+   "columns": [
+    "Event",
+    "Info",
+    "Duration (seconds)",
+    "Date",
+    "Start Time (UTC)",
+    "End Time (UTC)"
+   ]
+  }
+ },
+ "folders": {
+  "FloorPlan": {
+   "files": 6,
+   "gb": 0.0,
+   "extensions": {
+    ".png": 6
+   }
+  },
+  "U01_E01": {
+   "files": 2306,
+   "gb": 3.32,
+   "extensions": {
+    ".mat": 2306
+   }
+  },
+  "U02_E01": {
+   "files": 11907,
+   "gb": 3.27,
+   "extensions": {
+    ".mat": 11907
+   }
+  },
+  "U03_E02": {
+   "files": 10268,
+   "gb": 3.88,
+   "extensions": {
+    ".mat": 10268
+   }
+  },
+  "U04_E03": {
+   "files": 15287,
+   "gb": 3.93,
+   "extensions": {
+    ".mat": 15287
+   }
+  },
+  "U05_E04": {
+   "files": 20919,
+   "gb": 3.78,
+   "extensions": {
+    ".mat": 20919
+   }
+  },
+  "U05_E05": {
+   "files": 14989,
+   "gb": 2.63,
+   "extensions": {
+    ".mat": 14989
+   }
+  },
+  "U06_E06": {
+   "files": 14673,
+   "gb": 3.08,
+   "extensions": {
+    ".mat": 14673
+   }
+  }
+ }
+}

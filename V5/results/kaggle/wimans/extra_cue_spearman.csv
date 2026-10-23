@@ -1,0 +1,12 @@
+,classroom,empty_room,meeting_room
+pc2_frac,0.182,0.041,0.088
+pc3_frac,0.154,0.287,0.268
+eig_entropy,0.016,0.301,0.223
+doppler_centroid,-0.105,-0.046,-0.181
+doppler_spread,-0.104,-0.031,-0.161
+psd_entropy,-0.079,-0.014,-0.154
+activity_cv,0.033,0.22,0.139
+tone_energy_cv,-0.369,-0.733,-0.515
+half_band_corr,-0.429,-0.168,-0.294
+link_env_corr,-0.35,-0.19,-0.252
+link_energy_cv,-0.135,-0.134,0.021

@@ -1,0 +1,37 @@
+Event,Info,Duration (seconds),Date,Start Time (UTC),End Time (UTC)
+jumping,about 1.5m from the  IoT Devices,60.0,2025-05-08,00:57:31,00:58:45
+jumping,about 1.5m from the  IoT Devices,60.0,2025-05-08,01:01:16,01:02:21
+jumping,about 1.5m from the  IoT Devices,60.0,2025-05-08,01:04:55,01:06:02
+jumping,about 1.5m from the  IoT Devices,60.0,2025-05-08,01:07:15,01:08:21
+jumping,about 1.5m from the  IoT Devices,60.0,2025-05-08,01:09:29,01:10:35
+seated-breathing,about 1.5m from the  IoT Devices (on chair),180.0,2025-05-08,01:13:14,01:16:29
+seated-breathing,about 1.5m from the  IoT Devices(on chair),180.0,2025-05-08,01:17:01,01:20:12
+wavinghand,about 1.5m from the  IoT Devices,180.0,2025-05-08,01:20:46,01:23:55
+wavinghand,about 1.5m from the  IoT Devices,180.0,2025-05-08,01:24:16,01:27:26
+running,about 1.5m from the  IoT Devices ,90.0,2025-05-09,13:06:45,13:08:40
+running,about 1.5m from the  IoT Devices ,90.0,2025-05-09,13:09:01,13:10:45
+running,about 1.5m from the  IoT Devices,90.0,2025-05-09,13:11:04,13:12:49
+running,about 1.5m from the  IoT Devices ,90.0,2025-05-09,13:13:03,13:14:42
+walking,at 0.5m(0-1m) from the  IoT Devices,180.0,2025-05-09,13:15:04,13:18:15
+walking,at 0.5m(0-1m) from the  IoT Devices,180.0,2025-05-09,13:19:00,13:22:16
+walking,1.5m(1-2m) from the  IoT Devices,180.0,2025-05-09,13:23:08,13:26:17
+walking,1.5m(1-2m) from the  IoT Devices,180.0,2025-05-09,13:26:29,13:29:39
+walking,2.5m(2-3m) from the  IoT Devices,180.0,2025-05-09,13:29:56,13:33:04
+walking,2.5m(2-3m) from the  IoT Devices,180.0,2025-05-09,13:33:19,13:36:27
+walking,3.5m(3-4m) from the  IoT Devices,180.0,2025-05-09,13:36:41,13:40:02
+walking,3.5m(3-4m) from the  IoT Devices,180.0,2025-05-09,13:40:09,13:43:21
+localization-single-room1-round1,Walk in the room near the  IoT Devices (0-2m),180.0,,,
+localization-single-room1-round2,Walk in the room near the  IoT Devices (0-2m),180.0,,,
+localization-single-room2-round1,Walk in the room near the  IoT Devices (0-2m),180.0,,,
+localization-single-room2-round2,Walk in the room near the  IoT Devices (0-2m),180.0,,,
+localization-2users-case1-round1, IoT Devicesh users walking in the same room near the  IoT Devices (0-3m),180.0,,,
+localization-2users-case1-round2, IoT Devicesh users walking in the same room near the  IoT Devices (0-3m),180.0,,,
+localization-2users-case2-round1,Each user walking in a separate room near the  IoT Devices (0-2m),180.0,,,
+localization-2users-case2-round2,Each user walking in a separate room near the  IoT Devices (0-2m),180.0,,,
+localization-2users-case3-round1,One user walking in the room (0-2m) and one user sitting in the same room,180.0,,,
+localization-2users-case3-round2,One user walking in the room (0-2m) and one user sitting in the same room,180.0,,,
+localization-3users-case1-round1,Each user walking in a separate room near the  IoT Devices (0-2m),180.0,,,
+localization-3users-case1-round2,Each user walking in a separate room near the  IoT Devices (0-2m),180.0,,,
+,,,,,
+Tester,Enviornment,,,,
+U02,E01,,,,

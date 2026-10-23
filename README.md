@@ -1,3 +1,14 @@
+# Vibe-Coded Pipeline - Wi-Fi CSI sensing on the ESP32-S3
+
+| Version | What | Where |
+|---|---|---|
+| **V5** (2026-10-23, latest) | People counting 0 / 1 / 2 / 3+ from one ESP32-S3 link; trained on WiCount + 80 MHz set + WiMANS, rooms held out; C header for the trees | [`V5/`](V5/README.md) |
+| V4 | Presence (empty / occupied) + counting 0-2 in one room; noise suite, "unknown" gate | this folder (deploy) + [`V4/`](V4/) |
+
+V5 does not replace V4's presence model. A head-to-head benchmark (V4's own code vs V5 on the same data and noise) is running; results will be added to `V5/results/`.
+
+---
+
 # V4 deploy folder
 
 The model files and what the ESP32 must send. Everything here is **experimental**: it has

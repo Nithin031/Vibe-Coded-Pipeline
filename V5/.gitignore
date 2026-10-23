@@ -1,0 +1,18 @@
+# raw and intermediate data - never committed (see README "Data")
+Datasets/
+shared_format/
+*.zip
+*.mat
+*.pcap
+*.parquet
+*.npy
+*.npz
+
+# Python / notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# credentials
+kaggle.json
+.env
